@@ -19,6 +19,7 @@
 import QtQuick 2.7
 import QtQuick.Controls 2.0
 import QtQuick.Layouts 1.3
+import QtQuick.Window 2.0
 
 ApplicationWindow {
     visible: true
@@ -26,6 +27,8 @@ ApplicationWindow {
     maximumWidth: 640
     minimumHeight: 420
     maximumHeight: 420
+    x: Screen.width / 2 - width / 2
+    y: Screen.height / 2 - height / 2
     title: qsTr("Welcome")
 
     SwipeView {
@@ -46,16 +49,24 @@ Don't hesitate to give your opinion about KaOS in the Forum.")
 
         Page {
             Label {
-                //text: qsTr("Correct passwords for use in the live session:\nroot: root / root\nuser: live / live\nHope you enjoy :)")
+                //: Don not translate root/root and live/live
                 text: qsTr("Correct passwords for use in the live session:
-_________________________
-Username:   Password:
-_________________________
-root               root
-live                live
 
-Hope you enjoy :)")
+Username:   Password:
+root               root
+live               live
+
+Hope you enjoy")
                 anchors.centerIn: parent
+                horizontalAlignment: Text.AlignHCenter
+                Image {
+                    id: image
+                    anchors.centerIn: parent
+                    anchors.verticalCenterOffset : 100
+                    width: 22
+                    height: 22
+                    source: "images/face-smile-grin.svg"
+                }
             }
         }
     }
@@ -65,9 +76,21 @@ Hope you enjoy :)")
         currentIndex: swipeView.currentIndex
         TabButton {
             text: qsTr("Main")
+            Rectangle {
+            anchors.fill: parent
+            color: "transparent"
+            border.width: 1
+            border.color: ( parent.pressed ? "#2980B9" : "#353637" )
+            }
         }
         TabButton {
             text: qsTr("Passwords")
+            Rectangle {
+            anchors.fill: parent
+            color: "transparent"
+            border.width: 1
+            border.color: ( parent.pressed ? "#2980B9" : "#353637" )
+            }
         }
     }
 }

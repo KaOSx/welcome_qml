@@ -23,6 +23,13 @@ DEFINES += QT_DEPRECATED_WARNINGS
 # You can also select to disable deprecated APIs only up to a certain version of Qt.
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
+TRANSLATIONS  += lang/welcome.ts \
+              lang/welcome_nl_NL.ts \
+              lang/welcome_es.ts \
+              lang/welcome_es_AR.ts \
+              lang/welcome_fr.ts \
+              lang/welcome_it.ts \
+
 # Default rules for deployment.
 #qnx: target.path = /tmp/$${TARGET}/bin
 #else: unix:!android: target.path = /opt/$${TARGET}/bin
