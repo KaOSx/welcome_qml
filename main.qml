@@ -19,7 +19,6 @@
 import QtQuick 2.7
 import QtQuick.Controls 2.0
 import QtQuick.Layouts 1.3
-import org.kde.plasma.core 2.0 as PlasmaCore
 
 ApplicationWindow {
     visible: true
@@ -33,12 +32,6 @@ ApplicationWindow {
         id: swipeView
         anchors.fill: parent
         currentIndex: tabBar.currentIndex
-
-        PlasmaCore.DataSource {
-            id: executer
-            engine: "executable"
-            onNewData: {executer.disconnectSource(sourceName);}
-        }
 
         Page1 {
             Label {
