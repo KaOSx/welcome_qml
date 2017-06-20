@@ -62,7 +62,7 @@ Item {
             id: button2
             width: 150
             text: qsTr("About")
-            opacity: 0.9
+            opacity: 1
             Layout.fillWidth: true
             rightPadding: 35
             leftPadding: 35
@@ -85,7 +85,7 @@ Item {
             id: button3
             width: 150
             text: qsTr("Guide")
-            opacity: 0.9
+            opacity: 1
             Layout.fillWidth: true
             rightPadding: 35
             leftPadding: 35
@@ -126,7 +126,7 @@ Item {
             id: button4
             width: 150
             text: qsTr("Package List")
-            opacity: 0.9
+            opacity: 1
             rightPadding: 28
             leftPadding: 28
             Layout.fillWidth: true
@@ -150,7 +150,7 @@ Item {
             id: button5
             width: 150
             text: qsTr("Forum")
-            opacity: 0.9
+            opacity: 1
             rightPadding: 28
             leftPadding: 28
             Layout.fillWidth: true
@@ -173,7 +173,7 @@ Item {
             id: button6
             width: 150
             text: qsTr("Documentation")
-            opacity: 0.9
+            opacity: 1
             rightPadding: 28
             leftPadding: 28
             highlighted: true
