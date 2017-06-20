@@ -12,12 +12,6 @@
         <file>images/partition-disk.svg</file>
         <file>images/release.svg</file>
         <file>images/face-smile-grin.svg</file>
-        <file>lang/welcome.ts</file>
-        <file>lang/welcome_es.ts</file>
-        <file>lang/welcome_es_AR.ts</file>
-        <file>lang/welcome_fr.ts</file>
-        <file>lang/welcome_it.ts</file>
-        <file>lang/welcome_nl_NL.ts</file>
         <file>lang/welcome_es_AR.qm</file>
         <file>lang/welcome_es.qm</file>
         <file>lang/welcome_fr.qm</file>

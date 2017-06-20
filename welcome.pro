@@ -37,10 +37,16 @@ TRANSLATIONS  += lang/welcome.ts \
 target.path = /usr/bin
 sources.files = $$SOURCES $$RESOURCES *.pro
 sources.path = .
+
 desktop.path = /usr/share/applications
 desktop.files += welcome.desktop
+
 icon.files += welcome.svg
 icon.path += /usr/share/pixmaps
-INSTALLS += target desktop icon
+
+i18n.path = /usr/share/qt5/translations
+i18n.files += lang/*.qm
+
+INSTALLS += target desktop i18n icon
 
 DISTFILES +=
