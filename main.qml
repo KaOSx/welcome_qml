@@ -78,21 +78,9 @@ Hope you enjoy")
         currentIndex: swipeView.currentIndex
         TabButton {
             text: qsTr("Main")
-            Rectangle {
-            anchors.fill: parent
-            color: "transparent"
-            border.width: 1
-            border.color: ( parent.pressed ? "#2980B9" : "#353637" )
-            }
         }
         TabButton {
             text: qsTr("Passwords")
-            Rectangle {
-            anchors.fill: parent
-            color: "transparent"
-            border.width: 1
-            border.color: ( parent.pressed ? "#2980B9" : "#353637" )
-            }
         }
     }
 }

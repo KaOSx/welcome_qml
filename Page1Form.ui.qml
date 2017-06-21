@@ -28,6 +28,8 @@ Item {
     property alias button4: button4
     property alias button5: button5
     property alias button6: button6
+    property alias item1: item1
+    width: 700
 
     RowLayout {
         width: 550
@@ -108,9 +110,10 @@ Item {
     Image {
         id: image
         x: 270
-        y: 17
+        y: 25
         width: 100
         height: 100
+        anchors.horizontalCenter: rowLayout.horizontalCenter
         source: "images/logo.png"
     }
 
