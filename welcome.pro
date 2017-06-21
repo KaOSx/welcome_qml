@@ -25,6 +25,7 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 TRANSLATIONS  += lang/welcome.ts \
               lang/welcome_nl_NL.ts \
+              lang/welcome_de.ts \
               lang/welcome_es.ts \
               lang/welcome_es_AR.ts \
               lang/welcome_fr.ts \
@@ -44,9 +45,6 @@ desktop.files += welcome.desktop
 icon.files += welcome.svg
 icon.path += /usr/share/pixmaps
 
-i18n.path = /usr/share/qt5/translations
-i18n.files += lang/*.qm
-
-INSTALLS += target desktop i18n icon
+INSTALLS += target desktop icon
 
 DISTFILES +=

@@ -44,6 +44,8 @@ Want to learn more about the project? Please find the links below.
 Don't hesitate to give your opinion about KaOS in the Forum.")
                 anchors.centerIn: parent
                 horizontalAlignment: Text.AlignHCenter
+                width: 635
+                wrapMode: Text.WordWrap
             }
         }
 

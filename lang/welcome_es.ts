@@ -45,7 +45,10 @@
 Want to learn more about the project? Please find the links below.
 
 Don&apos;t hesitate to give your opinion about KaOS in the Forum.</source>
-        <translation>Gracias por probar KaOS. ¿Necesita el archivo de contraseñas o la lista de paquetes?¿Quiere aprender más sobre el proyecto? Por favor busque los enlaces debajo.No dude en dar su opinión sobre KaOS en el Foro.</translation>
+        <translation>Gracias por probar KaOS. ¿Necesita el archivo de contraseñas o la lista de paquetes?
+¿Quiere aprender más sobre el proyecto? Por favor busque los enlaces debajo.
+
+No dude en dar su opinión sobre KaOS en el Foro.</translation>
     </message>
     <message>
         <location filename="../main.qml" line="53"/>
