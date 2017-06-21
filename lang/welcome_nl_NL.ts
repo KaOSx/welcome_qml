@@ -46,7 +46,7 @@ Want to learn more about the project? Please find the links below.
 
 Don&apos;t hesitate to give your opinion about KaOS in the Forum.</source>
         <translation>Bedankt voor het proberen van KaOS. Wachtwoord of pakketten lijst nodig? 
-Wil je meer te weten komen over dit project? Hieronder treft u de nodige links aan.
+Wil je meer te weten komen over dit project? Hieronder tref je de nodige links aan.
 
 Twijfel niet om uw mening over KaOS te geven in de Forum.</translation>
     </message>

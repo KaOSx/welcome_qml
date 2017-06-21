@@ -66,7 +66,7 @@ Item {
             Layout.fillWidth: true
             rightPadding: 35
             leftPadding: 35
-            highlighted: true
+            highlighted: false
 
             Image {
                 id: image2
@@ -89,7 +89,7 @@ Item {
             Layout.fillWidth: true
             rightPadding: 35
             leftPadding: 35
-            highlighted: true
+            highlighted: false
 
             Image {
                 id: image3
@@ -131,7 +131,7 @@ Item {
             leftPadding: 28
             Layout.fillWidth: true
             checkable: false
-            highlighted: true
+            highlighted: false
 
             Image {
                 id: image4
@@ -154,7 +154,7 @@ Item {
             rightPadding: 28
             leftPadding: 28
             Layout.fillWidth: true
-            highlighted: true
+            highlighted: false
 
             Image {
                 id: image5
@@ -176,7 +176,7 @@ Item {
             opacity: 1
             rightPadding: 28
             leftPadding: 28
-            highlighted: true
+            highlighted: false
             Layout.fillWidth: true
 
             Image {
