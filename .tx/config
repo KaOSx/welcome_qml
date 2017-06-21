@@ -1,0 +1,8 @@
+[main]
+host = https://www.transifex.com
+
+[kaos.welcomets]
+file_filter = lang/welcome_<lang>.ts
+source_file = lang/welcome.ts
+source_lang = en
+type = QT

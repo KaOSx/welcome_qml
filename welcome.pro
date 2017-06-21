@@ -25,6 +25,7 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 TRANSLATIONS  += lang/welcome.ts \
               lang/welcome_nl_NL.ts \
+              lang/welcome_ca.ts \
               lang/welcome_de.ts \
               lang/welcome_es.ts \
               lang/welcome_es_AR.ts \

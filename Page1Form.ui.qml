@@ -142,7 +142,7 @@ Item {
                 anchors.left: parent.left
                 anchors.leftMargin: 15
                 fillMode: Image.PreserveAspectFit
-                source: "images/document.svg"
+                source: "images/list.svg"
             }
         }
 
@@ -187,7 +187,7 @@ Item {
                 anchors.verticalCenter: parent.verticalCenter
                 anchors.left: parent.left
                 anchors.leftMargin: 15
-                source: "images/release.svg"
+                source: "images/document.svg"
             }
         }
     }

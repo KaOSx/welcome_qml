@@ -23,8 +23,8 @@ import QtQuick.Window 2.0
 
 ApplicationWindow {
     visible: true
-    minimumWidth: 640
-    maximumWidth: 640
+    minimumWidth: 700
+    maximumWidth: 700
     minimumHeight: 420
     maximumHeight: 420
     x: Screen.width / 2 - width / 2
@@ -44,7 +44,7 @@ Want to learn more about the project? Please find the links below.
 Don't hesitate to give your opinion about KaOS in the Forum.")
                 anchors.centerIn: parent
                 horizontalAlignment: Text.AlignHCenter
-                width: 635
+                width: 690
                 wrapMode: Text.WordWrap
             }
         }
