@@ -26,11 +26,13 @@ DEFINES += QT_DEPRECATED_WARNINGS
 TRANSLATIONS  += lang/welcome.ts \
               lang/welcome_nl_NL.ts \
               lang/welcome_ca.ts \
+              lang/welcome_cs.ts \
               lang/welcome_de.ts \
               lang/welcome_es.ts \
               lang/welcome_es_AR.ts \
               lang/welcome_fr.ts \
               lang/welcome_it.ts \
+              lang/welcome_pt_BR.ts \
 
 # Default rules for deployment.
 #qnx: target.path = /tmp/$${TARGET}/bin

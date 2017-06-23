@@ -21,5 +21,7 @@
         <file>images/list.svg</file>
         <file>lang/welcome_ca.qm</file>
         <file>package.qml</file>
+        <file>lang/welcome_cs.qm</file>
+        <file>lang/welcome_pt_BR.qm</file>
     </qresource>
 </RCC>
