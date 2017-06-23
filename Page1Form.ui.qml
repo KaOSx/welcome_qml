@@ -19,6 +19,7 @@
 import QtQuick 2.7
 import QtQuick.Controls 2.0
 import QtQuick.Layouts 1.3
+import QtQuick.Controls.Material 2.1
 
 Item {
     id: item1
@@ -46,6 +47,7 @@ Item {
             leftPadding: 28
             checkable: true
             highlighted: true
+            Material.elevation: 1
 
             Image {
                 id: image1
@@ -69,6 +71,7 @@ Item {
             rightPadding: 35
             leftPadding: 35
             highlighted: false
+            Material.elevation: 1
 
             Image {
                 id: image2
@@ -92,6 +95,7 @@ Item {
             rightPadding: 35
             leftPadding: 35
             highlighted: false
+            Material.elevation: 1
 
             Image {
                 id: image3
@@ -135,6 +139,7 @@ Item {
             Layout.fillWidth: true
             checkable: false
             highlighted: false
+            Material.elevation: 1
 
             Image {
                 id: image4
@@ -158,6 +163,7 @@ Item {
             leftPadding: 28
             Layout.fillWidth: true
             highlighted: false
+            Material.elevation: 1
 
             Image {
                 id: image5
@@ -181,6 +187,7 @@ Item {
             leftPadding: 28
             highlighted: false
             Layout.fillWidth: true
+            Material.elevation: 1
 
             Image {
                 id: image6

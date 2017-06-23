@@ -20,6 +20,7 @@ import QtQuick 2.7
 import QtQuick.Controls 2.0
 import QtQuick.Layouts 1.3
 import QtQuick.Window 2.0
+import QtQuick.Dialogs 1.2
 
 ApplicationWindow {
     visible: true
@@ -51,7 +52,7 @@ Don't hesitate to give your opinion about KaOS in the Forum.")
 
         Page {
             Label {
-                //: Don not translate root/root and live/live
+                //: Do not translate root/root and live/live
                 text: qsTr("Correct passwords for use in the live session:
 
 Username:   Password:

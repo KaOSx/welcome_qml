@@ -46,6 +46,11 @@ desktop.files += welcome.desktop
 icon.files += welcome.svg
 icon.path += /usr/share/pixmaps
 
-INSTALLS += target desktop icon
+qml.path = /usr/lib/qt5/qml/welcome
+qml.files += package.qml
+
+INSTALLS += target desktop icon qml
 
 DISTFILES +=
+
+HEADERS +=

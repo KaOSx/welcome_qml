@@ -38,7 +38,9 @@ Page1Form {
         Qt.openUrlExternally("file:///home/live/Desktop/info/guide.pdf");
     }
     button4.onClicked: {
-        executer.connectSource("pacman -Q > ~/list.txt && nl -nrz -w1 ~/list.txt > ~/list2.txt && kdialog --textbox ~/list2.txt 500 600")
+        executer.connectSource("pacman -Q > /tmp/list.txt &&
+            nl -nrz -w1 /tmp/list.txt > /tmp/package_list.txt  &&
+            qmlscene-qt5 //usr/lib/qt5/qml/welcome/package.qml");
     }
     button5.onClicked: {
         Qt.openUrlExternally("https://forum.kaosx.us/");
