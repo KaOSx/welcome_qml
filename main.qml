@@ -39,10 +39,9 @@ ApplicationWindow {
 
         Page1 {
             Label {
-                text: qsTr("Thanks for trying KaOS. In need of the password file or package list?
-Want to learn more about the project? Please find the links below.
-
-Don't hesitate to give your opinion about KaOS in the Forum.")
+                text: qsTr("<div>Thanks for trying KaOS. In need of the password file or package list?<br>
+                            Want to learn more about the project? Please find the links below.<br><br>
+                            Don't hesitate to give your opinion about KaOS in the Forum.</div>")
                 anchors.centerIn: parent
                 horizontalAlignment: Text.AlignHCenter
                 width: 690
@@ -53,13 +52,24 @@ Don't hesitate to give your opinion about KaOS in the Forum.")
         Page {
             Label {
                 //: Do not translate root/root and live/live
-                text: qsTr("Correct passwords for use in the live session:
-
-Username:   Password:
-root               root
-live               live
-
-Hope you enjoy")
+                textFormat: Text.RichText
+                text: qsTr("<p>Correct passwords for use in the live session:</p>
+                            <p></p>
+                            <table width=60% align=center>
+                                <tr>
+                                    <th>Username:</th>
+                                    <th>Password:</th>
+                                </tr>
+                                <tr>
+                                    <td align=center>root</td>
+                                    <td align=center>root</td>
+                                </tr>
+                                <tr>
+                                    <td align=center>live</td>
+                                    <td align=center>live</td>
+                                </tr>
+                            </table>
+                            <p>Hope you enjoy</p>")
                 anchors.centerIn: parent
                 horizontalAlignment: Text.AlignHCenter
                 Image {

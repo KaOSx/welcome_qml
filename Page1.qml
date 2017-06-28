@@ -28,6 +28,10 @@ Page1Form {
         onNewData: {executer.disconnectSource(sourceName);}
     }
 
+    //Loader {
+    //    id: pageLoader
+    //}
+
     button1.onClicked: {
         executer.connectSource("/usr/bin/launch-calamares.sh");
     }
@@ -40,7 +44,8 @@ Page1Form {
     button4.onClicked: {
         executer.connectSource("pacman -Q > /tmp/list.txt &&
             nl -nrz -w1 /tmp/list.txt > /tmp/package_list.txt  &&
-            qmlscene-qt5 //usr/lib/qt5/qml/welcome/package.qml");
+            qmlscene-qt5 /usr/lib/qt5/qml/welcome/package.qml");
+        //pageloader.source = "/usr/lib/qt5/qml/welcome/package.qml"
     }
     button5.onClicked: {
         Qt.openUrlExternally("https://forum.kaosx.us/");
