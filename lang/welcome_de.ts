@@ -2,32 +2,32 @@
 <context>
     <name>Page1Form.ui</name>
     <message>
-        <location filename="../Page1Form.ui.qml" line="41"/>
+        <location filename="../Page1Form.ui.qml" line="44"/>
         <source>Install KaOS</source>
         <translation>Installiere KaOS</translation>
     </message>
     <message>
-        <location filename="../Page1Form.ui.qml" line="64"/>
+        <location filename="../Page1Form.ui.qml" line="68"/>
         <source>About</source>
         <translation>Über</translation>
     </message>
     <message>
-        <location filename="../Page1Form.ui.qml" line="87"/>
+        <location filename="../Page1Form.ui.qml" line="92"/>
         <source>Guide</source>
         <translation>Guide</translation>
     </message>
     <message>
-        <location filename="../Page1Form.ui.qml" line="128"/>
+        <location filename="../Page1Form.ui.qml" line="135"/>
         <source>Package List</source>
         <translation>Paketliste</translation>
     </message>
     <message>
-        <location filename="../Page1Form.ui.qml" line="152"/>
+        <location filename="../Page1Form.ui.qml" line="160"/>
         <source>Forum</source>
         <translation>Forum</translation>
     </message>
     <message>
-        <location filename="../Page1Form.ui.qml" line="175"/>
+        <location filename="../Page1Form.ui.qml" line="184"/>
         <source>Documentation</source>
         <translation>Dokumentation</translation>
     </message>
@@ -35,46 +35,45 @@
 <context>
     <name>main</name>
     <message>
-        <location filename="../main.qml" line="32"/>
+        <location filename="../main.qml" line="33"/>
         <source>Welcome</source>
         <translation>Willkommen</translation>
     </message>
     <message>
-        <location filename="../main.qml" line="41"/>
-        <source>Thanks for trying KaOS. In need of the password file or package list?
-Want to learn more about the project? Please find the links below.
-
-Don&apos;t hesitate to give your opinion about KaOS in the Forum.</source>
-        <translation>Danke für das Testen von KaOS. Benötigen Sie das Passwort oder die Paketliste?
-Wollen Sie mehr über das Projekt lernen? Sie finden die Links unterhalb.
-
-Zögern Sie nicht Ihre Meinung in das KaOS Forum zu posten.</translation>
+        <location filename="../main.qml" line="42"/>
+        <source>&lt;div&gt;Thanks for trying KaOS. In need of the password file or package list?&lt;br&gt;
+                            Want to learn more about the project? Please find the links below.&lt;br&gt;&lt;br&gt;
+                            Don&apos;t hesitate to give your opinion about KaOS in the Forum.&lt;/div&gt;</source>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../main.qml" line="53"/>
-        <source>Correct passwords for use in the live session:
-
-Username:   Password:
-root               root
-live               live
-
-Hope you enjoy</source>
-        <extracomment>Don not translate root/root and live/live</extracomment>
-        <translation>Passwörter für die Live Sitzung:
-
-Benutzername:   Passwort:
-root               root
-live               live
-
-Viel Vergnügen</translation>
+        <location filename="../main.qml" line="56"/>
+        <source>&lt;p&gt;Correct passwords for use in the live session:&lt;/p&gt;
+                            &lt;p&gt;&lt;/p&gt;
+                            &lt;table width=60% align=center&gt;
+                                &lt;tr&gt;
+                                    &lt;th&gt;Username:&lt;/th&gt;
+                                    &lt;th&gt;Password:&lt;/th&gt;
+                                &lt;/tr&gt;
+                                &lt;tr&gt;
+                                    &lt;td align=center&gt;root&lt;/td&gt;
+                                    &lt;td align=center&gt;root&lt;/td&gt;
+                                &lt;/tr&gt;
+                                &lt;tr&gt;
+                                    &lt;td align=center&gt;live&lt;/td&gt;
+                                    &lt;td align=center&gt;live&lt;/td&gt;
+                                &lt;/tr&gt;
+                            &lt;/table&gt;
+                            &lt;p&gt;Hope you enjoy&lt;/p&gt;</source>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../main.qml" line="78"/>
+        <location filename="../main.qml" line="91"/>
         <source>Main</source>
         <translation>Haupt</translation>
     </message>
     <message>
-        <location filename="../main.qml" line="87"/>
+        <location filename="../main.qml" line="94"/>
         <source>Passwords</source>
         <translation>Passwörter</translation>
     </message>
