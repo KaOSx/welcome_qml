@@ -51,8 +51,8 @@ ApplicationWindow {
 
         Page {
             Label {
-                //: Do not translate root/root and live/live
                 textFormat: Text.RichText
+                //: Do not translate root/root and live/live
                 text: qsTr("<p>Correct passwords for use in the live session:</p>
                             <p></p>
                             <table width=60% align=center>

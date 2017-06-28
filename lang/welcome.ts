@@ -67,6 +67,7 @@
                                 &lt;/tr&gt;
                             &lt;/table&gt;
                             &lt;p&gt;Hope you enjoy&lt;/p&gt;</source>
+        <extracomment>Do not translate root/root and live/live</extracomment>
         <translation type="unfinished"></translation>
     </message>
     <message>
