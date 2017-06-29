@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="es_AR">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="es_AR" version="2.1">
 <context>
     <name>Page1Form.ui</name>
     <message>
@@ -46,7 +44,9 @@
         <source>&lt;div&gt;Thanks for trying KaOS. In need of the password file or package list?&lt;br&gt;
                             Want to learn more about the project? Please find the links below.&lt;br&gt;&lt;br&gt;
                             Don&apos;t hesitate to give your opinion about KaOS in the Forum.&lt;/div&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;div&gt;Gracias por probar KaOS. ¿Necesita el archivo de contraseña o la lista de paquetes?&lt;br&gt;
+                            ¿Quiere aprender más sobre el proyecto? Por favor vea los enlaces más abajo.&lt;br&gt;&lt;br&gt;
+                            No dude en dejar su opinión sobre KaOS en el Foro.&lt;/div&gt;</translation>
     </message>
     <message>
         <location filename="../main.qml" line="56"/>
@@ -68,7 +68,23 @@
                             &lt;/table&gt;
                             &lt;p&gt;Hope you enjoy&lt;/p&gt;</source>
         <extracomment>Do not translate root/root and live/live</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>&lt;p&gt;Contraseñas correctas para usar en la sisión live:&lt;/p&gt;
+                            &lt;p&gt;&lt;/p&gt;
+                            &lt;table width=60% align=center&gt;
+                                &lt;tr&gt;
+                                    &lt;th&gt;Nombre de Usuario:&lt;/th&gt;
+                                    &lt;th&gt;Contraseña:&lt;/th&gt;
+                                &lt;/tr&gt;
+                                &lt;tr&gt;
+                                    &lt;td align=center&gt;root&lt;/td&gt;
+                                    &lt;td align=center&gt;root&lt;/td&gt;
+                                &lt;/tr&gt;
+                                &lt;tr&gt;
+                                    &lt;td align=center&gt;live&lt;/td&gt;
+                                    &lt;td align=center&gt;live&lt;/td&gt;
+                                &lt;/tr&gt;
+                            &lt;/table&gt;
+                            &lt;p&gt;Esperamos que lo disfrute&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../main.qml" line="91"/>
