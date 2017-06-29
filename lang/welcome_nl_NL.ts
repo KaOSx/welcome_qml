@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="nl_NL">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="nl_NL" version="2.1">
 <context>
     <name>Page1Form.ui</name>
     <message>
@@ -54,7 +52,7 @@
         <location filename="../main.qml" line="56"/>
         <source>&lt;p&gt;Correct passwords for use in the live session:&lt;/p&gt;
                             &lt;p&gt;&lt;/p&gt;
-                            &lt;table width=60% align=center&gt;
+                            &lt;table width=100% align=center border=1&gt;
                                 &lt;tr&gt;
                                     &lt;th&gt;Username:&lt;/th&gt;
                                     &lt;th&gt;Password:&lt;/th&gt;
@@ -72,9 +70,9 @@
         <extracomment>Do not translate root/root and live/live</extracomment>
         <translation>&lt;p&gt;Correcte wachtwoorden voor gebruik in de live session:&lt;/p&gt;
                             &lt;p&gt;&lt;/p&gt;
-                            &lt;table width=60% align=center&gt;
+                            &lt;table width=100% align=center border=1&gt;
                                 &lt;tr&gt;
-                                    &lt;th&gt;Gebruikdersnaam:&lt;/th&gt;
+                                    &lt;th&gt;Gebruikersnaam:&lt;/th&gt;
                                     &lt;th&gt;Wachtwoord:&lt;/th&gt;
                                 &lt;/tr&gt;
                                 &lt;tr&gt;

@@ -52,7 +52,7 @@
         <location filename="../main.qml" line="56"/>
         <source>&lt;p&gt;Correct passwords for use in the live session:&lt;/p&gt;
                             &lt;p&gt;&lt;/p&gt;
-                            &lt;table width=60% align=center&gt;
+                            &lt;table width=100% align=center border=1&gt;
                                 &lt;tr&gt;
                                     &lt;th&gt;Username:&lt;/th&gt;
                                     &lt;th&gt;Password:&lt;/th&gt;
