@@ -44,7 +44,9 @@
         <source>&lt;div&gt;Thanks for trying KaOS. In need of the password file or package list?&lt;br&gt;
                             Want to learn more about the project? Please find the links below.&lt;br&gt;&lt;br&gt;
                             Don&apos;t hesitate to give your opinion about KaOS in the Forum.&lt;/div&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;div&gt;Merci d’essayer KaOS. Vous recherchez un fichier de mots de passe ou d’une liste de paquets ?&lt;br&gt;
+Vous voulez en savoir plus sur le projet ? Veuillez cliquer sur les liens ci-dessous.&lt;br&gt;&lt;br&gt;
+N’hésitez pas à partager votre avis sur KaOS dans le forum.&lt;/div&gt;</translation>
     </message>
     <message>
         <location filename="../main.qml" line="56"/>
@@ -66,7 +68,23 @@
                             &lt;/table&gt;
                             &lt;p&gt;Hope you enjoy&lt;/p&gt;</source>
         <extracomment>Do not translate root/root and live/live</extracomment>
-        <translation type="unfinished"/>
+        <translation>&lt;p&gt;Mots de passe corrects de la session live :&lt;/p&gt;
+                            &lt;p&gt;&lt;/p&gt;
+                            &lt;table width=100% align=center border=1&gt;
+                                &lt;tr&gt;
+                                    &lt;th&gt;Nom d’utilisateur :&lt;/th&gt;
+                                    &lt;th&gt;Mot de passe :&lt;/th&gt;
+                                &lt;/tr&gt;
+                                &lt;tr&gt;
+                                    &lt;td align=center&gt;root&lt;/td&gt;
+                                    &lt;td align=center&gt;root&lt;/td&gt;
+                                &lt;/tr&gt;
+                                &lt;tr&gt;
+                                    &lt;td align=center&gt;live&lt;/td&gt;
+                                    &lt;td align=center&gt;live&lt;/td&gt;
+                                &lt;/tr&gt;
+                            &lt;/table&gt;
+                            &lt;p&gt;Amusez-vous bien !&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../main.qml" line="91"/>
