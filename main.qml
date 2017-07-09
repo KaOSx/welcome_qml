@@ -55,7 +55,7 @@ ApplicationWindow {
                 //: Do not translate root/root and live/live
                 text: qsTr("<p>Correct passwords for use in the live session:</p>
                             <p></p>
-                            <table width=100% align=center border=1>
+                            <table width=100% align=center bgcolor=#eaeaea>
                                 <tr>
                                     <th>Username:</th>
                                     <th>Password:</th>
