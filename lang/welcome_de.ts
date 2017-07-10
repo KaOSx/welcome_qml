@@ -50,7 +50,7 @@
         <location filename="../main.qml" line="56"/>
         <source>&lt;p&gt;Correct passwords for use in the live session:&lt;/p&gt;
                             &lt;p&gt;&lt;/p&gt;
-                            &lt;table width=100% align=center border=1&gt;
+                            &lt;table width=100% align=center bgcolor=#eaeaea&gt;
                                 &lt;tr&gt;
                                     &lt;th&gt;Username:&lt;/th&gt;
                                     &lt;th&gt;Password:&lt;/th&gt;
@@ -66,7 +66,23 @@
                             &lt;/table&gt;
                             &lt;p&gt;Hope you enjoy&lt;/p&gt;</source>
         <extracomment>Do not translate root/root and live/live</extracomment>
-        <translation type="unfinished"/>
+        <translation>&lt;p&gt;Korrekte Passwörter für die Nutzung der Live-Session:&lt;/p&gt;
+                            &lt;p&gt;&lt;/p&gt;
+                            &lt;table width=100% align=center bgcolor=#eaeaea&gt;
+                                &lt;tr&gt;
+                                    &lt;th&gt;Benutzername&lt;/th&gt;
+                                    &lt;th&gt;Passwort:&lt;/th&gt;
+                                &lt;/tr&gt;
+                                &lt;tr&gt;
+                                    &lt;td align=center&gt;root&lt;/td&gt;
+                                    &lt;td align=center&gt;root&lt;/td&gt;
+                                &lt;/tr&gt;
+                                &lt;tr&gt;
+                                    &lt;td align=center&gt;live&lt;/td&gt;
+                                    &lt;td align=center&gt;live&lt;/td&gt;
+                                &lt;/tr&gt;
+                            &lt;/table&gt;
+                            &lt;p&gt;Wir wünschen Ihnen viel Spass&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../main.qml" line="91"/>

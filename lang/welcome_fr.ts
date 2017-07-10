@@ -52,7 +52,7 @@ N’hésitez pas à partager votre avis sur KaOS dans le forum.&lt;/div&gt;</tra
         <location filename="../main.qml" line="56"/>
         <source>&lt;p&gt;Correct passwords for use in the live session:&lt;/p&gt;
                             &lt;p&gt;&lt;/p&gt;
-                            &lt;table width=100% align=center border=1&gt;
+                            &lt;table width=100% align=center bgcolor=#eaeaea&gt;
                                 &lt;tr&gt;
                                     &lt;th&gt;Username:&lt;/th&gt;
                                     &lt;th&gt;Password:&lt;/th&gt;
@@ -70,7 +70,7 @@ N’hésitez pas à partager votre avis sur KaOS dans le forum.&lt;/div&gt;</tra
         <extracomment>Do not translate root/root and live/live</extracomment>
         <translation>&lt;p&gt;Mots de passe corrects de la session live :&lt;/p&gt;
                             &lt;p&gt;&lt;/p&gt;
-                            &lt;table width=100% align=center border=1&gt;
+                            &lt;table width=100% align=center bgcolor=#eaeaea&gt;
                                 &lt;tr&gt;
                                     &lt;th&gt;Nom d’utilisateur :&lt;/th&gt;
                                     &lt;th&gt;Mot de passe :&lt;/th&gt;
