@@ -44,7 +44,9 @@
         <source>&lt;div&gt;Thanks for trying KaOS. In need of the password file or package list?&lt;br&gt;
                             Want to learn more about the project? Please find the links below.&lt;br&gt;&lt;br&gt;
                             Don&apos;t hesitate to give your opinion about KaOS in the Forum.&lt;/div&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;div&gt;Děkujeme za vyzkoušení KaOS. Potřebujete soubor s heslem nebo seznam balíčků?&lt;br&gt;
+                            Chcete se naučit více o projektu? Podívejte se, prosím, na odkazy níže.&lt;br&gt;&lt;br&gt;
+                            Neváhejte sdělit svůj názor na KaOS v diskusním fóru.&lt;/div&gt;</translation>
     </message>
     <message>
         <location filename="../main.qml" line="56"/>
@@ -66,7 +68,23 @@
                             &lt;/table&gt;
                             &lt;p&gt;Hope you enjoy&lt;/p&gt;</source>
         <extracomment>Do not translate root/root and live/live</extracomment>
-        <translation type="unfinished"/>
+        <translation>&lt;p&gt;Správné heslo pro systém spuštění jako live:&lt;/p&gt;
+                            &lt;p&gt;&lt;/p&gt;
+                            &lt;table width=100% align=center bgcolor=#eaeaea&gt;
+                                &lt;tr&gt;
+                                    &lt;th&gt;Jméno:&lt;/th&gt;
+                                    &lt;th&gt;Heslo:&lt;/th&gt;
+                                &lt;/tr&gt;
+                                &lt;tr&gt;
+                                    &lt;td align=center&gt;root&lt;/td&gt;
+                                    &lt;td align=center&gt;root&lt;/td&gt;
+                                &lt;/tr&gt;
+                                &lt;tr&gt;
+                                    &lt;td align=center&gt;live&lt;/td&gt;
+                                    &lt;td align=center&gt;live&lt;/td&gt;
+                                &lt;/tr&gt;
+                            &lt;/table&gt;
+                            &lt;p&gt;Užijte si to&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../main.qml" line="91"/>
