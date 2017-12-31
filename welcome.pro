@@ -38,6 +38,7 @@ TRANSLATIONS  += lang/welcome.ts \
               lang/welcome_it.ts \
               lang/welcome_pl.ts \
               lang/welcome_pt_BR.ts \
+              lang/welcome_uk.ts \
 
 # Default rules for deployment.
 #qnx: target.path = /tmp/$${TARGET}/bin

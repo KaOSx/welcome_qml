@@ -45,7 +45,7 @@
                             Want to learn more about the project? Please find the links below.&lt;br&gt;&lt;br&gt;
                             Don&apos;t hesitate to give your opinion about KaOS in the Forum.&lt;/div&gt;</source>
         <translation>&lt;div&gt;Gràcies per provar el KaOS. Us cal el fitxer de contrasenya o una llista de paquets?&lt;br&gt;
-                            Voleu saber més coses sobre el projecte? Consulteu els enllaços de sota&lt;br&gt;&lt;br&gt;
+                            Voleu saber més coses del projecte? Consulteu els enllaços que hi ha a continuació.&lt;br&gt;&lt;br&gt;
                             No dubteu a donar-nos l&apos;opinió sobre el KaOS al Fòrum.&lt;/div&gt;</translation>
     </message>
     <message>
