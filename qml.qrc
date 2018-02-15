@@ -24,5 +24,6 @@
         <file>lang/welcome_cs.qm</file>
         <file>lang/welcome_pt_BR.qm</file>
         <file>lang/welcome_uk.qm</file>
+        <file>lang/welcome_hr_HR.qm</file>
     </qresource>
 </RCC>
