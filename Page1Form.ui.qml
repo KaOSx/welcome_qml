@@ -24,7 +24,7 @@ import QtQuick.Controls.Material 2.1
 Item {
     id: item1
     property alias button1: button1
-    property alias button2: button2
+    //property alias button2: button2
     property alias button3: button3
     property alias button4: button4
     property alias button5: button5
@@ -62,7 +62,7 @@ Item {
             }
         }
 
-        Button {
+        /*Button {
             id: button2
             width: 150
             text: qsTr("About")
@@ -84,7 +84,7 @@ Item {
                 anchors.leftMargin: 15
                 source: "images/information.svgz"
             }
-        }
+        }*/
 
         Button {
             id: button3

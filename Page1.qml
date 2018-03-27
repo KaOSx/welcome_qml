@@ -28,18 +28,15 @@ Page1Form {
         onNewData: {executer.disconnectSource(sourceName);}
     }
 
-    //Loader {
-    //    id: pageLoader
-    //}
-
     button1.onClicked: {
         executer.connectSource("/usr/bin/launch-calamares.sh");
     }
-    button2.onClicked: {
-        Qt.openUrlExternally("file:///home/live/Desktop/info/about.pdf");
-    }
+    
+    property variant window;
     button3.onClicked: {
-        Qt.openUrlExternally("file:///home/live/Desktop/info/guide.pdf");
+        var component = Qt.createComponent("guide.qml");
+        window = component.createObject(button3);
+        window.show();
     }
     button4.onClicked: {
         executer.connectSource("pacman -Q > /tmp/list.txt &&

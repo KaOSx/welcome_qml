@@ -82,6 +82,14 @@ ApplicationWindow {
                 }
             }
         }
+        
+        Page {
+            Loader {
+                id: about
+                source: "about.qml"
+            }
+            
+        }
     }
 
     footer: TabBar {
@@ -92,6 +100,9 @@ ApplicationWindow {
         }
         TabButton {
             text: qsTr("Passwords")
+        }
+        TabButton {
+            text: qsTr("About")
         }
     }
 }
