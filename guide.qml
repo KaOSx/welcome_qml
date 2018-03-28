@@ -84,7 +84,7 @@ Window {
                 Image {
                     id: image
                     x: 8
-                    y: 750
+                    y: 609
                     width: 920
                     height: 494
                     fillMode: Image.PreserveAspectFit
@@ -94,7 +94,7 @@ Window {
                 Image {
                     id: image1
                     x: 8
-                    y: 1250
+                    y: 1089
                     width: 920
                     height: 499
                     fillMode: Image.PreserveAspectFit
@@ -105,7 +105,7 @@ Window {
             TextArea {
                 id: notes
                 x: 14
-                y: 1748
+                y: 1572
                 width: 920
                 height: 2000
                 font.pointSize: 14
@@ -116,16 +116,13 @@ Window {
                 wrapMode: Text.WordWrap
 
                 text: qsTr("<p>The Release Notes give you important information of what is included in this ISO</p>
-                <p>If you selected non-free Nvidia during the start-up of the Live session, you will be presented with a License page.  Make sure to read and accept the license, otherwise your install will not include the non-free driver, and will fallback to Nouveau instead. You won't see this page if you selected to use the free drivers.</p>
-                <p>Next is the Keyboard Setup. You can test the layout by typing something in the designated area.</p>
-
-                <p>Use the drop-down menu to fine tune to your exact desired keyboard model.</p>")
+                <p>If you selected non-free Nvidia during the start-up of the Live session, you will be presented with a License page.  Make sure to read and accept the license, otherwise your install will not include the non-free driver, and will fallback to Nouveau instead. You won't see this page if you selected to use the free drivers.</p>")
 
 
                 Image {
                     id: image3
                     x: 0
-                    y: 289
+                    y: 136
                     width: 920
                     height: 494
                     fillMode: Image.PreserveAspectFit
@@ -135,7 +132,7 @@ Window {
                 Image {
                     id: image4
                     x: 0
-                    y: 768
+                    y: 595
                     width: 920
                     height: 499
                     fillMode: Image.PreserveAspectFit
@@ -146,7 +143,7 @@ Window {
             TextArea {
                 id: noteskeyboard
                 x: 14
-                y: 3021
+                y: 2634
                 width: 920
                 height: 2000
                 font.pointSize: 14
@@ -170,17 +167,27 @@ Window {
                     width: 920
                     height: 494
                     fillMode: Image.PreserveAspectFit
-                    source: "images/guide/cala3.png"
+                    source: "images/guide/cala5.png"
                 }
 
                 Image {
                     id: image6
-                    x: 8
-                    y: 570
-                    width: 920
-                    height: 499
+                    x: 13
+                    y: 589
+                    width: 895
+                    height: 464
                     fillMode: Image.PreserveAspectFit
-                    source: "images/guide/cala4.png"
+                    source: "images/guide/cala6.png"
+                }
+
+                Image {
+                    id: image2
+                    x: 0
+                    y: 1059
+                    width: 920
+                    height: 494
+                    fillMode: Image.PreserveAspectFit
+                    source: "images/guide/cala7.png"
                 }
             }
         }

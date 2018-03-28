@@ -39,6 +39,7 @@ Item {
             font.pointSize: 14
             textFormat: Text.RichText
             wrapMode: Text.WordWrap
+            activeFocusOnPress: false
             text: qsTr("<h3>About KaOS</h3>
                     <p>The idea behind KaOS is to create a tightly integrated rolling and transparent distribution for the modern desktop, build from scratch with a very specific focus. Focus on <b>one DE (KDE), one toolkit (Qt), one architecture (x86_64)</b> plus a focus on evaluating and selecting the most suitable tools and applications. All work is geared toward packaging, not developing new tools or applications.</p>
 
