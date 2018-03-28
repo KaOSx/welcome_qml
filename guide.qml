@@ -36,31 +36,34 @@ Window {
         id: view
         hoverEnabled: true
         anchors.fill: parent
-        contentHeight:2000
+        contentHeight:10000
         ScrollBar.vertical.width: 5
         ScrollBar.vertical.policy: ScrollBar.AlwaysOn
         ScrollBar.horizontal.policy: ScrollBar.AlwaysOff
-        clip: false
+        focus: false
 
         Rectangle {
             id: rectangle
             x: 6
             y: 6
             width: 920
-            height: 2000
-            color: "#ffffff"
+            height: 10000
+            color: "#00000000"
+            border.width: 0
+            border.color: "#00000000"
 
             TextArea {
-                id: guide
+                id: intro
                 x: 14
                 y: 0
                 width: 920
-                height: 2000
+                height: 1753
                 font.pointSize: 14
                 textFormat: Text.RichText
-                wrapMode: Text.WordWrap
                 onLinkActivated: Qt.openUrlExternally(link)
                 antialiasing: true
+                activeFocusOnPress: false
+                wrapMode: Text.WordWrap
 
                 text: qsTr("<h3>Installation Guide</h3>
 
@@ -72,24 +75,114 @@ Window {
 
                 <h3>Starting the Installer</h3>
 
-                <p>The first two pages give you some information of the current status of the installer, option to select what language will be used for the installer, set your current location and fine tune the language settings.</p>
+                <p>The first page gives you some information of the current status of the installer and an option to select what language will be used for the installer.</p>
+                
+                <p>Ensure that your system meets the minimal requirements. Not having an internet connection during the install is no deal breaker and won't stop the install from going trough.</p>
+                
+                <p>Having less than the shown disc space or available RAM will almost certainly fail the install. As for disc space, a minimum of 20 Gb is recommended.</p>")
 
+                Image {
+                    id: image
+                    x: 8
+                    y: 750
+                    width: 920
+                    height: 494
+                    fillMode: Image.PreserveAspectFit
+                    source: "images/guide/cala1.png"
+                }
+
+                Image {
+                    id: image1
+                    x: 8
+                    y: 1250
+                    width: 920
+                    height: 499
+                    fillMode: Image.PreserveAspectFit
+                    source: "images/guide/cala2.png"
+                }
+            }
+            
+            TextArea {
+                id: notes
+                x: 14
+                y: 1748
+                width: 920
+                height: 2000
+                font.pointSize: 14
+                textFormat: Text.RichText
+                onLinkActivated: Qt.openUrlExternally(link)
+                antialiasing: true
+                activeFocusOnPress: false
+                wrapMode: Text.WordWrap
+
+                text: qsTr("<p>The Release Notes give you important information of what is included in this ISO</p>
+                <p>If you selected non-free Nvidia during the start-up of the Live session, you will be presented with a License page.  Make sure to read and accept the license, otherwise your install will not include the non-free driver, and will fallback to Nouveau instead. You won't see this page if you selected to use the free drivers.</p>
                 <p>Next is the Keyboard Setup. You can test the layout by typing something in the designated area.</p>
 
                 <p>Use the drop-down menu to fine tune to your exact desired keyboard model.</p>")
 
 
                 Image {
-                    id: image
-                    x: 26
-                    y: 630
-                    width: 905
-                    height: 477
+                    id: image3
+                    x: 0
+                    y: 289
+                    width: 920
+                    height: 494
                     fillMode: Image.PreserveAspectFit
-                    source: "images/welcome1.png"
+                    source: "images/guide/cala3.png"
+                }
+
+                Image {
+                    id: image4
+                    x: 0
+                    y: 768
+                    width: 920
+                    height: 499
+                    fillMode: Image.PreserveAspectFit
+                    source: "images/guide/cala4.png"
+                }
+            }
+
+            TextArea {
+                id: noteskeyboard
+                x: 14
+                y: 3021
+                width: 920
+                height: 2000
+                font.pointSize: 14
+                textFormat: Text.RichText
+                onLinkActivated: Qt.openUrlExternally(link)
+                antialiasing: true
+                activeFocusOnPress: false
+                wrapMode: Text.WordWrap
+
+                text: qsTr("<p>Next is the Keyboard Setup. You can test the layout by typing something in the designated area.</p>
+
+                <p>Use the drop-down menu to fine tune to your exact desired keyboard model.</p>")
+                clip: false
+                visible: true
+
+
+                Image {
+                    id: image5
+                    x: 0
+                    y: 95
+                    width: 920
+                    height: 494
+                    fillMode: Image.PreserveAspectFit
+                    source: "images/guide/cala3.png"
+                }
+
+                Image {
+                    id: image6
+                    x: 8
+                    y: 570
+                    width: 920
+                    height: 499
+                    fillMode: Image.PreserveAspectFit
+                    source: "images/guide/cala4.png"
                 }
             }
         }
-
     }
 }

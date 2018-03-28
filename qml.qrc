@@ -16,8 +16,18 @@
         <file>images/partition-disk.svg</file>
         <file>images/release.svg</file>
         <file>images/face-smile-grin.svg</file>
-        <file>images/welcome1.png</file>
-        
+        <!--guide images-->
+        <file>images/guide/cala1.png</file>
+        <file>images/guide/cala2.png</file>
+        <file>images/guide/cala3.png</file>
+        <file>images/guide/cala4.png</file>
+        <!--<file>images/guide/cala5.png</file>
+        <file>images/guide/cala6.png</file>
+        <file>images/guide/cala7.png</file>
+        <file>images/guide/cala8.png</file>
+        <file>images/guidecala9.png</file>
+        <file>images/guide/cala10.png</file>-->
+        <!--Locale-->
         <file>lang/welcome_es_AR.qm</file>
         <file>lang/welcome_es.qm</file>
         <file>lang/welcome_fr.qm</file>

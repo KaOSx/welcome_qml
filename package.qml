@@ -17,6 +17,7 @@ Rectangle {
     TextArea {
         width: parent.width
         height: parent.height
+        activeFocusOnPress: false
         id: msg
         text: showFile("/tmp/package_list.txt")
     }

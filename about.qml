@@ -32,10 +32,13 @@ Item {
 
         TextArea {
             id: textArea
-            x: 14
-            y: 14
+            x: 4
+            y: 4
             width: 690
             height: 2000
+            font.pointSize: 14
+            textFormat: Text.RichText
+            wrapMode: Text.WordWrap
             text: qsTr("<h3>About KaOS</h3>
                     <p>The idea behind KaOS is to create a tightly integrated rolling and transparent distribution for the modern desktop, build from scratch with a very specific focus. Focus on <b>one DE (KDE), one toolkit (Qt), one architecture (x86_64)</b> plus a focus on evaluating and selecting the most suitable tools and applications. All work is geared toward packaging, not developing new tools or applications.</p>
 
@@ -54,9 +57,6 @@ Item {
                     <p><b>The target users</b> are those who have tried many Operating Systems/Distributions/Desktop Environments and have found they prefer a Distribution that uses all its available resources to work on one DE to make that the best it can be, and know that after their searches, the best for them is KDE. Their used hardware is from about 2005 or later, so there are no issues with running 64 bit software. And the target audience is not afraid to use KDE/Qt versions of their needed applications, likes to see the best available selected for their needs, even if that means learning some new ways of working with a before unused application. There is an understanding selection for similar applications will be limited to 5-6.</p>
                     
                     <p>KDE is a modern Desktop Environment which can make use of most of any graphics or sound card capabilities. This does not mean KDE can’t be made to run on very low-end hardware, but in general there are better options available for such systems (OpenBox for example). The very minimal needed for <b>hard-drive space is 8 Gb, but 25 Gb</b> is recommended as minimal. KaOS will install with 1.5Gb of RAM available, though a much better experience will start with <b>2 Gb of RAM</b>. Since only x86_64 packages are available, a <b>64 bit capable cpu</b> is needed. As with any rolling distribution, updates are frequent and can be large, so a reasonable fast internet connection (dial-up will become very cumbersome) and available monthly data of over 2 Gb are recommended.</p>")
-            font.pointSize: 14
-            textFormat: Text.RichText
-            wrapMode: Text.WordWrap
          }
             ScrollBar.vertical: ScrollBar {
                     width: 5
