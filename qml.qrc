@@ -5,7 +5,7 @@
         <file>Page1Form.ui.qml</file>
         <file>about.qml</file>
         <file>guide.qml</file>
-        <file>TextTemplate.qml</file>
+        <!--<file>TextTemplate.qml</file>-->
         <file>qtquickcontrols2.conf</file>
         
         <file>images/document.svg</file>
