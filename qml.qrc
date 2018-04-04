@@ -4,7 +4,12 @@
         <file>Page1.qml</file>
         <file>Page1Form.ui.qml</file>
         <file>about.qml</file>
-        <file>guide.qml</file>
+        <file>guide/guide.qml</file>
+        <file>guide/intro.qml</file>
+        <file>guide/notes.qml</file>
+        <file>guide/partition.qml</file>
+        <file>guide/summary.qml</file>
+        <file>guide/user.qml</file>
         <!--<file>TextTemplate.qml</file>-->
         <file>qtquickcontrols2.conf</file>
         
@@ -17,16 +22,22 @@
         <file>images/release.svg</file>
         <file>images/face-smile-grin.svg</file>
         <!--guide images-->
-        <file>images/guide/cala1.png</file>
-        <file>images/guide/cala2.png</file>
-        <file>images/guide/cala3.png</file>
-        <file>images/guide/cala4.png</file>
-        <file>images/guide/cala5.png</file>
-        <file>images/guide/cala6.png</file>
-        <file>images/guide/cala7.png</file>
-        <file>images/guide/cala8.png</file>
-        <file>images/guide/cala9.png</file>
-        <file>images/guide/cala10.png</file>
+        <file>guide/images/cala1.png</file>
+        <file>guide/images/cala2.png</file>
+        <file>guide/images/cala3.png</file>
+        <file>guide/images/cala4.png</file>
+        <file>guide/images/cala5.png</file>
+        <file>guide/images/cala6.png</file>
+        <file>guide/images/cala7.png</file>
+        <file>guide/images/cala8.png</file>
+        <file>guide/images/cala9.png</file>
+        <file>guide/images/cala10.png</file>
+        <file>guide/images/cala11.png</file>
+        <file>guide/images/cala13.png</file>
+        <file>guide/images/cala24.png</file>
+        <file>guide/images/cala25.png</file>
+        <file>guide/images/cala26.png</file>
+        <file>guide/images/cala27.png</file>
         <!--Locale-->
         <file>lang/welcome_es_AR.qm</file>
         <file>lang/welcome_es.qm</file>

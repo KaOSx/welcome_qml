@@ -30,11 +30,12 @@ Page1Form {
 
     button1.onClicked: {
         executer.connectSource("/usr/bin/launch-calamares.sh");
+        //executer.connectSource("/data/anke/dev/github/build-guide-Desktop-Debug/guide");
     }
     
     property variant window;
     button3.onClicked: {
-        var component = Qt.createComponent("guide.qml");
+        var component = Qt.createComponent("guide/guide.qml");
         window = component.createObject(button3);
         window.show();
     }
