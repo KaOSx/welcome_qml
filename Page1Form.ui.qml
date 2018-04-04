@@ -94,7 +94,7 @@ Item {
             Layout.fillWidth: true
             rightPadding: 35
             leftPadding: 35
-            highlighted: false
+            highlighted: true
             Material.elevation: 1
 
             Image {
