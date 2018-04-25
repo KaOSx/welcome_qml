@@ -55,8 +55,6 @@ Item {
 
             <p>For security reasons, it is advisable to use a different password for the administrator (or root) account.</p>
 
-            <p>Calamares, the installer of KaOS is straightforward and easy to use, but lacks one feature at this stage. RAID disk setups is not supported yet.</p>
-
             <p>Default is set to autologin disabled, add a marker to enable passwordless login.</p>")
 
             Image {
