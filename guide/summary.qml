@@ -77,7 +77,7 @@ Item {
         TextArea {
             id: summary2
             x: 14
-            y: 1200
+            y: 1263
             width: 920
             height: 1800
             font.pointSize: 14

@@ -69,7 +69,7 @@ Item {
             Image {
                 id: image1
                 x: 8
-                y: 630
+                y: 680
                 width: 920
                 height: 494
                 fillMode: Image.PreserveAspectFit
@@ -79,7 +79,7 @@ Item {
             Image {
                 id: image2
                 x: 8
-                y: 1113
+                y: 1170
                 width: 920
                 height: 499
                 fillMode: Image.PreserveAspectFit

@@ -56,7 +56,7 @@ Item {
             Image {
                 id: image3
                 x: 0
-                y: 136
+                y: 150
                 width: 920
                 height: 494
                 fillMode: Image.PreserveAspectFit
@@ -66,7 +66,7 @@ Item {
             Image {
                 id: image4
                 x: 0
-                y: 595
+                y: 639
                 width: 920
                 height: 499
                 fillMode: Image.PreserveAspectFit
@@ -77,7 +77,7 @@ Item {
         TextArea {
             id: noteskeyboard
             x: 14
-            y: 1200
+            y: 1220
             width: 920
             height: 3300
             font.pointSize: 14
@@ -95,7 +95,7 @@ Item {
             Image {
                 id: image5
                 x: 0
-                y: 95
+                y: 100
                 width: 920
                 height: 494
                 fillMode: Image.PreserveAspectFit
@@ -105,7 +105,7 @@ Item {
             Image {
                 id: image6
                 x: 13
-                y: 589
+                y: 600
                 width: 895
                 height: 464
                 fillMode: Image.PreserveAspectFit
@@ -115,7 +115,7 @@ Item {
             Image {
                 id: image7
                 x: 0
-                y: 1059
+                y: 1070
                 width: 920
                 height: 494
                 fillMode: Image.PreserveAspectFit
