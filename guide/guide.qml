@@ -81,7 +81,7 @@ ApplicationWindow {
             text: qsTr("Intro")
         }
         TabButton {
-            text: qsTr("Keybaord")
+            text: qsTr("Keyboard")
         }
         TabButton {
             text: qsTr("Partitioning")

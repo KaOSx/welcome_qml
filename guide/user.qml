@@ -51,7 +51,7 @@ Item {
 
             text: qsTr("<h3>User Creation</h3>
 
-            <p>The user creation page gives you the option to set a user name different from your actual name and set a preffered name for the system.</p>
+            <p>The user creation page gives you the option to set a user name different from your actual name and set a preferred name for the system.</p>
 
             <p>For security reasons, it is advisable to use a different password for the administrator (or root) account.</p>
 
