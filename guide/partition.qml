@@ -196,7 +196,7 @@ Item {
             wrapMode: Text.WordWrap
             
             text: qsTr("<p>Using the fourth option to delete an existing layout. Select <code>New Partition Table</code> for a new drive or to switch from ms-dos to GPT or vice versa.</br>
-            Highlight <code>Free Space</code> and select <code>Create</code>.  You then get a window with options to set partition type, file system and mountpoint. When using an UEFI install, it is a must a vfat (fat32) formatted /boot partition is available. Best set the size to 512Mb and have it at the beginning of the partition-table. Once root is set, the Next button will become active again.</p>")
+            Highlight <code>Free Space</code> and select <code>Create</code>.  You then get a window with options to set partition type, file system and mountpoint. When using an UEFI install, it is a must to have a vfat (fat32) formatted /boot partition available. Best set the size to 512Mb and have it at the beginning of the partition-table. Once root is set, the Next button will become active again.</p>")
             
             Image {
                 id: image15
