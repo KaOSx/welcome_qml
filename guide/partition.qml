@@ -187,7 +187,7 @@ Item {
             x: 0
             y: 4562
             width: 920
-            height: 2300
+            height: 2700
             font.pointSize: 14
             textFormat: Text.RichText
             onLinkActivated: Qt.openUrlExternally(link)
@@ -229,9 +229,19 @@ Item {
             }
             
             Image {
-                id: image21
+                id: image20
                 x: 13
                 y: 1770
+                width: 895
+                height: 464
+                fillMode: Image.PreserveAspectFit
+                source: "images/cala20.png"
+            }
+            
+            Image {
+                id: image21
+                x: 13
+                y: 2270
                 width: 895
                 height: 464
                 fillMode: Image.PreserveAspectFit
@@ -243,9 +253,9 @@ Item {
         TextArea {
             id: manual_adjust
             x: 0
-            y: 6962
+            y: 7362
             width: 920
-            height: 1800
+            height: 1400
             font.pointSize: 14
             textFormat: Text.RichText
             onLinkActivated: Qt.openUrlExternally(link)
@@ -267,19 +277,9 @@ Item {
             }
             
             Image {
-                id: image20
-                x: 13
-                y: 690
-                width: 895
-                height: 464
-                fillMode: Image.PreserveAspectFit
-                source: "images/cala20.png"
-            }
-            
-            Image {
                 id: image22
                 x: 13
-                y: 1270
+                y: 770
                 width: 895
                 height: 464
                 fillMode: Image.PreserveAspectFit
