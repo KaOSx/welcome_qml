@@ -62,7 +62,7 @@ Item {
 
             <p>The first page gives you some information of the installer, option to check the currently known issues and an option to select what language will be used for the install.</p>
             
-            <p>Ensure that your system meets the minimal requirements. Not having an internet connection during the install is no deal breaker and won't stop the install from going trough.</p>
+            <p>Ensure that your system meets the minimal requirements. Not having an internet connection during the install is no deal breaker and won't stop the install from going through.</p>
             
             <p>Having less than the shown disc space or available RAM will almost certainly fail the install. As for disc space, a minimum of 20 Gb is recommended.</p>")
 
