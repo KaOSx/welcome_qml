@@ -36,6 +36,7 @@ TRANSLATIONS  += lang/welcome.ts \
               lang/welcome_fa_IR.ts \
               lang/welcome_fr.ts \
               lang/welcome_hr_HR.ts \
+              lang/welcome_hi_IN.ts \
               lang/welcome_hu.ts \
               lang/welcome_id_ID.ts \
               lang/welcome_it.ts \
