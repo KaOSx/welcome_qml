@@ -66,7 +66,7 @@
     </message>
     <message>
         <location filename="../guide/guide.qml" line="84"/>
-        <source>Keybaord</source>
+        <source>Keyboard</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -102,7 +102,7 @@
 
             &lt;p&gt;The first page gives you some information of the installer, option to check the currently known issues and an option to select what language will be used for the install.&lt;/p&gt;
             
-            &lt;p&gt;Ensure that your system meets the minimal requirements. Not having an internet connection during the install is no deal breaker and won't stop the install from going through.&lt;/p&gt;
+            &lt;p&gt;Ensure that your system meets the minimal requirements. Not having an internet connection during the install is no deal breaker and won't stop the install from going trough.&lt;/p&gt;
             
             &lt;p&gt;Having less than the shown disc space or available RAM will almost certainly fail the install. As for disc space, a minimum of 20 Gb is recommended.&lt;/p&gt;</source>
         <translation type="unfinished"/>
@@ -175,7 +175,7 @@
     <message>
         <location filename="../main.qml" line="105"/>
         <source>About</source>
-        <translation type="unfinished"/>
+        <translation>Tentang</translation>
     </message>
 </context>
 <context>
@@ -209,11 +209,11 @@
             &lt;p&gt;For both UEFI and BIOS systems, hovering over the respective info buttons will give you some more information for the different options for each.&lt;/p&gt;
             
             &lt;p&gt;This installer gives you four options to use.&lt;/br&gt;
-            The first option will allow you to shrink an existing partition and install KaOS alongside any other OS already available on your system, using the XFS filesystem. Shrinking is not possible for partitions residing on an extended partition table or using the XFS filesystem.&lt;/br&gt;
+            The first option will allow you to shrink an existing partition and install KaOS alongside any other OS already available on your system, using the XFS filesystem. Shrinking is not possible for partitions residing on an extended partion table or using the XFS filesystem.&lt;/br&gt;
             The second option lets you use an existing partition and it will replace all files and/or OS on that partition with a KaOS install, using the XFS filesystem.&lt;/br&gt;
             The third option will use the entire disk and will create one partition where all will be installed under root, all other partitions will be removed and the filesystem used will XFS.&lt;/p&gt;
             
-            &lt;p&gt;The fourth option gives you the freedom to set any option, any filesystem and partition table. If you want to completely clean the drive and start over or if this drive has no partition table at all yet (new media, virtualbox install), you have to make a decision what partitiontable to use. Default in the installer is GPT, ms-dos is the older option (still more commonly used for BIOS systems). Advantage of GPT, it can use virtual unlimited primary partitions (ms-dos is limited to four), is needed for drives larger than 2 Tb and is best for UEFI systems. If you choose to use GPT on a BIOS system, make sure to set it up correctly, with the needed 8 MB partition of unformatted space at the beginning of the drive and having the bios_grub flag assigned to that unformatted partition.  This setup cannot have a seperate /boot partition.&lt;/p&gt;
+            &lt;p&gt;The fourth option gives you the freedom to set any option, any filesystem and partition table. If you want to completely clean the drive and start over or if this drive has no partition table at all yet (new media, virtualbox install), you have to make a decision what partitiontable to use. Default in the installer is GPT, ms-dos is the older option (still more commomly used for BIOS systems). Advantage of GPT, it can use virtual unlimited primary partitions (ms-dos is limited to four), is needed for drives larger than 2 Tb and is best for UEFI systems. If you choose to use GPT on a BIOS system, make sure to set it up correctly, with the needed 8 MB partition of unformatted space at the beginning of the drive and having the bios_grub flag assigned to that unformatted partition.  This setup cannot have a seperate /boot partition.&lt;/p&gt;
             
             &lt;p&gt;Once the partitiontable is set, you need to partition the drive, minimum needed, one partition for / (root). There are some advantages to using a separate partition for /home, and you might like to have a swap partition for sleep/hibernate. Any other partitions is strictly personal choice, though setting up /usr is not very well supported in systemd (you&apos;ll have to use extra steps to make that work correctly).&lt;/p&gt;</source>
         <translation type="unfinished"/>
@@ -221,23 +221,24 @@
     <message>
         <location filename="../guide/partition.qml" line="117"/>
         <source>&lt;p&gt;Option to install alongside an existing partition, UEFI system, / (root) and swap used. After selecting which partition you want to shrink to create room for KaOS, you can drag in that partition to set the desired size.  Also shown here is the option to encrypt the system with password set.&lt;/p&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;p&gt;Opsi untuk memasang sepanjang partisi yang ada, sistem UEFI, / (root) dan swap yang digunakan. Setelah memilih partisi mana yang kamu ingin ciutkan untuk menciptakan ruang bagi KaOS, kamu bisa menyeret pada partisinya untuk mengeset ukuran yang diinginkan. Juga ditampilkan di sini adalah opsi untuk mengenkripsi sistem dengan set sandi.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../guide/partition.qml" line="144"/>
         <source>&lt;p&gt;Option to replace an existing partition, UEFI system, / (root) and swap used. Once you select the partition you want to replace, the preview will show the &lt;i&gt;after&lt;/i&gt; bar.  Also shown here is the option to encrypt the system with password set.&lt;/p&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;p&gt;Opsi untuk mengganti partisi yang ada, sistem UEFI, / (root) dan swap yang digunakan. Setelah kamu memilih partisi yang kamu ingin ganti, pratinjau akan menampilkan bilah &lt;i&gt;sesudah&lt;/i&gt;. Juga ditampilkan di sini adalah opsi untuk mengenkripsi sistem dengan set sandi.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../guide/partition.qml" line="171"/>
         <source>&lt;p&gt;Option to use the entire drive, all installed under / (root) if on a BIOS system and FAT32 EFI partition also created if the system is UEFI, with swap assigned if disk size allows.  This will remove all data and installed systems from the selected drive.&lt;/p&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;p&gt;Opsi untuk menggunakan seluruh drive, semua yang terpasang di bawah / (root) jika pada sebuah sistem BIOS dan partisi EFI FAT32 juga diciptakan jika sistemnya adalah UEFI, dengan swap yang ditugaskan jika ukuran disk memungkinkan. Ini akan menghapus semua data dan sistem yang terpasang pada drive yang terpilih.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../guide/partition.qml" line="198"/>
         <source>&lt;p&gt;Using the fourth option to delete an existing layout. Select &lt;code&gt;New Partition Table&lt;/code&gt; for a new drive or to switch from ms-dos to GPT or vice versa.&lt;/br&gt;
-            Highlight &lt;code&gt;Free Space&lt;/code&gt; and select &lt;code&gt;Create&lt;/code&gt;.  You then get a window with options to set partition type, file system and mountpoint. When using an UEFI install, it is a must a vfat (fat32) formatted /boot partition is available. Best set the size to 512Mb and have it at the beginning of the partition-table. Once root is set, the Next button will become active again.&lt;/p&gt;</source>
-        <translation type="unfinished"/>
+            Highlight &lt;code&gt;Free Space&lt;/code&gt; and select &lt;code&gt;Create&lt;/code&gt;.  You then get a window with options to set partition type, file system and mountpoint. When using an UEFI install, it is a must to have a vfat (fat32) formatted /boot partition available. Best set the size to 512Mb and have it at the beginning of the partition-table. Once root is set, the Next button will become active again.&lt;/p&gt;</source>
+        <translation>&lt;p&gt;Menggunakan opsi keempat untuk menghapus tataletak yang ada. Pilih &lt;code&gt;Tabel Partisi Baru&lt;/code&gt; untuk drive baru atau untuk mengalihkan dari ms-dos ke GPT atau sebaliknya.&lt;/br&gt;
+Sorot &lt;code&gt;Ruang Bebas&lt;/code&gt; dan pilih &lt;code&gt;Ciptakan&lt;/code&gt;. Kamu kemudian mendapatkan sebuah jendela dengan opsi untuk mengeset tipe partisi, sistem file dan titik kait. Ketika menggunakan sebuah pemasangan UEFI, ini harus memiliki sebuah partisi /boot terformat vfat (fat32) yang tersedia. Sebaiknya set ukuran ke 512Mb dan memilikinya di awal pada tabel partisi. Setelah root diset, tombol Selanjutnya akan menjadi aktif lagi.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../guide/partition.qml" line="266"/>
@@ -260,7 +261,9 @@
         <source>&lt;h3&gt;Summary&lt;/h3&gt;
 
             &lt;p&gt;All looking as it should? Then clicking Next will give you one last warning before the actual formatting and installation will start.&lt;/p&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h3&gt;Ringkasan&lt;/h3&gt;
+
+&lt;p&gt;Apakah semua terlihat seperti seharusnya? Lalu mengeklik Selanjutnya akan memberikanmu satu peringatan terakhir sebelum pemformatan dan pemasangan yang sesungguhnya akan dimulai.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../guide/summary.qml" line="90"/>
@@ -278,14 +281,18 @@
         <location filename="../guide/user.qml" line="52"/>
         <source>&lt;h3&gt;User Creation&lt;/h3&gt;
 
-            &lt;p&gt;The user creation page gives you the option to set a user name different from your actual name and set a preffered name for the system.&lt;/p&gt;
+            &lt;p&gt;The user creation page gives you the option to set a user name different from your actual name and set a preferred name for the system.&lt;/p&gt;
 
             &lt;p&gt;For security reasons, it is advisable to use a different password for the administrator (or root) account.&lt;/p&gt;
 
-            &lt;p&gt;Calamares, the installer of KaOS is straightforward and easy to use, but lacks one feature at this stage. RAID disk setups is not supported yet.&lt;/p&gt;
-
             &lt;p&gt;Default is set to autologin disabled, add a marker to enable passwordless login.&lt;/p&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h3&gt;Penciptaan Pengguna&lt;/h3&gt;
+
+&lt;p&gt;Halaman penciptaan pengguna memberikanmu opsi untuk menyiapkan nama pengguna yang berbeda dari nama yang sebenarnya dan menyiapkan sebuah nama yang disukai untuk sistem&lt;/p&gt;
+
+&lt;p&gt;Untuk alasan keamanan, sebaiknya menggunakan sandi yang berbeda untuk akun administrator (atau root).&lt;/p&gt;
+
+&lt;p&gt;Untuk autologin sebagai bakunya adalah dinonaktifkan, ditambah sebuah penanda untuk mengaktifkan login secara bersandi.&lt;/p&gt;</translation>
     </message>
 </context>
 </TS>

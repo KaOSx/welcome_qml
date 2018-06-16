@@ -251,7 +251,24 @@
             &lt;p&gt;The fourth option gives you the freedom to set any option, any filesystem and partition table. If you want to completely clean the drive and start over or if this drive has no partition table at all yet (new media, virtualbox install), you have to make a decision what partitiontable to use. Default in the installer is GPT, ms-dos is the older option (still more commomly used for BIOS systems). Advantage of GPT, it can use virtual unlimited primary partitions (ms-dos is limited to four), is needed for drives larger than 2 Tb and is best for UEFI systems. If you choose to use GPT on a BIOS system, make sure to set it up correctly, with the needed 8 MB partition of unformatted space at the beginning of the drive and having the bios_grub flag assigned to that unformatted partition.  This setup cannot have a seperate /boot partition.&lt;/p&gt;
             
             &lt;p&gt;Once the partitiontable is set, you need to partition the drive, minimum needed, one partition for / (root). There are some advantages to using a separate partition for /home, and you might like to have a swap partition for sleep/hibernate. Any other partitions is strictly personal choice, though setting up /usr is not very well supported in systemd (you&apos;ll have to use extra steps to make that work correctly).&lt;/p&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h3&gt;Particions&lt;/h3&gt;
+            
+            &lt;p&gt;Usar la configuració de particions correcta, el sistema de fitxers i la taula de particions més adequats és una de les etapes més desafiants per a qualsevol persona nova a l&apos;hora d&apos;instal·lar un sistema operatiu.&lt;/p&gt;
+
+            &lt;p&gt;&lt;font color=&apos;#ff0000&apos;&gt;Assegureu-vos de fer una còpia de seguretat de qualssevol dades que pugueu necessitar dels dispositius abans de continuar.&lt;/font&gt;&lt;/p&gt;
+            
+            &lt;p&gt;Si el mitjà d&apos;instal·lació de destinació (HDD, SSD, memòria USB...), no està formatat i partit o no està configurat com us agradaria, ho podeu fer des de dins de l&apos;instal·lador, o preparar-ho abans d&apos;iniciar l&apos;instal·lador.&lt;/p&gt;
+            
+            &lt;p&gt;Per als sistemes UEFI i BIOS, passar per sobre dels botons d&apos;informació respectius us oferirà més informació de les diferents opcions de cada cas.&lt;/p&gt;
+            
+            &lt;p&gt;Aquest instal·lador us ofereix quatre opcions.&lt;/br&gt;
+            La primera opció us permetrà encongir una partició existent i instal·lar el KaOS al costat de qualsevol altre sistema operatiu disponible que hi hagi, amb el sistema de fitxers XFS. No és possible encongir particions que siguin en una taula de particions ampliada o que usin un sistema de fitxers XFS.&lt;/br&gt;
+            La segona opció us permet usar una partició existent per reemplaçar-ne tots els fitxers o sistemes operatius per una instal·lació del KaOS, amb el sistema de fitxers XFS.&lt;/br&gt;
+            La tercera opció usarà el disc sencer i hi crearà una partició en què s&apos;hi instal·larà tot com a arrel. Totes les altres particions s&apos;eliminaran i el sistema de fitxers serà XFS.&lt;/p&gt;
+            
+            &lt;p&gt;La quarta opció us ofereix la llibertat d&apos;establir qualsevol configuració, qualsevol sistema de fitxers i taula de particions. Si voleu netejar el disc completament i començar de nou o si aquest disc encara no té cap mena de taula de particions (un mitjà nou, o una instal·lació de màquina virtual), heu de prendre la decisió de quina taula de particions usar-hi. Per defecte a l&apos;instal·lador és GPT, MS-DOS és l&apos;opció més antiga (encar molt utilitzada en sistemes BIOS). L&apos;avantatge de GPT és que pot usar particions primàries il·limitades virtuals (MS-DOS està limitat a quatre), és necessari per a discs més grosso de 2 TB i és millor per a sistemes UEFI. Si trieu usar GPT en un sistema BIOS, assegureu-vos de configurar-ho correctament, amb una partició necessària de 8 MB sense formatar al principi del disc i amb la bandera bios_grub assignada.  Aquesta configuració no pot tenir una partició /boot separada.&lt;/p&gt;
+            
+            &lt;p&gt;Un cop la taula de particions està establerta, heu de partir el disc. El mínim necessari és una partició per a l&apos;arrel, / (root). Hi ha alguna avantatges a l&apos;hora d&apos;usar una partició per a l&apos;usuari separada (/home), i potser us aniria bé tenir una partició d&apos;intercanvi (swap) per a la suspensió o hibernació del sistema. Qualsevol altra partició és estrictament una tria personal, tot i que establir-ne una per a /usr no es gaire ben admès a systemd (haureu de fer passos complementaris per fer que funcioni correctament).&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../guide/partition.qml" line="117"/>
@@ -272,20 +289,24 @@
         <location filename="../guide/partition.qml" line="198"/>
         <source>&lt;p&gt;Using the fourth option to delete an existing layout. Select &lt;code&gt;New Partition Table&lt;/code&gt; for a new drive or to switch from ms-dos to GPT or vice versa.&lt;/br&gt;
             Highlight &lt;code&gt;Free Space&lt;/code&gt; and select &lt;code&gt;Create&lt;/code&gt;.  You then get a window with options to set partition type, file system and mountpoint. When using an UEFI install, it is a must to have a vfat (fat32) formatted /boot partition available. Best set the size to 512Mb and have it at the beginning of the partition-table. Once root is set, the Next button will become active again.&lt;/p&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;p&gt;Usar la quarta opció per eliminar una disposició de particions existent. Seleccioneu &lt;code&gt;Taula de particions nova&lt;/code&gt; per a un disc nou o per canviar d&apos;MS-DOS a GPT o a l&apos;inrevés.&lt;/br&gt;
+            Marqueu &lt;code&gt;Espai lliure&lt;/code&gt; i seleccioneu &lt;code&gt;Crea&lt;/code&gt;.  Se us obrirà una finestra amb opcions per establir el tipus de partició, el tipus de sistema de fitxers i el punt de muntatge. Quan s&apos;usa una instal·lació UEFI, hi ha d&apos;haver una partició d&apos;arrencada (/boot) disponible formatada en vfat (fat32). Millor que sigui de 512 MB i que sigui al principi de la taula de particions. Un cop s&apos;ha establert l&apos;arrel, el botó de Següent tornarà a estar actiu.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../guide/partition.qml" line="266"/>
         <source>&lt;p&gt;Using the fourth option to adjust existing layout. Select &lt;code&gt;New Partition Table&lt;/code&gt; for a new drive or to switch from ms-dos to GPT or vice versa.&lt;/br&gt;
             Highlight a desired partition, and select &lt;code&gt;Format&lt;/code&gt;. If this is going to be the root partition, it needs to be formatted. If old files are still present it will most likely result in a broken install. Next select a Mountpoint, root needs to be set, for UEFI install /boot needs to be set too. Repeat these steps for any other partition you want to use for this install. Once root is set, the Next button will become active again. Options are available to encrypt partitions, this includes swap.&lt;/p&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;p&gt;Usar la quarta opció per modificar una disposició de particions existents. Seleccioneu &lt;code&gt;Taula de particions nova&lt;/code&gt; per a un dispositiu nou o per canviar d&apos;MS-DOS a GPT o a l&apos;inrevés.&lt;/br&gt;
+            Marqueu la partició desitjada i seleccioneu &lt;code&gt;Formata&lt;/code&gt;. Si ha de ser la partició d&apos;arrel, cal que es formati. Si encara hi queden fitxers antics pot ser que acabeu tenint una instal·lació trencada. Després seleccioneu-ne un punt de muntatge, cal establir el d&apos;arrel (root), i per a una instal·lació UEFI també cal establir el d&apos;arrencada (/boot). Repetiu aquests passos per a qualsevol altra partició que vulgueu usar per a la instal·lació. Un cop s&apos;hagi establert l&apos;arrel, el botó de Següent tornarà a estar actiu.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../guide/partition.qml" line="304"/>
         <source>&lt;p&gt;The image below shows the needed setup for an UEFI partition. If your install already has this set, &lt;font color='#ff0000'&gt;DO NOT&lt;/font&gt; format it. With UEFI any existing bootloader can be used, formatting will delete any currently present files to boot Windows or any other OS.&lt;/br&gt;
             For BIOS systems select where you want to install the bootloader, this can either be done in the Master Boot Record of the selected disc, or can be installed in the /boot partition of the system (/boot can reside under root for that).&lt;/br&gt;
             No changes will happen when you click the Next button, you will get a chance to review all your chosen settings and go back if things are not exactly as you want them.&lt;/p&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;p&gt;La imatge de sota mostra la configuració necessària per a una partició UEFI. Si la vostra instal·lació ja té aquesta configuració, &lt;font color=&apos;#ff0000&apos;&gt;NO&lt;/font&gt; la formateu. Amb UEFI es pot usar qualsevol carregador d&apos;arrencada existent. Formatar-ho eliminarà qualsevol fitxer que hi hagi actualment per arrencar Windows o qualsevol altre sistema operatiu.&lt;/br&gt;
+            Per a sistemes BIOS, seleccioneu on voleu instal·lar el carregador d&apos;arrencada, es pot fer al registre d&apos;arrencada mestre del disc (MBR, Master Boot Record), o es pot instal·lar a la partició d&apos;arrencada (/boot) del sistema (/boot pot ser dins de l&apos;arrel).&lt;/br&gt;
+            No es farà cap canvi quan cliqueu al botó de Següent, tindreu l&apos;oportunitat de revisar tots els paràmetres i tornar enrere si no són exactament com els voleu.&lt;/p&gt;</translation>
     </message>
 </context>
 <context>
@@ -306,7 +327,11 @@
             &lt;p&gt;Once the installation is finished, you have the option to close the installer and go back to live mode or reboot the system right away. A full log of the install is available as installation.log in the home directory of the Live user and this log is copied to /var/log/installation.log of the target system.&lt;/p&gt;
 
             &lt;p&gt;Hopefully this Guide has answered any questions you had about using this Installer. If anything is not clear enough then it would be really appreciated if you can get in touch to get the needed changes in.&lt;/p&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;p&gt;Mentre s&apos;instal·la el sistema, es mostrarà una presentació de diapositives que us oferirà informació bàsica. També podreu seguir què està fent l&apos;instal·lador en diferents etapes. Espereu que aquesta part duri uns 5 o 10 minuts, segons la configuració o la velocitat del dispositiu de destinació. Cap al 30%, s&apos;acaba la còpia de fitxers (que és el que dura més), i després l&apos;instal·lador crearà els usuaris, eliminarà paquets específics del sistema autònom, instal·larà paquets addicionals, eliminarà paquets de llengua i controladors no necessaris per al vostre maquinari, configurarà o bé el GRUB per a sistemes BIOS o bé Systemd-boot per a UEFI, i copiarà la configuració específica de l&apos;usuari de KaOS.&lt;/p&gt;
+
+            &lt;p&gt;Un cop acabi la instal·lació, tindreu l&apos;opció de tancar l&apos;instal·lador i tornar al mode autònom o reiniciar el sistema immediatament. Hi ha un registre complet de la instal·lació disponible com a installation.log al directori personal de l&apos;usuari Live i que es copia a /var/log/installation.log del sistema de destinació.&lt;/p&gt;
+
+            &lt;p&gt;Esperem que aquesta guia hagi resolt qualsevol pregunta que tingueu de l&apos;ús de l&apos;instal·lador. Si hi ha alguna cosa que encara no sigui clara, us agrairíem que us poséssiu en contacte amb nosaltres per afegir-hi els canvis necessaris.&lt;/p&gt;</translation>
     </message>
 </context>
 <context>
