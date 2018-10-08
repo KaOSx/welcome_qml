@@ -57,32 +57,32 @@
     <message>
         <location filename="../guide/guide.qml" line="33"/>
         <source>Guide</source>
-        <translation type="unfinished"/>
+        <translation>Panduan</translation>
     </message>
     <message>
         <location filename="../guide/guide.qml" line="81"/>
         <source>Intro</source>
-        <translation type="unfinished"/>
+        <translation>Intro</translation>
     </message>
     <message>
         <location filename="../guide/guide.qml" line="84"/>
         <source>Keyboard</source>
-        <translation type="unfinished"/>
+        <translation>Keyboard</translation>
     </message>
     <message>
         <location filename="../guide/guide.qml" line="87"/>
         <source>Partitioning</source>
-        <translation type="unfinished"/>
+        <translation>Pemartisian</translation>
     </message>
     <message>
         <location filename="../guide/guide.qml" line="90"/>
         <source>Users</source>
-        <translation type="unfinished"/>
+        <translation>Pengguna</translation>
     </message>
     <message>
         <location filename="../guide/guide.qml" line="93"/>
         <source>Summary</source>
-        <translation type="unfinished"/>
+        <translation>Ringkasan</translation>
     </message>
 </context>
 <context>
@@ -184,14 +184,17 @@
         <location filename="../guide/notes.qml" line="52"/>
         <source>&lt;p&gt;The &lt;strong&gt;Release Notes&lt;/strong&gt; give you important information of what is included in this ISO&lt;/p&gt;
             &lt;p&gt;If you selected non-free Nvidia during the start-up of the Live session, you will be presented with a License page.  Make sure to read and accept the license, otherwise your install will not include the non-free driver, and will fallback to Nouveau instead. You won&apos;t see this page if you selected to use the free drivers.&lt;/p&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;p&gt;&lt;strong&gt;Catatan Rilis&lt;/strong&gt; memberikanmu informasi penting dari apa yang telah dimasukkan di dalam ISO ini&lt;/p&gt;
+            &lt;p&gt;Jika kamu memilih non-free Nvidia selagi start-up pada sesi Live, kamu akan disuguhkan sebuah halaman Lisensi. Pastikan untuk membaca dan menyetujuinya, kalau tidak pemasanganmu tidak akan disertakan driver non-free, dan akan berpulih ke Nouveau sebagai gantinya. Kamu takusah melihat halaman ini jika kamu memilih untuk menggunakan driver yang free.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../guide/notes.qml" line="90"/>
         <source>&lt;p&gt;Next is the &lt;strong&gt;Keyboard Setup&lt;/strong&gt;. You can test the layout by typing something in the designated area.&lt;/p&gt;
 
             &lt;p&gt;Use the drop-down menu to fine tune to your exact desired keyboard model.&lt;/p&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;p&gt;Selanjutnya adalah &lt;strong&gt;Persiapan Keyboard&lt;/strong&gt;. Kamu bisa menguji tataletak dengan mengetik sesuatu di dalam area yang ditunjuk.&lt;/p&gt;
+
+              &lt;p&gt;Gunakan menu longsor untuk menala tepatnya model keyboard yang dikehendaki.&lt;/p&gt;</translation>
     </message>
 </context>
 <context>
@@ -216,7 +219,24 @@
             &lt;p&gt;The fourth option gives you the freedom to set any option, any filesystem and partition table. If you want to completely clean the drive and start over or if this drive has no partition table at all yet (new media, virtualbox install), you have to make a decision what partitiontable to use. Default in the installer is GPT, ms-dos is the older option (still more commomly used for BIOS systems). Advantage of GPT, it can use virtual unlimited primary partitions (ms-dos is limited to four), is needed for drives larger than 2 Tb and is best for UEFI systems. If you choose to use GPT on a BIOS system, make sure to set it up correctly, with the needed 8 MB partition of unformatted space at the beginning of the drive and having the bios_grub flag assigned to that unformatted partition.  This setup cannot have a seperate /boot partition.&lt;/p&gt;
             
             &lt;p&gt;Once the partitiontable is set, you need to partition the drive, minimum needed, one partition for / (root). There are some advantages to using a separate partition for /home, and you might like to have a swap partition for sleep/hibernate. Any other partitions is strictly personal choice, though setting up /usr is not very well supported in systemd (you&apos;ll have to use extra steps to make that work correctly).&lt;/p&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h3&gt;Pemartisian&lt;/h3&gt;
+     
+       &lt;p&gt;Menggunakan persiapan partisi yang benar, beberapa file sistem dan tabel partisi yang sesuai adalah hal bagian yang menantang bagi siapapun yang baru memasang sebuah Sistem Operasi.&lt;/p&gt;
+
+     &lt;p&gt;&lt;font color=&apos;#ff0000&apos;&gt;Pastikan sudah mencadangkan data apapun jika diperlukan dari drive-mu sebelum memprosesnya.&lt;/font&gt;&lt;/p&gt;
+         
+&lt;p&gt;Jika medium pemasangan sasaranmu (sebagai contohnya HDD, ssd, usb-stick), tidaklah diformat dan tidak dipartisi atau belum dipersiapkan seperti yang kamu kehendaki, kamu juga bisa melakukannya dari dalam pemasang, atau mempersiapkannya sebelum memulai pemasangan.&lt;/p&gt;
+     
+       &lt;p&gt;Bagi both UEFI dan BIOS System, melayang melintasi tombol info masing-masing akan memberikanmu beberapa informasi atas opsi yang berbeda-beda.&lt;/p&gt;
+          
+          &lt;p&gt;Pemasang ini memberikanmu empat opsi untuk digunakan.&lt;/br&gt;
+           Opsi pertama membolehkanmu untuk mengiris partisi yang ada dan memasang KaOS disamping OS apapun yang sudah tersedia pada sistem kamu, menggunakan filesystem XFS. Pengirisan tidaklah mungkin untuk partisi yang berada pada sebuah label partisi extended atau menggunakan filesystem XFS.&lt;/br&gt;
+          Opsi kedua membiarkanmu menggunakan partisi yang ada dan akan menggantikan semua file dan/atau OS pada partisi tersebut dengan KaOS yang terpasang, menggunakan filesystem XFS.&lt;/br&gt;
+         Opsi ketiga akan menggunakan entri disk dan akan menciptakan satu partisi dimana semua terpasang di bawah root, semua partisi yang lain akan dihapus dan filesystem yang digunakan adalah XFS.&lt;/p&gt;
+           
+          &lt;p&gt;Opsi keempat memberikanmu kebebasan untuk menyetel opsi apapun, filesystem dan tabel partisi apapun. Jika kamu ngin secara keseluruhan drive bersih dan memulai drive atau jika drive ini belum memiliki tabel partisi di semuanya (madia baru, pemasangan virtualbox), kamu harus membuat keputusan partisi mana yang dapat digunakan. Bakunya pada pemasangan adalah GPT, ms-dos adalah opsi kuno (yang masih umum digunakan oleh sistem BIOS). Keuntungan pada GPT, bisa digunakan partisi primer virtual tak terbatas (ms-dos adalah sebatas empat saja), ialah diperlukan untuk drive yang lebih besar dari 2 Tb dan lebih baik untuk UEFI system. Jika kamu pilih menggunakan GPT pada BIOS system, pastikan persiapannya sudah benar, dengan keperluan ruang partisi 8 Mb yang takdiformat di awal drive dan memiliki bendera bios_grub tercantum ke partisi takdiformat. Persiapan ini tidak bisa memiliki partisi /boot yang terpisah.&lt;/p&gt;
+          
+            &lt;p&gt;Setelah semua partisi sudah dipersiapkan, kamu perlu mempartisi drive, minimum yang diperlukan, satu partisi untuk / (root). Ada beberapa keuntungan untuk menggunakan sebuah partisi /home yang terpisah, dan mungkin kamu ingin memiliki sebuah partisi swap untuk slep/hibernate. Partisi apapun lainnya adalah pilihan ketat personal, mengenai setelan /usr adalah sangat tidak didukung dalam systemd (kamu haruslah menggunakan langkah extra untuk membuatnya bekerja secara benar).&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../guide/partition.qml" line="117"/>
@@ -244,14 +264,17 @@ Sorot &lt;code&gt;Ruang Bebas&lt;/code&gt; dan pilih &lt;code&gt;Ciptakan&lt;/co
         <location filename="../guide/partition.qml" line="266"/>
         <source>&lt;p&gt;Using the fourth option to adjust existing layout. Select &lt;code&gt;New Partition Table&lt;/code&gt; for a new drive or to switch from ms-dos to GPT or vice versa.&lt;/br&gt;
             Highlight a desired partition, and select &lt;code&gt;Format&lt;/code&gt;. If this is going to be the root partition, it needs to be formatted. If old files are still present it will most likely result in a broken install. Next select a Mountpoint, root needs to be set, for UEFI install /boot needs to be set too. Repeat these steps for any other partition you want to use for this install. Once root is set, the Next button will become active again. Options are available to encrypt partitions, this includes swap.&lt;/p&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;p&gt;Menggunakan opsi yang keempat untuk menyetel tataletak yang ada. Pilih &lt;code&gt;Tabel Partisi Baru&lt;/code&gt; untuk perangkat baru atau untuk beralih dari ms-dos ke GPT atau vice versa.&lt;/br&gt;
+          Sorot sebuah partisi yang dikehendaki, dan pilih &lt;code&gt;Format&lt;/code&gt;. Jika ini telah menjadi partisi root, maka perlu diformat. Jika file-file yang lawas masih ada sepertinya itu akan mengakibatkan pemasangan yang rusak. Selanjutnya pilih sebuah Titikait, root perlu untuk dipersiapkan, bagi UEFI Install /boot juga perlu untuk dipersiapkan. Ulangi langkah tersebut untuk partisi yang lain yang kamu ingin gunakan untuk pemasangan ini. Setelah root dipersiapkan, tombol Selanjutnya akan menjadi aktif lagi. Opsi jadi tersedia untuk mengenkripsi partisi. Ini termasuk swap.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../guide/partition.qml" line="304"/>
         <source>&lt;p&gt;The image below shows the needed setup for an UEFI partition. If your install already has this set, &lt;font color='#ff0000'&gt;DO NOT&lt;/font&gt; format it. With UEFI any existing bootloader can be used, formatting will delete any currently present files to boot Windows or any other OS.&lt;/br&gt;
             For BIOS systems select where you want to install the bootloader, this can either be done in the Master Boot Record of the selected disc, or can be installed in the /boot partition of the system (/boot can reside under root for that).&lt;/br&gt;
             No changes will happen when you click the Next button, you will get a chance to review all your chosen settings and go back if things are not exactly as you want them.&lt;/p&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;p&gt;Citra di bawah ini menampilkan persiapan yang diperlukan untuk partisi UEFI. Jika pemasanganmu sudah memiliki setelan ini, &lt;font color=&apos;#ff0000&apos;&gt;JANGAN&lt;/font&gt; memformatnya. Dengan UEFI bootloader yang ada apapun bisa digunakan, pemformatan akan menghapus apapun file yang ada saat ini terhadap boot Windows atau OS apapun lainnya.&lt;/br&gt;
+             Bagi BIOS system pilihlah di mana kamu ingin memasang bootloader, ini bisa antara melakukan di dalam Master Boot Record pada disk yang dipilih, atau bisa dipasang di dalam partisi /boot pada sistem (/boot bisa bersisi di bawah root untuk itu).&lt;/br&gt;
+            Tiada perubahan akan terjadi ketika kamu mengeklik tombol Selanjutnya, kamu akan mendapatkan kesempatan untuk meninjau semua setelan pilihanmu dan pergi kembali jika dirasa kurang tepat seperti yang kamu inginkan.&lt;/p&gt;</translation>
     </message>
 </context>
 <context>

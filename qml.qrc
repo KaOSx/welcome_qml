@@ -62,5 +62,6 @@
         <file>lang/welcome_uk.qm</file>
         <file>lang/welcome_hr_HR.qm</file>
         <file>lang/welcome_hi_IN.qm</file>
+        <file>lang/welcome_hu.qm</file>
     </qresource>
 </RCC>
