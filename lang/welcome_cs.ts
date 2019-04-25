@@ -62,7 +62,7 @@
     <message>
         <location filename="../guide/guide.qml" line="81"/>
         <source>Intro</source>
-        <translation>Intro</translation>
+        <translation>Úvod</translation>
     </message>
     <message>
         <location filename="../guide/guide.qml" line="84"/>
@@ -175,7 +175,7 @@
     <message>
         <location filename="../main.qml" line="105"/>
         <source>About</source>
-        <translation type="unfinished"/>
+        <translation>O</translation>
     </message>
 </context>
 <context>
