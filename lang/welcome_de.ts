@@ -49,7 +49,24 @@
                     &lt;p&gt;&lt;b&gt;The target users&lt;/b&gt; are those who have tried many Operating Systems/Distributions/Desktop Environments and have found they prefer a Distribution that uses all its available resources to work on one DE to make that the best it can be, and know that after their searches, the best for them is KDE. Their used hardware is from about 2005 or later, so there are no issues with running 64 bit software. And the target audience is not afraid to use KDE/Qt versions of their needed applications, likes to see the best available selected for their needs, even if that means learning some new ways of working with a before unused application. There is an understanding selection for similar applications will be limited to 5-6.&lt;/p&gt;
                     
                     &lt;p&gt;KDE is a modern Desktop Environment which can make use of most of any graphics or sound card capabilities. This does not mean KDE can’t be made to run on very low-end hardware, but in general there are better options available for such systems (OpenBox for example). The very minimal needed for &lt;b&gt;hard-drive space is 8 Gb, but 25 Gb&lt;/b&gt; is recommended as minimal. KaOS will install with 1.5Gb of RAM available, though a much better experience will start with &lt;b&gt;2 Gb of RAM&lt;/b&gt;. Since only x86_64 packages are available, a &lt;b&gt;64 bit capable cpu&lt;/b&gt; is needed. As with any rolling distribution, updates are frequent and can be large, so a reasonable fast internet connection (dial-up will become very cumbersome) and available monthly data of over 2 Gb are recommended.&lt;/p&gt;</source>
-        <translation type="unfinished"/>
+        <translation>Über KaOS
+&lt;p&gt;Die Idee hinter KaOS ist es, eine fest integrierte, laufend aktualisierte und transparente Distribution für den modernen Heimcomputer zu schaffen, die von Grund auf neu entwickelt wurde und einen ganz besonderen Fokus aufweist. Fokus auf &lt;b&gt;ein DE (KDE), ein Toolkit (Qt), eine Architektur (x86_64) sowie ein Fokus auf die Evaluierung und &lt;/b&gt;Auswahl der am besten geeigneten Tools und Anwendungen. Alle Arbeiten sind auf die Paketierung ausgerichtet, statt auf die Entwicklung neuer Werkzeuge und Anwendungen.&lt;/p&gt;
+
+&lt;p&gt;Bei der Umstellung von proprietären Betriebssystemen auf Open-Source-Optionen (Linux-basiert, BSD-basiert, Solaris-basiert) geht es in fast allen Fällen um &lt;b&gt;Freiheit und persönliche Vorlieben.&lt;/b&gt;Jedoch sollte ein solches Betriebssystem oder eine solche Distribution eine Auswahl dessen treffen, was ihrer Meinung nach am besten zusammen passt. KaOS sieht hier einen Mangel an Fokus bisher. Um die höchstmögliche Qualität der Distribution zu erreichen, muss ein Fokus darauf gelegt werden, dass der Benutzer die bestmögliche Summe aller Teile erhält. Es ist einfach nicht möglich alles zu zusammenzustopfen, um ideal für jede Desktop-Umgebung und jedes Toolkit zu funktionieren.&lt;/p&gt;
+
+&lt;p&gt;KaOS hat die Wahl getroffen, den &lt;b&gt;Linux-Kernel&lt;/b&gt; als Basis zu verwenden (obwohl der Illumos-Kernel ständig evaluiert wird und ein zukünftiger Wechsel wünschenswert ist). Nach dieser Wahl ist der passendste verfügbare Paketmanager pacman/makepkg, wenn die flexibelste Art der Paketerstellung und die Repository-Wartung für eine rollende Distribution&lt;/b&gt; wie KaOS  berücksichtigt wird. Was die Desktop-Umgebung betrifft, so wird es nie eine Änderung geben, egal ob sie auf Linux oder Illumos basiert. KDE ist die Wahl diesbezüglich und Qt das Toolkit. Mit diesen Entscheidungen wurde im April 2013 mit dem Aufbau der Paketstruktur für diese unabhängige Distribution begonnen.&lt;/p&gt;
+
+&lt;p&gt;KaOS ist eine Build from Scratch-Distribution, &lt;b&gt;jedes Paket in jedem Repository wird von und für KaOS erstellt&lt;/b&gt;. Bis Juli 2013 wurde das ursprüngliche Ziel von rund 1500 Paketen erreicht.&lt;/p&gt;
+
+&lt;p&gt;Bitte beachten Sie bei der relativ geringen Anzahl der insgesamt verfügbaren Pakete eines. Da der Fokus auf einem Toolkit, einem DE, liegt, ist es &lt;b&gt;nicht notwendig, die Pakete übermäßig zu splitten,&lt;/b&gt;um zu versuchen alles für alle Arten von verschiedenen Umgebungen nutzbar zu machen. An anderen Stellen sind viele Pakete in 3-4-5, manchmal sogar in 15-20 Pakete aufgeteilt, KaOS vereinfacht die Dinge so weit wie möglich und vermeidet dieses Aufsplitten. (Beispiele sind hier die xorg apps da sie statt in fünfzig, in nur drei Paketen zusammengefasst sind und mesa, dieses besteht aus zwei anstatt fünfzehn).&lt;/p&gt;
+
+&lt;p&gt;Die Entscheidung für KDE/QT bedeutet nicht, dass KaOS die Bedeutung des &lt;b&gt;besten verfügbaren Werkzeugs&lt;/b&gt; aus den Augen verliert. Meistens wird davon ausgegangen, dass KDE/Qt das überlegene Werkzeug bietet und es gibt einige Anwendungen, bei denen die GTK-Option die einzige dieser Art ist (Inkscape und Ardour, um zwei zu nennen). Und auch im Falle von den Web-Browsern zum Beispiel, sind die Qt-Optionen noch nicht so stabil wie ihre GTK-Pendants. Für diese Fälle stehen GTK-Anwendungen zur Verfügung, deren Anzahl jedoch begrenzt bleibt. Diese ISO ist jedoch ein Schaufenster der Leistungsfähigkeit von Qt/KDE, so dass die &lt;b&gt;ISO GTK-frei ist&lt;/b&gt;, d.h. kein Firefox, Chrome oder LibreOffice vorinstalliert ist um  ein paar zu nennen, da diese mit GTK+ in direkter Abhängigkeit stehen.&lt;/p&gt;
+
+&lt;p&gt;Das Repository-Layout ist einfach und besteht aus drei Gruppen, Core, Main und Apps. Ein regelmäßiges Komplettsystem-Update gibt Ihnen immer den aktuellsten Stand, &lt;b&gt;ohne dass Sie das System neu installieren müssen&lt;/b&gt;. &lt;i&gt;Core&lt;/i&gt; hat die Basispakete, die ein System benötigt, um zu booten, mit dem BIOS zu kommunizieren und grundlegende Shell-Optionen einzustellen. Beispielpakete sind der Kernel, systemd, toolchain für die Erstellung und grundlegende Kommandozeilen-Tools. Das &lt;i&gt;Main&lt;/i&gt;-Repository besteht aus allen benötigten Bibliotheken, zusätzlichen Treibern und Firmware, die für die Funktion des Desktops und der Anwendungen benötigt werden. &lt;i&gt;Apps&lt;/i&gt; besteht aus allen Paketen, die von den Benutzern gesehen und verwendet werden, einschließlich KDE und allen benötigten Tools. &lt;i&gt;Build&lt;/i&gt; ist, wo alle Pakete beginnen, egal ob es sich um einen Rebuild, ein Update oder einen neuen Zusatz handelt, alle gehen zum Build, sobald sie die richtigen Tests durchlaufen haben, dann werden sie in ihr jeweiliges Repository verschoben.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Die Zielgruppe&lt;/b&gt; sind diejenigen, die viele Betriebssysteme/Distributionen/Desktop-Umgebungen ausprobiert haben und festgestellt haben, dass sie eine Distribution bevorzugen, die alle verfügbaren Ressourcen nutzt an einer Desktop-Umgebung zu arbeiten, um das Beste daraus zu machen, und wissen, dass ihre bevozugte Wahl KDE ist. Die verwendete Hardware stammt aus dem Jahr 2005 oder später, so dass es keine Probleme mit 64-Bit-Software gibt. Und die Zielgruppe scheut sich nicht, die KDE/Qt-Versionen ihrer Programmtypen zu verwenden, möchte die hochwertigsten die verfügbar sind vorausgewählt sehen, auch wenn das bedeutet, dass sie einige neue Arbeitsmethoden neu einstudieren. Es gibt eine sinnvolle Vorauswahl für miteinander ähnlichen Anwendungen und diese wird stets auf 5-6 beschränkt sein.&lt;/p&gt;
+
+&lt;p&gt;KDE ist eine moderne Desktop-Umgebung, die die meisten Grafik- und Soundkartenfunktionen nutzen kann. Dies bedeutet nicht, dass KDE nicht auf sehr schwacher Hardware laufen kann und im Allgemeinen gibt es andere Optionen für solche Systeme (z.B. OpenBox). Der minimale Platzbedarf auf der &lt;b&gt;Festplatte beträgt 8 Gb und 25 Gb&lt;/b&gt; werden als Minimum empfohlen. KaOS wird mit 1.5Gb RAM installiert, obwohl eine viel flüssigere Erfahrung mit &lt;b&gt;2Gb RAM&lt;/b&gt; beginnt. Da nur x86_64-Pakete verfügbar sind, wird eine &lt;b&gt;64-Bit-fähige CPU&lt;/b&gt; benötigt. Wie bei jeder rollenden Distribution sind Updates häufig und können groß sein, so dass eine schnelle Internetverbindung (Einwahl wird sehr umständlich) und ein monatlich verfügbares Datenvolumen von über 2 Gb empfohlen werden.&lt;/p&gt;</translation>
     </message>
 </context>
 <context>
@@ -57,32 +74,32 @@
     <message>
         <location filename="../guide/guide.qml" line="33"/>
         <source>Guide</source>
-        <translation type="unfinished"/>
+        <translation>Anleitung</translation>
     </message>
     <message>
         <location filename="../guide/guide.qml" line="81"/>
         <source>Intro</source>
-        <translation type="unfinished"/>
+        <translation>Einführung</translation>
     </message>
     <message>
         <location filename="../guide/guide.qml" line="84"/>
-        <source>Keybaord</source>
-        <translation type="unfinished"/>
+        <source>Keyboard</source>
+        <translation>Tastatur</translation>
     </message>
     <message>
         <location filename="../guide/guide.qml" line="87"/>
         <source>Partitioning</source>
-        <translation type="unfinished"/>
+        <translation>Partitionierung</translation>
     </message>
     <message>
         <location filename="../guide/guide.qml" line="90"/>
         <source>Users</source>
-        <translation type="unfinished"/>
+        <translation>Anwender</translation>
     </message>
     <message>
         <location filename="../guide/guide.qml" line="93"/>
         <source>Summary</source>
-        <translation type="unfinished"/>
+        <translation>Zusammenfassung</translation>
     </message>
 </context>
 <context>
@@ -102,10 +119,26 @@
 
             &lt;p&gt;The first page gives you some information of the installer, option to check the currently known issues and an option to select what language will be used for the install.&lt;/p&gt;
             
-            &lt;p&gt;Ensure that your system meets the minimal requirements. Not having an internet connection during the install is no deal breaker and won't stop the install from going through.&lt;/p&gt;
+            &lt;p&gt;Ensure that your system meets the minimal requirements. Not having an internet connection during the install is no deal breaker and won't stop the install from going trough.&lt;/p&gt;
             
             &lt;p&gt;Having less than the shown disc space or available RAM will almost certainly fail the install. As for disc space, a minimum of 20 Gb is recommended.&lt;/p&gt;</source>
-        <translation type="unfinished"/>
+        <translation>Installationsanleitung
+
+Jetzt wo du einiges von KaOS gesehen hast, willst du es vielleicht installieren.
+Davor gibt es einige Dinge, die wichtig sind zu verstehen:
+
+Wie mit jeder rollenden Distribution, ist es von Bedeutung das du sie regelmäßig aktualisierst, fällst du zu sehr zurück und versuchst dann ein Update einzuspielen, wird dies potenziell scheitern. Empfohlen ist ein Update pro Woche und mindestens ein mal pro Monat.
+Wenn dir dies unpassend erscheint, ist es vielleicht sinnvoller eine andere Distribution zu wählen, die etwa einen festen Akutalisierungszyklus von sechs oder neun Monaten bietet. Wenn es außergewöhnliche Schritte geben sollte die für eine Aktualisierung notwendig erscheinen könnten, werden diese stets auf &quot;https://kaosx.us/news/&quot; erwähnt, was ebenso in Octopi, dem grafischen Paketmanager angezeigt wird. Es ist empfohlen, sich mit dem Kommandozeilenmodus von Pacman anzufreunden. Jede Distribution hat früher oder später fundamentale Änderungen vorzunehmen und eine rollende Distribution verlässt sich hierbei auf den Paketmanager um mit den Anwendern zu interagieren und sicherzustellen, das die Aktualisierung sauber verläuft. Da so ein rollendes Prinzip inhärent meint, dass es keine Neuinstallationen nach einer gewissen Zeit gibt. (Eine statische Distribution kann solche Neuinstallationen verwenden, um neue fundamentale Veränderungen einzuführen). Keine grafische Oberfläche für Pacman ist hierbei so hilfreich wie Pacman selbst.
+
+Calamares, das Installationsprogramm für KaOS selbst, ist leicht zu bedienen und bietet vielfältige Einstellungsmöglichkeiten. Eine einzige grundlegende Funktion fehlt noch und das ist die für RAID Partitionierung. 
+
+Das Installationsprogramm starten
+
+Die erste Seite gibt dir eine Übersicht über das Installationsprogramm, die Option bereits bekannte Fehler einzusehen und die Auswahl deiner Sprache. 
+
+Stelle sicher, dass dein Computer von KaOS unterstützt wird. Eine fehlende Internetverbindung ist kein Hinderungsgrund für die Installation. Sie wird dennoch korrekt verlaufen.
+
+Solltest du weniger als die minimalen Systemanforderungen wie 20 GB Speicherplatz verwenden, wird die Installation schief laufen. </translation>
     </message>
 </context>
 <context>
@@ -166,7 +199,7 @@ Zögern Sie nicht Ihre Meinung in das KaOS-Forum zu posten.&lt;/div&gt;</transla
     <message>
         <location filename="../main.qml" line="99"/>
         <source>Main</source>
-        <translation>Haupt</translation>
+        <translation>Hauptmenü</translation>
     </message>
     <message>
         <location filename="../main.qml" line="102"/>
@@ -176,7 +209,7 @@ Zögern Sie nicht Ihre Meinung in das KaOS-Forum zu posten.&lt;/div&gt;</transla
     <message>
         <location filename="../main.qml" line="105"/>
         <source>About</source>
-        <translation type="unfinished"/>
+        <translation>Was ist KaOS?</translation>
     </message>
 </context>
 <context>
@@ -185,14 +218,17 @@ Zögern Sie nicht Ihre Meinung in das KaOS-Forum zu posten.&lt;/div&gt;</transla
         <location filename="../guide/notes.qml" line="52"/>
         <source>&lt;p&gt;The &lt;strong&gt;Release Notes&lt;/strong&gt; give you important information of what is included in this ISO&lt;/p&gt;
             &lt;p&gt;If you selected non-free Nvidia during the start-up of the Live session, you will be presented with a License page.  Make sure to read and accept the license, otherwise your install will not include the non-free driver, and will fallback to Nouveau instead. You won&apos;t see this page if you selected to use the free drivers.&lt;/p&gt;</source>
-        <translation type="unfinished"/>
+        <translation>Die Veröffentlichungshinweise geben dir einen Hinweis darauf, was dich auf dieser ISO erwartet.
+Wenn du die patentrechtlich geschützten NVidiatreiber verwendest, wirst du auf eine speziell dafür vorbereitete Seite weitergeleitet, die dich eine Lizenzvereinbarung bestätigen lässt. Falls du dies nicht tust, wird der freie Nouveau Treiber verwendet. Falls du diese sowieso ausgewählt hast, siehst du die Lizenzseite auch nicht. </translation>
     </message>
     <message>
         <location filename="../guide/notes.qml" line="90"/>
         <source>&lt;p&gt;Next is the &lt;strong&gt;Keyboard Setup&lt;/strong&gt;. You can test the layout by typing something in the designated area.&lt;/p&gt;
 
             &lt;p&gt;Use the drop-down menu to fine tune to your exact desired keyboard model.&lt;/p&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;p&gt;Das nächste ist &lt;strong&gt;die Tastatureinstellung&lt;/strong&gt;. Du kannst die Tastaturbelegung testen, indem du hier etwas in das freie Feld schreibst.&lt;/p&gt;
+
+            &lt;p&gt;Verwende optional das ausklappbare Menü, um dein genaues Model auszuwählen.&lt;/p&gt;</translation>
     </message>
 </context>
 <context>
@@ -210,11 +246,11 @@ Zögern Sie nicht Ihre Meinung in das KaOS-Forum zu posten.&lt;/div&gt;</transla
             &lt;p&gt;For both UEFI and BIOS systems, hovering over the respective info buttons will give you some more information for the different options for each.&lt;/p&gt;
             
             &lt;p&gt;This installer gives you four options to use.&lt;/br&gt;
-            The first option will allow you to shrink an existing partition and install KaOS alongside any other OS already available on your system, using the XFS filesystem. Shrinking is not possible for partitions residing on an extended partition table or using the XFS filesystem.&lt;/br&gt;
+            The first option will allow you to shrink an existing partition and install KaOS alongside any other OS already available on your system, using the XFS filesystem. Shrinking is not possible for partitions residing on an extended partion table or using the XFS filesystem.&lt;/br&gt;
             The second option lets you use an existing partition and it will replace all files and/or OS on that partition with a KaOS install, using the XFS filesystem.&lt;/br&gt;
             The third option will use the entire disk and will create one partition where all will be installed under root, all other partitions will be removed and the filesystem used will XFS.&lt;/p&gt;
             
-            &lt;p&gt;The fourth option gives you the freedom to set any option, any filesystem and partition table. If you want to completely clean the drive and start over or if this drive has no partition table at all yet (new media, virtualbox install), you have to make a decision what partitiontable to use. Default in the installer is GPT, ms-dos is the older option (still more commonly used for BIOS systems). Advantage of GPT, it can use virtual unlimited primary partitions (ms-dos is limited to four), is needed for drives larger than 2 Tb and is best for UEFI systems. If you choose to use GPT on a BIOS system, make sure to set it up correctly, with the needed 8 MB partition of unformatted space at the beginning of the drive and having the bios_grub flag assigned to that unformatted partition.  This setup cannot have a seperate /boot partition.&lt;/p&gt;
+            &lt;p&gt;The fourth option gives you the freedom to set any option, any filesystem and partition table. If you want to completely clean the drive and start over or if this drive has no partition table at all yet (new media, virtualbox install), you have to make a decision what partitiontable to use. Default in the installer is GPT, ms-dos is the older option (still more commomly used for BIOS systems). Advantage of GPT, it can use virtual unlimited primary partitions (ms-dos is limited to four), is needed for drives larger than 2 Tb and is best for UEFI systems. If you choose to use GPT on a BIOS system, make sure to set it up correctly, with the needed 8 MB partition of unformatted space at the beginning of the drive and having the bios_grub flag assigned to that unformatted partition.  This setup cannot have a seperate /boot partition.&lt;/p&gt;
             
             &lt;p&gt;Once the partitiontable is set, you need to partition the drive, minimum needed, one partition for / (root). There are some advantages to using a separate partition for /home, and you might like to have a swap partition for sleep/hibernate. Any other partitions is strictly personal choice, though setting up /usr is not very well supported in systemd (you&apos;ll have to use extra steps to make that work correctly).&lt;/p&gt;</source>
         <translation type="unfinished"/>
@@ -237,7 +273,7 @@ Zögern Sie nicht Ihre Meinung in das KaOS-Forum zu posten.&lt;/div&gt;</transla
     <message>
         <location filename="../guide/partition.qml" line="198"/>
         <source>&lt;p&gt;Using the fourth option to delete an existing layout. Select &lt;code&gt;New Partition Table&lt;/code&gt; for a new drive or to switch from ms-dos to GPT or vice versa.&lt;/br&gt;
-            Highlight &lt;code&gt;Free Space&lt;/code&gt; and select &lt;code&gt;Create&lt;/code&gt;.  You then get a window with options to set partition type, file system and mountpoint. When using an UEFI install, it is a must a vfat (fat32) formatted /boot partition is available. Best set the size to 512Mb and have it at the beginning of the partition-table. Once root is set, the Next button will become active again.&lt;/p&gt;</source>
+            Highlight &lt;code&gt;Free Space&lt;/code&gt; and select &lt;code&gt;Create&lt;/code&gt;.  You then get a window with options to set partition type, file system and mountpoint. When using an UEFI install, it is a must to have a vfat (fat32) formatted /boot partition available. Best set the size to 512Mb and have it at the beginning of the partition-table. Once root is set, the Next button will become active again.&lt;/p&gt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -279,11 +315,9 @@ Zögern Sie nicht Ihre Meinung in das KaOS-Forum zu posten.&lt;/div&gt;</transla
         <location filename="../guide/user.qml" line="52"/>
         <source>&lt;h3&gt;User Creation&lt;/h3&gt;
 
-            &lt;p&gt;The user creation page gives you the option to set a user name different from your actual name and set a preffered name for the system.&lt;/p&gt;
+            &lt;p&gt;The user creation page gives you the option to set a user name different from your actual name and set a preferred name for the system.&lt;/p&gt;
 
             &lt;p&gt;For security reasons, it is advisable to use a different password for the administrator (or root) account.&lt;/p&gt;
-
-            &lt;p&gt;Calamares, the installer of KaOS is straightforward and easy to use, but lacks one feature at this stage. RAID disk setups is not supported yet.&lt;/p&gt;
 
             &lt;p&gt;Default is set to autologin disabled, add a marker to enable passwordless login.&lt;/p&gt;</source>
         <translation type="unfinished"/>
