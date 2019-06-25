@@ -253,7 +253,25 @@ Wenn du die patentrechtlich geschützten NVidiatreiber verwendest, wirst du auf 
             &lt;p&gt;The fourth option gives you the freedom to set any option, any filesystem and partition table. If you want to completely clean the drive and start over or if this drive has no partition table at all yet (new media, virtualbox install), you have to make a decision what partitiontable to use. Default in the installer is GPT, ms-dos is the older option (still more commomly used for BIOS systems). Advantage of GPT, it can use virtual unlimited primary partitions (ms-dos is limited to four), is needed for drives larger than 2 Tb and is best for UEFI systems. If you choose to use GPT on a BIOS system, make sure to set it up correctly, with the needed 8 MB partition of unformatted space at the beginning of the drive and having the bios_grub flag assigned to that unformatted partition.  This setup cannot have a seperate /boot partition.&lt;/p&gt;
             
             &lt;p&gt;Once the partitiontable is set, you need to partition the drive, minimum needed, one partition for / (root). There are some advantages to using a separate partition for /home, and you might like to have a swap partition for sleep/hibernate. Any other partitions is strictly personal choice, though setting up /usr is not very well supported in systemd (you&apos;ll have to use extra steps to make that work correctly).&lt;/p&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h3&gt;Partitioning&lt;/h3&gt;
+            
+            &lt;p&gt;Das korrekte partitionieren einer Festplatte, das Auswählen eines Dateisystems und einer Partitionstabelle gehören zu den aufwendigsten Herausforderungen für jeden, wenn es darum geht ein Betriebssystem zu installieren.
+&lt;/p&gt;
+
+            &lt;p&gt;&lt;font color=&apos;#ff0000&apos;&gt;Stelle sicher, dass du sämtliche deiner Dateien, die du auf deiner Festplatte gespeichert hast, vor der Installation irgendwo rücksicherst. &lt;/font&gt;&lt;/p&gt;
+            
+            &lt;p&gt;Wenn das Zielmedium (wie Festplatte, USB-Stick oder sonstiges) jetzt noch nicht formatiert und partitioniert worden ist, oder nicht so wie du das möchtest, kannst du dies sowohl im Installationsprozess als auch vorher mit dem Tool KDE-Partitionsmanager tun.&lt;/p&gt;
+            
+            &lt;p&gt;Solltest du weitere Informationen über die BIOS oder UEFI Installationsmöglichkeiten wünschen, bewege die Maus einfach über die jeweiligen Optionen.&lt;/p&gt;
+            
+            &lt;p&gt;Dieses Installationsprogramm bietet dir vier verschiedene Möglichkeiten an.&lt;/br&gt;
+            Die erste Option bietet dir an, eine bestehende Partition zu verkleinern und KaOS darauf zu installieren. Dies geschieht im parallelen Verfahren, so das die bestehenden Betriebssysteme weiter genutzt werden können. Und es wird das XFS Dateisystem verwendet. Verkleinern ist nicht möglich auf einem bestehenden XFS Dateisystem oder einer erweiterten Partition.&lt;/br&gt;
+            Die zweite Option lässt dich eine vorhandene Partition verwenden und alle Dateien, die darauf gespeichert sind, überschreiben. Auch hier wird XFS verwendet.&lt;/br&gt;
+            Die dritte Option lässt sich die komplette Festplatte verwenden und alle Partitionen überschreiben. Alles kommt in eine Root-Partition und auch hier wird wiederum das XFS Dateisystem verwendet. &lt;/p&gt;
+            
+            &lt;p&gt;Die vierte Option schenkt dir die Freiheit, jedes Dateisystem, jede Partitionstabelle und jede Option selbst zu wählen. Wenn du eine komplett neue Festplatte verwendest, Virtualbox oder einfach ganz von neu beginnen willst, ist der erste Schritt die Wahl einer Partitionstabelle. Standard ist GPT, wobei auch ms-dos zur Verfügung steht, die übliche Verwendung bei einem BIOS System. Der Vorteil von GPT ist das du unendlich viele primäre Partitionen erstellen kannst, ms-dos ist limitiert auf vier. Du kannst auch Festplatten mit einer Größe höher als 2TB verwenden und GPT ist die optionale Wahl für UEFI Systeme. Wenn du GPT auf einem BIOS System verwenden willst, stelle sicher dies folgendermaßen zu partitionieren: Eine 8MB große unformatierte Partition ganz am Anfang des Speicherplatzes und die bios_grub Markierung ausgewählt für diese Partition. In dieser Einstellung kannst du keine seperate /boot Partition wählen.&lt;/p&gt;
+            
+            &lt;p&gt;Sobald die Partitionstabelle gesetzt ist, wählst du ganz einfach die Partition für dein / (Rootverzeichnis). Es gibt einige Vorteile darin, für deine privaten Daten ein eigenes /home Verzeichnis zu wählen und du möchtest vielleicht eine swap Partition für den Standby Modus.  Alles andere ist eine rein persönliche Entscheidung, wobei die Einrichtung von /usr nicht wohl unterstützt ist in systemd. Das ist deutlich herausfordernder. &lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../guide/partition.qml" line="117"/>
