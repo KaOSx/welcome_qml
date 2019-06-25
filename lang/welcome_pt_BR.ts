@@ -57,7 +57,7 @@
     <message>
         <location filename="../guide/guide.qml" line="33"/>
         <source>Guide</source>
-        <translation type="unfinished"/>
+        <translation>Guia</translation>
     </message>
     <message>
         <location filename="../guide/guide.qml" line="81"/>
@@ -67,22 +67,22 @@
     <message>
         <location filename="../guide/guide.qml" line="84"/>
         <source>Keyboard</source>
-        <translation type="unfinished"/>
+        <translation>Teclado</translation>
     </message>
     <message>
         <location filename="../guide/guide.qml" line="87"/>
         <source>Partitioning</source>
-        <translation type="unfinished"/>
+        <translation>Particionamento</translation>
     </message>
     <message>
         <location filename="../guide/guide.qml" line="90"/>
         <source>Users</source>
-        <translation type="unfinished"/>
+        <translation>Usuários</translation>
     </message>
     <message>
         <location filename="../guide/guide.qml" line="93"/>
         <source>Summary</source>
-        <translation type="unfinished"/>
+        <translation>Sumário</translation>
     </message>
 </context>
 <context>
@@ -175,7 +175,7 @@
     <message>
         <location filename="../main.qml" line="105"/>
         <source>About</source>
-        <translation type="unfinished"/>
+        <translation>Sobre</translation>
     </message>
 </context>
 <context>
