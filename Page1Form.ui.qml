@@ -1,3 +1,4 @@
+
 /***************************************************************************
  *   Copyright (C) 2017 Anke Boersma <demm@kaosx.us>       *
  *                                                                         *
@@ -42,6 +43,7 @@ Item {
             id: button1
             width: 150
             text: qsTr("Install KaOS")
+            font.capitalization: Font.MixedCase
             Layout.fillWidth: true
             rightPadding: 28
             leftPadding: 28
@@ -61,6 +63,7 @@ Item {
                 source: "images/partition-disk.svg"
             }
         }
+
 
         /*Button {
             id: button2
@@ -85,11 +88,11 @@ Item {
                 source: "images/information.svgz"
             }
         }*/
-
         Button {
             id: button3
             width: 150
             text: qsTr("Guide")
+            font.capitalization: Font.MixedCase
             opacity: 1
             Layout.fillWidth: true
             rightPadding: 35
@@ -133,6 +136,7 @@ Item {
             id: button4
             width: 150
             text: qsTr("Package List")
+            font.capitalization: Font.MixedCase
             opacity: 1
             rightPadding: 28
             leftPadding: 28
@@ -158,6 +162,7 @@ Item {
             id: button5
             width: 150
             text: qsTr("Forum")
+            font.capitalization: Font.MixedCase
             opacity: 1
             rightPadding: 28
             leftPadding: 28
@@ -182,6 +187,7 @@ Item {
             id: button6
             width: 150
             text: qsTr("Documentation")
+            font.capitalization: Font.MixedCase
             opacity: 1
             rightPadding: 28
             leftPadding: 28
