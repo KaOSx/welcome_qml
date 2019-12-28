@@ -145,7 +145,7 @@
     <message>
         <location filename="../main.qml" line="33"/>
         <source>Welcome</source>
-        <translation>Benvingut</translation>
+        <translation>Benvingut/da</translation>
     </message>
     <message>
         <location filename="../main.qml" line="42"/>
