@@ -62,7 +62,7 @@ icon.path += /usr/share/pixmaps
 #qml.files += package.qml
 
 script.path = /usr/bin
-script.file += packages.sh
+script.files += packages.sh
 
 INSTALLS += target desktop icon script
 
