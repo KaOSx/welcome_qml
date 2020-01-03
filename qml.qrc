@@ -5,7 +5,6 @@
         <file>Page1Form.ui.qml</file>
         <file>about.qml</file>
         <file>packages.qml</file>
-        <file>package_list.txt</file>
         <file>guide/guide.qml</file>
         <file>guide/intro.qml</file>
         <file>guide/notes.qml</file>
