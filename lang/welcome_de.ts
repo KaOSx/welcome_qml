@@ -2,27 +2,27 @@
 <context>
     <name>Page1Form.ui</name>
     <message>
-        <location filename="../Page1Form.ui.qml" line="44"/>
+        <location filename="../Page1Form.ui.qml" line="45"/>
         <source>Install KaOS</source>
         <translation>Installiere KaOS</translation>
     </message>
     <message>
-        <location filename="../Page1Form.ui.qml" line="92"/>
+        <location filename="../Page1Form.ui.qml" line="94"/>
         <source>Guide</source>
         <translation>Guide</translation>
     </message>
     <message>
-        <location filename="../Page1Form.ui.qml" line="135"/>
-        <source>Package List</source>
-        <translation>Paketliste</translation>
+        <location filename="../Page1Form.ui.qml" line="187"/>
+        <source>Donate</source>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../Page1Form.ui.qml" line="160"/>
+        <location filename="../Page1Form.ui.qml" line="138"/>
         <source>Forum</source>
         <translation>Forum</translation>
     </message>
     <message>
-        <location filename="../Page1Form.ui.qml" line="184"/>
+        <location filename="../Page1Form.ui.qml" line="163"/>
         <source>Documentation</source>
         <translation>Dokumentation</translation>
     </message>
@@ -111,7 +111,7 @@
             &lt;p&gt;Now that you have seen some of how KaOS works in live mode, you might be ready to install. Before doing so, it is best to understand a few things.&lt;/p&gt;
 
             &lt;p&gt;As with any rolling release, updating regularly is a must, fall too far behind, and trying to update then will likely cause issues. Recommended is to update weekly, no less than once a month.&lt;/br&gt;
-            If that is something not feasible for you, it might be better to consider using a static distribution, with a six or nine month release cycle. If any instructions are needed for an update to KaOS, &lt;a href='http://kaosx.us/news/'&gt;kaosx.us/news/&lt;/a&gt; will always warn you about them (which will be shown in Octopi, the package manager too). It is best to familiarize yourself with the command line &lt;a href='https://kaosx.us/docs/pacman/'&gt;package manager pacman&lt;/a&gt;. Any distribution has to implement major changes at times, a rolling distribution has to rely on the package manager to interact with the users to make sure such updates are done correctly. Since rolling inherently means, no re-install at set intervals (a static distribution can use such needed re-install to introduce major changes). No GUI for pacman is as powerful as pacman itself in those situations.&lt;/p&gt;
+            If that is something not feasible for you, it might be better to consider using a static distribution, with a six or nine month release cycle. If any instructions are needed for an update to KaOS, &lt;a href='https://kaosx.us/news/'&gt;kaosx.us/news/&lt;/a&gt; will always warn you about them (which will be shown in Octopi, the package manager too). It is best to familiarize yourself with the command line &lt;a href='https://kaosx.us/docs/pacman/'&gt;package manager pacman&lt;/a&gt;. Any distribution has to implement major changes at times, a rolling distribution has to rely on the package manager to interact with the users to make sure such updates are done correctly. Since rolling inherently means, no re-install at set intervals (a static distribution can use such needed re-install to introduce major changes). No GUI for pacman is as powerful as pacman itself in those situations.&lt;/p&gt;
 
             &lt;p&gt;Calamares, the installer of KaOS is straightforward and easy to use, but lacks one feature at this stage. RAID disk setups is not supported yet.&lt;/p&gt;
 
@@ -119,37 +119,21 @@
 
             &lt;p&gt;The first page gives you some information of the installer, option to check the currently known issues and an option to select what language will be used for the install.&lt;/p&gt;
             
-            &lt;p&gt;Ensure that your system meets the minimal requirements. Not having an internet connection during the install is no deal breaker and won't stop the install from going trough.&lt;/p&gt;
+            &lt;p&gt;Ensure that your system meets the minimal requirements. Not having an internet connection during the install is no deal breaker and won't stop the install from going through.&lt;/p&gt;
             
             &lt;p&gt;Having less than the shown disc space or available RAM will almost certainly fail the install. As for disc space, a minimum of 20 Gb is recommended.&lt;/p&gt;</source>
-        <translation>Installationsanleitung
-
-Jetzt wo du einiges von KaOS gesehen hast, willst du es vielleicht installieren.
-Davor gibt es einige Dinge, die wichtig sind zu verstehen:
-
-Wie mit jeder rollenden Distribution, ist es von Bedeutung das du sie regelmäßig aktualisierst, fällst du zu sehr zurück und versuchst dann ein Update einzuspielen, wird dies potenziell scheitern. Empfohlen ist ein Update pro Woche und mindestens ein mal pro Monat.
-Wenn dir dies unpassend erscheint, ist es vielleicht sinnvoller eine andere Distribution zu wählen, die etwa einen festen Akutalisierungszyklus von sechs oder neun Monaten bietet. Wenn es außergewöhnliche Schritte geben sollte die für eine Aktualisierung notwendig erscheinen könnten, werden diese stets auf &quot;https://kaosx.us/news/&quot; erwähnt, was ebenso in Octopi, dem grafischen Paketmanager angezeigt wird. Es ist empfohlen, sich mit dem Kommandozeilenmodus von Pacman anzufreunden. Jede Distribution hat früher oder später fundamentale Änderungen vorzunehmen und eine rollende Distribution verlässt sich hierbei auf den Paketmanager um mit den Anwendern zu interagieren und sicherzustellen, das die Aktualisierung sauber verläuft. Da so ein rollendes Prinzip inhärent meint, dass es keine Neuinstallationen nach einer gewissen Zeit gibt. (Eine statische Distribution kann solche Neuinstallationen verwenden, um neue fundamentale Veränderungen einzuführen). Keine grafische Oberfläche für Pacman ist hierbei so hilfreich wie Pacman selbst.
-
-Calamares, das Installationsprogramm für KaOS selbst, ist leicht zu bedienen und bietet vielfältige Einstellungsmöglichkeiten. Eine einzige grundlegende Funktion fehlt noch und das ist die für RAID Partitionierung. 
-
-Das Installationsprogramm starten
-
-Die erste Seite gibt dir eine Übersicht über das Installationsprogramm, die Option bereits bekannte Fehler einzusehen und die Auswahl deiner Sprache. 
-
-Stelle sicher, dass dein Computer von KaOS unterstützt wird. Eine fehlende Internetverbindung ist kein Hinderungsgrund für die Installation. Sie wird dennoch korrekt verlaufen.
-
-Solltest du weniger als die minimalen Systemanforderungen wie 20 GB Speicherplatz verwenden, wird die Installation schief laufen. </translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
     <name>main</name>
     <message>
-        <location filename="../main.qml" line="33"/>
+        <location filename="../main.qml" line="35"/>
         <source>Welcome</source>
         <translation>Willkommen</translation>
     </message>
     <message>
-        <location filename="../main.qml" line="42"/>
+        <location filename="../main.qml" line="44"/>
         <source>&lt;div&gt;Thanks for trying KaOS. In need of the password file or package list?&lt;br&gt;
                             Want to learn more about the project? Please find the links below.&lt;br&gt;&lt;br&gt;
                             Don&apos;t hesitate to give your opinion about KaOS in the Forum.&lt;/div&gt;</source>
@@ -159,7 +143,7 @@ Wollen Sie mehr über das Projekt lernen? Sie finden die Links unterhalb.&lt;br&
 Zögern Sie nicht Ihre Meinung in das KaOS-Forum zu posten.&lt;/div&gt;</translation>
     </message>
     <message>
-        <location filename="../main.qml" line="56"/>
+        <location filename="../main.qml" line="58"/>
         <source>&lt;p&gt;Correct passwords for use in the live session:&lt;/p&gt;
                             &lt;p&gt;&lt;/p&gt;
                             &lt;table width=100% align=center bgcolor=#eaeaea&gt;
@@ -197,19 +181,24 @@ Zögern Sie nicht Ihre Meinung in das KaOS-Forum zu posten.&lt;/div&gt;</transla
                             &lt;p&gt;Wir wünschen Ihnen viel Spass&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../main.qml" line="99"/>
+        <location filename="../main.qml" line="108"/>
         <source>Main</source>
         <translation>Hauptmenü</translation>
     </message>
     <message>
-        <location filename="../main.qml" line="102"/>
+        <location filename="../main.qml" line="111"/>
         <source>Passwords</source>
         <translation>Passwörter</translation>
     </message>
     <message>
-        <location filename="../main.qml" line="105"/>
+        <location filename="../main.qml" line="114"/>
         <source>About</source>
         <translation>Was ist KaOS?</translation>
+    </message>
+    <message>
+        <location filename="../main.qml" line="117"/>
+        <source>Package List</source>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -246,32 +235,14 @@ Wenn du die patentrechtlich geschützten NVidiatreiber verwendest, wirst du auf 
             &lt;p&gt;For both UEFI and BIOS systems, hovering over the respective info buttons will give you some more information for the different options for each.&lt;/p&gt;
             
             &lt;p&gt;This installer gives you four options to use.&lt;/br&gt;
-            The first option will allow you to shrink an existing partition and install KaOS alongside any other OS already available on your system, using the XFS filesystem. Shrinking is not possible for partitions residing on an extended partion table or using the XFS filesystem.&lt;/br&gt;
+            The first option will allow you to shrink an existing partition and install KaOS alongside any other OS already available on your system, using the XFS filesystem. Shrinking is not possible for partitions residing on an extended partition table or using the XFS filesystem.&lt;/br&gt;
             The second option lets you use an existing partition and it will replace all files and/or OS on that partition with a KaOS install, using the XFS filesystem.&lt;/br&gt;
             The third option will use the entire disk and will create one partition where all will be installed under root, all other partitions will be removed and the filesystem used will XFS.&lt;/p&gt;
             
-            &lt;p&gt;The fourth option gives you the freedom to set any option, any filesystem and partition table. If you want to completely clean the drive and start over or if this drive has no partition table at all yet (new media, virtualbox install), you have to make a decision what partitiontable to use. Default in the installer is GPT, ms-dos is the older option (still more commomly used for BIOS systems). Advantage of GPT, it can use virtual unlimited primary partitions (ms-dos is limited to four), is needed for drives larger than 2 Tb and is best for UEFI systems. If you choose to use GPT on a BIOS system, make sure to set it up correctly, with the needed 8 MB partition of unformatted space at the beginning of the drive and having the bios_grub flag assigned to that unformatted partition.  This setup cannot have a seperate /boot partition.&lt;/p&gt;
+            &lt;p&gt;The fourth option gives you the freedom to set any option, any filesystem and partition table. If you want to completely clean the drive and start over or if this drive has no partition table at all yet (new media, virtualbox install), you have to make a decision what partitiontable to use. Default in the installer is GPT, ms-dos is the older option (still more commonly used for BIOS systems). Advantage of GPT, it can use virtual unlimited primary partitions (ms-dos is limited to four), is needed for drives larger than 2 Tb and is best for UEFI systems. If you choose to use GPT on a BIOS system, make sure to set it up correctly, with the needed 8 MB partition of unformatted space at the beginning of the drive and having the bios_grub flag assigned to that unformatted partition.  This setup cannot have a seperate /boot partition.&lt;/p&gt;
             
             &lt;p&gt;Once the partitiontable is set, you need to partition the drive, minimum needed, one partition for / (root). There are some advantages to using a separate partition for /home, and you might like to have a swap partition for sleep/hibernate. Any other partitions is strictly personal choice, though setting up /usr is not very well supported in systemd (you&apos;ll have to use extra steps to make that work correctly).&lt;/p&gt;</source>
-        <translation>&lt;h3&gt;Partitioning&lt;/h3&gt;
-            
-            &lt;p&gt;Das korrekte partitionieren einer Festplatte, das Auswählen eines Dateisystems und einer Partitionstabelle gehören zu den aufwendigsten Herausforderungen für jeden, wenn es darum geht ein Betriebssystem zu installieren.
-&lt;/p&gt;
-
-            &lt;p&gt;&lt;font color=&apos;#ff0000&apos;&gt;Stelle sicher, dass du sämtliche deiner Dateien, die du auf deiner Festplatte gespeichert hast, vor der Installation irgendwo rücksicherst. &lt;/font&gt;&lt;/p&gt;
-            
-            &lt;p&gt;Wenn das Zielmedium (wie Festplatte, USB-Stick oder sonstiges) jetzt noch nicht formatiert und partitioniert worden ist, oder nicht so wie du das möchtest, kannst du dies sowohl im Installationsprozess als auch vorher mit dem Tool KDE-Partitionsmanager tun.&lt;/p&gt;
-            
-            &lt;p&gt;Solltest du weitere Informationen über die BIOS oder UEFI Installationsmöglichkeiten wünschen, bewege die Maus einfach über die jeweiligen Optionen.&lt;/p&gt;
-            
-            &lt;p&gt;Dieses Installationsprogramm bietet dir vier verschiedene Möglichkeiten an.&lt;/br&gt;
-            Die erste Option bietet dir an, eine bestehende Partition zu verkleinern und KaOS darauf zu installieren. Dies geschieht im parallelen Verfahren, so das die bestehenden Betriebssysteme weiter genutzt werden können. Und es wird das XFS Dateisystem verwendet. Verkleinern ist nicht möglich auf einem bestehenden XFS Dateisystem oder einer erweiterten Partition.&lt;/br&gt;
-            Die zweite Option lässt dich eine vorhandene Partition verwenden und alle Dateien, die darauf gespeichert sind, überschreiben. Auch hier wird XFS verwendet.&lt;/br&gt;
-            Die dritte Option lässt sich die komplette Festplatte verwenden und alle Partitionen überschreiben. Alles kommt in eine Root-Partition und auch hier wird wiederum das XFS Dateisystem verwendet. &lt;/p&gt;
-            
-            &lt;p&gt;Die vierte Option schenkt dir die Freiheit, jedes Dateisystem, jede Partitionstabelle und jede Option selbst zu wählen. Wenn du eine komplett neue Festplatte verwendest, Virtualbox oder einfach ganz von neu beginnen willst, ist der erste Schritt die Wahl einer Partitionstabelle. Standard ist GPT, wobei auch ms-dos zur Verfügung steht, die übliche Verwendung bei einem BIOS System. Der Vorteil von GPT ist das du unendlich viele primäre Partitionen erstellen kannst, ms-dos ist limitiert auf vier. Du kannst auch Festplatten mit einer Größe höher als 2TB verwenden und GPT ist die optionale Wahl für UEFI Systeme. Wenn du GPT auf einem BIOS System verwenden willst, stelle sicher dies folgendermaßen zu partitionieren: Eine 8MB große unformatierte Partition ganz am Anfang des Speicherplatzes und die bios_grub Markierung ausgewählt für diese Partition. In dieser Einstellung kannst du keine seperate /boot Partition wählen.&lt;/p&gt;
-            
-            &lt;p&gt;Sobald die Partitionstabelle gesetzt ist, wählst du ganz einfach die Partition für dein / (Rootverzeichnis). Es gibt einige Vorteile darin, für deine privaten Daten ein eigenes /home Verzeichnis zu wählen und du möchtest vielleicht eine swap Partition für den Standby Modus.  Alles andere ist eine rein persönliche Entscheidung, wobei die Einrichtung von /usr nicht wohl unterstützt ist in systemd. Das ist deutlich herausfordernder. &lt;/p&gt;</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../guide/partition.qml" line="117"/>

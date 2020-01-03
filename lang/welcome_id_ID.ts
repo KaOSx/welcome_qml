@@ -2,27 +2,27 @@
 <context>
     <name>Page1Form.ui</name>
     <message>
-        <location filename="../Page1Form.ui.qml" line="44"/>
+        <location filename="../Page1Form.ui.qml" line="45"/>
         <source>Install KaOS</source>
         <translation>Pasang KaOS</translation>
     </message>
     <message>
-        <location filename="../Page1Form.ui.qml" line="92"/>
+        <location filename="../Page1Form.ui.qml" line="94"/>
         <source>Guide</source>
         <translation>Panduan</translation>
     </message>
     <message>
-        <location filename="../Page1Form.ui.qml" line="135"/>
-        <source>Package List</source>
-        <translation>Daftar Paket</translation>
+        <location filename="../Page1Form.ui.qml" line="187"/>
+        <source>Donate</source>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../Page1Form.ui.qml" line="160"/>
+        <location filename="../Page1Form.ui.qml" line="138"/>
         <source>Forum</source>
         <translation>Forum</translation>
     </message>
     <message>
-        <location filename="../Page1Form.ui.qml" line="184"/>
+        <location filename="../Page1Form.ui.qml" line="163"/>
         <source>Documentation</source>
         <translation>Dokumentasien</translation>
     </message>
@@ -94,7 +94,7 @@
             &lt;p&gt;Now that you have seen some of how KaOS works in live mode, you might be ready to install. Before doing so, it is best to understand a few things.&lt;/p&gt;
 
             &lt;p&gt;As with any rolling release, updating regularly is a must, fall too far behind, and trying to update then will likely cause issues. Recommended is to update weekly, no less than once a month.&lt;/br&gt;
-            If that is something not feasible for you, it might be better to consider using a static distribution, with a six or nine month release cycle. If any instructions are needed for an update to KaOS, &lt;a href='http://kaosx.us/news/'&gt;kaosx.us/news/&lt;/a&gt; will always warn you about them (which will be shown in Octopi, the package manager too). It is best to familiarize yourself with the command line &lt;a href='https://kaosx.us/docs/pacman/'&gt;package manager pacman&lt;/a&gt;. Any distribution has to implement major changes at times, a rolling distribution has to rely on the package manager to interact with the users to make sure such updates are done correctly. Since rolling inherently means, no re-install at set intervals (a static distribution can use such needed re-install to introduce major changes). No GUI for pacman is as powerful as pacman itself in those situations.&lt;/p&gt;
+            If that is something not feasible for you, it might be better to consider using a static distribution, with a six or nine month release cycle. If any instructions are needed for an update to KaOS, &lt;a href='https://kaosx.us/news/'&gt;kaosx.us/news/&lt;/a&gt; will always warn you about them (which will be shown in Octopi, the package manager too). It is best to familiarize yourself with the command line &lt;a href='https://kaosx.us/docs/pacman/'&gt;package manager pacman&lt;/a&gt;. Any distribution has to implement major changes at times, a rolling distribution has to rely on the package manager to interact with the users to make sure such updates are done correctly. Since rolling inherently means, no re-install at set intervals (a static distribution can use such needed re-install to introduce major changes). No GUI for pacman is as powerful as pacman itself in those situations.&lt;/p&gt;
 
             &lt;p&gt;Calamares, the installer of KaOS is straightforward and easy to use, but lacks one feature at this stage. RAID disk setups is not supported yet.&lt;/p&gt;
 
@@ -102,7 +102,7 @@
 
             &lt;p&gt;The first page gives you some information of the installer, option to check the currently known issues and an option to select what language will be used for the install.&lt;/p&gt;
             
-            &lt;p&gt;Ensure that your system meets the minimal requirements. Not having an internet connection during the install is no deal breaker and won't stop the install from going trough.&lt;/p&gt;
+            &lt;p&gt;Ensure that your system meets the minimal requirements. Not having an internet connection during the install is no deal breaker and won't stop the install from going through.&lt;/p&gt;
             
             &lt;p&gt;Having less than the shown disc space or available RAM will almost certainly fail the install. As for disc space, a minimum of 20 Gb is recommended.&lt;/p&gt;</source>
         <translation type="unfinished"/>
@@ -111,12 +111,12 @@
 <context>
     <name>main</name>
     <message>
-        <location filename="../main.qml" line="33"/>
+        <location filename="../main.qml" line="35"/>
         <source>Welcome</source>
         <translation>Selamat Datang</translation>
     </message>
     <message>
-        <location filename="../main.qml" line="42"/>
+        <location filename="../main.qml" line="44"/>
         <source>&lt;div&gt;Thanks for trying KaOS. In need of the password file or package list?&lt;br&gt;
                             Want to learn more about the project? Please find the links below.&lt;br&gt;&lt;br&gt;
                             Don&apos;t hesitate to give your opinion about KaOS in the Forum.&lt;/div&gt;</source>
@@ -125,7 +125,7 @@
                              Jangan ragu untuk memberikan opini kamu tentang KaOS di Forum.&lt;/div&gt;</translation>
     </message>
     <message>
-        <location filename="../main.qml" line="56"/>
+        <location filename="../main.qml" line="58"/>
         <source>&lt;p&gt;Correct passwords for use in the live session:&lt;/p&gt;
                             &lt;p&gt;&lt;/p&gt;
                             &lt;table width=100% align=center bgcolor=#eaeaea&gt;
@@ -163,19 +163,24 @@
                             &lt;p&gt;Semoga kamu menikmati&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../main.qml" line="99"/>
+        <location filename="../main.qml" line="108"/>
         <source>Main</source>
         <translation>Utama</translation>
     </message>
     <message>
-        <location filename="../main.qml" line="102"/>
+        <location filename="../main.qml" line="111"/>
         <source>Passwords</source>
         <translation>Sandi</translation>
     </message>
     <message>
-        <location filename="../main.qml" line="105"/>
+        <location filename="../main.qml" line="114"/>
         <source>About</source>
         <translation>Tentang</translation>
+    </message>
+    <message>
+        <location filename="../main.qml" line="117"/>
+        <source>Package List</source>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -212,31 +217,14 @@
             &lt;p&gt;For both UEFI and BIOS systems, hovering over the respective info buttons will give you some more information for the different options for each.&lt;/p&gt;
             
             &lt;p&gt;This installer gives you four options to use.&lt;/br&gt;
-            The first option will allow you to shrink an existing partition and install KaOS alongside any other OS already available on your system, using the XFS filesystem. Shrinking is not possible for partitions residing on an extended partion table or using the XFS filesystem.&lt;/br&gt;
+            The first option will allow you to shrink an existing partition and install KaOS alongside any other OS already available on your system, using the XFS filesystem. Shrinking is not possible for partitions residing on an extended partition table or using the XFS filesystem.&lt;/br&gt;
             The second option lets you use an existing partition and it will replace all files and/or OS on that partition with a KaOS install, using the XFS filesystem.&lt;/br&gt;
             The third option will use the entire disk and will create one partition where all will be installed under root, all other partitions will be removed and the filesystem used will XFS.&lt;/p&gt;
             
-            &lt;p&gt;The fourth option gives you the freedom to set any option, any filesystem and partition table. If you want to completely clean the drive and start over or if this drive has no partition table at all yet (new media, virtualbox install), you have to make a decision what partitiontable to use. Default in the installer is GPT, ms-dos is the older option (still more commomly used for BIOS systems). Advantage of GPT, it can use virtual unlimited primary partitions (ms-dos is limited to four), is needed for drives larger than 2 Tb and is best for UEFI systems. If you choose to use GPT on a BIOS system, make sure to set it up correctly, with the needed 8 MB partition of unformatted space at the beginning of the drive and having the bios_grub flag assigned to that unformatted partition.  This setup cannot have a seperate /boot partition.&lt;/p&gt;
+            &lt;p&gt;The fourth option gives you the freedom to set any option, any filesystem and partition table. If you want to completely clean the drive and start over or if this drive has no partition table at all yet (new media, virtualbox install), you have to make a decision what partitiontable to use. Default in the installer is GPT, ms-dos is the older option (still more commonly used for BIOS systems). Advantage of GPT, it can use virtual unlimited primary partitions (ms-dos is limited to four), is needed for drives larger than 2 Tb and is best for UEFI systems. If you choose to use GPT on a BIOS system, make sure to set it up correctly, with the needed 8 MB partition of unformatted space at the beginning of the drive and having the bios_grub flag assigned to that unformatted partition.  This setup cannot have a seperate /boot partition.&lt;/p&gt;
             
             &lt;p&gt;Once the partitiontable is set, you need to partition the drive, minimum needed, one partition for / (root). There are some advantages to using a separate partition for /home, and you might like to have a swap partition for sleep/hibernate. Any other partitions is strictly personal choice, though setting up /usr is not very well supported in systemd (you&apos;ll have to use extra steps to make that work correctly).&lt;/p&gt;</source>
-        <translation>&lt;h3&gt;Pemartisian&lt;/h3&gt;
-     
-       &lt;p&gt;Menggunakan persiapan partisi yang benar, beberapa file sistem dan tabel partisi yang sesuai adalah hal bagian yang menantang bagi siapapun yang baru memasang sebuah Sistem Operasi.&lt;/p&gt;
-
-     &lt;p&gt;&lt;font color=&apos;#ff0000&apos;&gt;Pastikan sudah mencadangkan data apapun jika diperlukan dari drive-mu sebelum memprosesnya.&lt;/font&gt;&lt;/p&gt;
-         
-&lt;p&gt;Jika medium pemasangan sasaranmu (sebagai contohnya HDD, ssd, usb-stick), tidaklah diformat dan tidak dipartisi atau belum dipersiapkan seperti yang kamu kehendaki, kamu juga bisa melakukannya dari dalam pemasang, atau mempersiapkannya sebelum memulai pemasangan.&lt;/p&gt;
-     
-       &lt;p&gt;Bagi both UEFI dan BIOS System, melayang melintasi tombol info masing-masing akan memberikanmu beberapa informasi atas opsi yang berbeda-beda.&lt;/p&gt;
-          
-          &lt;p&gt;Pemasang ini memberikanmu empat opsi untuk digunakan.&lt;/br&gt;
-           Opsi pertama membolehkanmu untuk mengiris partisi yang ada dan memasang KaOS disamping OS apapun yang sudah tersedia pada sistem kamu, menggunakan filesystem XFS. Pengirisan tidaklah mungkin untuk partisi yang berada pada sebuah label partisi extended atau menggunakan filesystem XFS.&lt;/br&gt;
-          Opsi kedua membiarkanmu menggunakan partisi yang ada dan akan menggantikan semua file dan/atau OS pada partisi tersebut dengan KaOS yang terpasang, menggunakan filesystem XFS.&lt;/br&gt;
-         Opsi ketiga akan menggunakan entri disk dan akan menciptakan satu partisi dimana semua terpasang di bawah root, semua partisi yang lain akan dihapus dan filesystem yang digunakan adalah XFS.&lt;/p&gt;
-           
-          &lt;p&gt;Opsi keempat memberikanmu kebebasan untuk menyetel opsi apapun, filesystem dan tabel partisi apapun. Jika kamu ngin secara keseluruhan drive bersih dan memulai drive atau jika drive ini belum memiliki tabel partisi di semuanya (madia baru, pemasangan virtualbox), kamu harus membuat keputusan partisi mana yang dapat digunakan. Bakunya pada pemasangan adalah GPT, ms-dos adalah opsi kuno (yang masih umum digunakan oleh sistem BIOS). Keuntungan pada GPT, bisa digunakan partisi primer virtual tak terbatas (ms-dos adalah sebatas empat saja), ialah diperlukan untuk drive yang lebih besar dari 2 Tb dan lebih baik untuk UEFI system. Jika kamu pilih menggunakan GPT pada BIOS system, pastikan persiapannya sudah benar, dengan keperluan ruang partisi 8 Mb yang takdiformat di awal drive dan memiliki bendera bios_grub tercantum ke partisi takdiformat. Persiapan ini tidak bisa memiliki partisi /boot yang terpisah.&lt;/p&gt;
-          
-            &lt;p&gt;Setelah semua partisi sudah dipersiapkan, kamu perlu mempartisi drive, minimum yang diperlukan, satu partisi untuk / (root). Ada beberapa keuntungan untuk menggunakan sebuah partisi /home yang terpisah, dan mungkin kamu ingin memiliki sebuah partisi swap untuk slep/hibernate. Partisi apapun lainnya adalah pilihan ketat personal, mengenai setelan /usr adalah sangat tidak didukung dalam systemd (kamu haruslah menggunakan langkah extra untuk membuatnya bekerja secara benar).&lt;/p&gt;</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../guide/partition.qml" line="117"/>

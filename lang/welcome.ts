@@ -4,27 +4,27 @@
 <context>
     <name>Page1Form.ui</name>
     <message>
-        <location filename="../Page1Form.ui.qml" line="44"/>
+        <location filename="../Page1Form.ui.qml" line="45"/>
         <source>Install KaOS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../Page1Form.ui.qml" line="92"/>
+        <location filename="../Page1Form.ui.qml" line="94"/>
         <source>Guide</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../Page1Form.ui.qml" line="135"/>
-        <source>Package List</source>
+        <location filename="../Page1Form.ui.qml" line="187"/>
+        <source>Donate</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../Page1Form.ui.qml" line="160"/>
+        <location filename="../Page1Form.ui.qml" line="138"/>
         <source>Forum</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../Page1Form.ui.qml" line="184"/>
+        <location filename="../Page1Form.ui.qml" line="163"/>
         <source>Documentation</source>
         <translation type="unfinished"></translation>
     </message>
@@ -68,7 +68,7 @@
     </message>
     <message>
         <location filename="../guide/guide.qml" line="84"/>
-        <source>Keybaord</source>
+        <source>Keyboard</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -96,7 +96,7 @@
             &lt;p&gt;Now that you have seen some of how KaOS works in live mode, you might be ready to install. Before doing so, it is best to understand a few things.&lt;/p&gt;
 
             &lt;p&gt;As with any rolling release, updating regularly is a must, fall too far behind, and trying to update then will likely cause issues. Recommended is to update weekly, no less than once a month.&lt;/br&gt;
-            If that is something not feasible for you, it might be better to consider using a static distribution, with a six or nine month release cycle. If any instructions are needed for an update to KaOS, &lt;a href=&apos;http://kaosx.us/news/&apos;&gt;kaosx.us/news/&lt;/a&gt; will always warn you about them (which will be shown in Octopi, the package manager too). It is best to familiarize yourself with the command line &lt;a href=&apos;https://kaosx.us/docs/pacman/&apos;&gt;package manager pacman&lt;/a&gt;. Any distribution has to implement major changes at times, a rolling distribution has to rely on the package manager to interact with the users to make sure such updates are done correctly. Since rolling inherently means, no re-install at set intervals (a static distribution can use such needed re-install to introduce major changes). No GUI for pacman is as powerful as pacman itself in those situations.&lt;/p&gt;
+            If that is something not feasible for you, it might be better to consider using a static distribution, with a six or nine month release cycle. If any instructions are needed for an update to KaOS, &lt;a href=&apos;https://kaosx.us/news/&apos;&gt;kaosx.us/news/&lt;/a&gt; will always warn you about them (which will be shown in Octopi, the package manager too). It is best to familiarize yourself with the command line &lt;a href=&apos;https://kaosx.us/docs/pacman/&apos;&gt;package manager pacman&lt;/a&gt;. Any distribution has to implement major changes at times, a rolling distribution has to rely on the package manager to interact with the users to make sure such updates are done correctly. Since rolling inherently means, no re-install at set intervals (a static distribution can use such needed re-install to introduce major changes). No GUI for pacman is as powerful as pacman itself in those situations.&lt;/p&gt;
 
             &lt;p&gt;Calamares, the installer of KaOS is straightforward and easy to use, but lacks one feature at this stage. RAID disk setups is not supported yet.&lt;/p&gt;
 
@@ -113,19 +113,19 @@
 <context>
     <name>main</name>
     <message>
-        <location filename="../main.qml" line="33"/>
+        <location filename="../main.qml" line="35"/>
         <source>Welcome</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.qml" line="42"/>
+        <location filename="../main.qml" line="44"/>
         <source>&lt;div&gt;Thanks for trying KaOS. In need of the password file or package list?&lt;br&gt;
                             Want to learn more about the project? Please find the links below.&lt;br&gt;&lt;br&gt;
                             Don&apos;t hesitate to give your opinion about KaOS in the Forum.&lt;/div&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.qml" line="56"/>
+        <location filename="../main.qml" line="58"/>
         <source>&lt;p&gt;Correct passwords for use in the live session:&lt;/p&gt;
                             &lt;p&gt;&lt;/p&gt;
                             &lt;table width=100% align=center bgcolor=#eaeaea&gt;
@@ -147,18 +147,23 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.qml" line="99"/>
+        <location filename="../main.qml" line="108"/>
         <source>Main</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.qml" line="102"/>
+        <location filename="../main.qml" line="111"/>
         <source>Passwords</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.qml" line="105"/>
+        <location filename="../main.qml" line="114"/>
         <source>About</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../main.qml" line="117"/>
+        <source>Package List</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -220,7 +225,7 @@
     <message>
         <location filename="../guide/partition.qml" line="198"/>
         <source>&lt;p&gt;Using the fourth option to delete an existing layout. Select &lt;code&gt;New Partition Table&lt;/code&gt; for a new drive or to switch from ms-dos to GPT or vice versa.&lt;/br&gt;
-            Highlight &lt;code&gt;Free Space&lt;/code&gt; and select &lt;code&gt;Create&lt;/code&gt;.  You then get a window with options to set partition type, file system and mountpoint. When using an UEFI install, it is a must a vfat (fat32) formatted /boot partition is available. Best set the size to 512Mb and have it at the beginning of the partition-table. Once root is set, the Next button will become active again.&lt;/p&gt;</source>
+            Highlight &lt;code&gt;Free Space&lt;/code&gt; and select &lt;code&gt;Create&lt;/code&gt;.  You then get a window with options to set partition type, file system and mountpoint. When using an UEFI install, it is a must to have a vfat (fat32) formatted /boot partition available. Best set the size to 512Mb and have it at the beginning of the partition-table. Once root is set, the Next button will become active again.&lt;/p&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -262,11 +267,9 @@
         <location filename="../guide/user.qml" line="52"/>
         <source>&lt;h3&gt;User Creation&lt;/h3&gt;
 
-            &lt;p&gt;The user creation page gives you the option to set a user name different from your actual name and set a preffered name for the system.&lt;/p&gt;
+            &lt;p&gt;The user creation page gives you the option to set a user name different from your actual name and set a preferred name for the system.&lt;/p&gt;
 
             &lt;p&gt;For security reasons, it is advisable to use a different password for the administrator (or root) account.&lt;/p&gt;
-
-            &lt;p&gt;Calamares, the installer of KaOS is straightforward and easy to use, but lacks one feature at this stage. RAID disk setups is not supported yet.&lt;/p&gt;
 
             &lt;p&gt;Default is set to autologin disabled, add a marker to enable passwordless login.&lt;/p&gt;</source>
         <translation type="unfinished"></translation>
