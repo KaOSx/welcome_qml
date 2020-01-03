@@ -58,13 +58,13 @@ desktop.files += welcome.desktop
 icon.files += welcome.svg
 icon.path += /usr/share/pixmaps
 
-qml.path = /usr/lib/qt5/qml/welcome
-qml.files += package.qml
+#qml.path = /usr/lib/qt5/qml/welcome
+#qml.files += package.qml
 
-sh.path =/usr/bin
-sh.file += packages.sh
+script.path = /usr/bin
+script.file += packages.sh
 
-INSTALLS += target desktop icon qml sh
+INSTALLS += target desktop icon script
 
 DISTFILES +=
 
