@@ -1,5 +1,5 @@
 /***************************************************************************
- *   Copyright (C) 2017 - 2020 Anke Boersma <demm@kaosx.us>       *
+ *   Copyright (C) 2020 Anke Boersma <demm@kaosx.us>       *
  *                                                                         *
  *   This program is free software; you can redistribute it and/or modify  *
  *   it under the terms of the GNU General Public License as published by  *
@@ -19,39 +19,17 @@
 import QtQuick 2.7
 import QtQuick.Controls 2.0
 import QtQuick.Layouts 1.3
-import org.kde.plasma.core 2.0 as PlasmaCore
+import QtQuick.Controls.Material 2.1
+import QtWebView 1.1
 
-Page1Form {
-    PlasmaCore.DataSource {
-        id: executer
-        engine: "executable"
-        onNewData: {executer.disconnectSource(sourceName);}
+Item {
+    width: 700
+    height: 378
+
+    WebView {
+        id: webView
+        anchors.fill: parent
+        url: "file:/tmp/package_list.txt"
     }
 
-    button1.onClicked: {
-        executer.connectSource("/usr/bin/launch-calamares.sh");
-        //executer.connectSource("/data/anke/dev/github/build-guide-Desktop-Debug/guide");
-    }
-    
-    property variant window;
-    button3.onClicked: {
-        var component = Qt.createComponent("guide/guide.qml");
-        window = component.createObject(button3);
-        window.show();
-    }
-    //button4.onClicked: {
-    //    executer.connectSource("pacman -Q > /tmp/list.txt &&
-    //        nl -nrz -w1 /tmp/list.txt > /tmp/package_list.txt  &&
-    //        qmlscene-qt5 /usr/lib/qt5/qml/welcome/package.qml");
-        //pageloader.source = "/usr/lib/qt5/qml/welcome/package.qml"
-    //}
-    button5.onClicked: {
-        Qt.openUrlExternally("https://forum.kaosx.us/");
-    }
-    button6.onClicked: {
-        Qt.openUrlExternally("https://kaosx.us/docs");
-    }
-    button4.onClicked: {
-        Qt.openUrlExternally("https://kaosx.us/about/donors/");
-    }
 }

@@ -4,6 +4,8 @@
 #include <QTranslator>
 #include <QLocale>
 #include <QQuickStyle>
+#include <QProcess>
+#include <QDebug>
 
 int main(int argc, char *argv[])
 {
@@ -13,6 +15,9 @@ int main(int argc, char *argv[])
     QQuickStyle::setStyle("Material");
 
     QTranslator appTranslator;
+
+    QProcess p;
+    p.startDetached("bash", QStringList()<< "/usr/bin/packages.sh");
 
     appTranslator.load(":/lang/welcome_" +
                        QLocale::system().name());

@@ -1,5 +1,5 @@
 /***************************************************************************
- *   Copyright (C) 2017 Anke Boersma <demm@kaosx.us>       *
+ *   Copyright (C) 2017 - 2020 Anke Boersma <demm@kaosx.us>       *
  *                                                                         *
  *   This program is free software; you can redistribute it and/or modify  *
  *   it under the terms of the GNU General Public License as published by  *
@@ -17,10 +17,11 @@
  *   51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.          *
  ***************************************************************************/
 import QtQuick 2.7
-import QtQuick.Controls 2.0
+import QtQuick.Controls 2.14
 import QtQuick.Layouts 1.3
 import QtQuick.Window 2.0
 import QtQuick.Dialogs 1.2
+import org.kde.plasma.core 2.0 as PlasmaCore
 
 ApplicationWindow {
     visible: true
@@ -91,6 +92,13 @@ ApplicationWindow {
             }
             
         }
+        Page {
+            Loader {
+                id: packages
+                source: "packages.qml"
+            }
+
+        }
     }
 
     footer: TabBar {
@@ -104,6 +112,9 @@ ApplicationWindow {
         }
         TabButton {
             text: qsTr("About")
+        }
+        TabButton {
+            text: qsTr("Package List")
         }
     }
 }

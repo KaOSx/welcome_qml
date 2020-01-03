@@ -1,6 +1,6 @@
 
 /***************************************************************************
- *   Copyright (C) 2017-2019 Anke Boersma <demm@kaosx.us>       *
+ *   Copyright (C) 2017-2020 Anke Boersma <demm@kaosx.us>       *
  *                                                                         *
  *   This program is free software; you can redistribute it and/or modify  *
  *   it under the terms of the GNU General Public License as published by  *
@@ -133,32 +133,6 @@ Item {
         anchors.horizontalCenter: parent.horizontalCenter
 
         Button {
-            id: button4
-            width: 150
-            text: qsTr("Package List")
-            font.capitalization: Font.MixedCase
-            opacity: 1
-            rightPadding: 28
-            leftPadding: 28
-            Layout.fillWidth: true
-            checkable: false
-            highlighted: false
-            Material.elevation: 1
-
-            Image {
-                id: image4
-                y: 10
-                width: 22
-                height: 22
-                anchors.verticalCenter: parent.verticalCenter
-                anchors.left: parent.left
-                anchors.leftMargin: 15
-                fillMode: Image.PreserveAspectFit
-                source: "images/list.svg"
-            }
-        }
-
-        Button {
             id: button5
             width: 150
             text: qsTr("Forum")
@@ -204,6 +178,32 @@ Item {
                 anchors.left: parent.left
                 anchors.leftMargin: 15
                 source: "images/document.svg"
+            }
+        }
+        
+        Button {
+            id: button4
+            width: 150
+            text: qsTr("Donate")
+            font.capitalization: Font.MixedCase
+            opacity: 1
+            rightPadding: 28
+            leftPadding: 28
+            Layout.fillWidth: true
+            checkable: false
+            highlighted: false
+            Material.elevation: 1
+
+            Image {
+                id: image4
+                y: 10
+                width: 22
+                height: 22
+                anchors.verticalCenter: parent.verticalCenter
+                anchors.left: parent.left
+                anchors.leftMargin: 15
+                fillMode: Image.PreserveAspectFit
+                source: "images/donate.svg"
             }
         }
     }
