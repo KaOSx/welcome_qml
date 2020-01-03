@@ -3,13 +3,14 @@ Live system welcome app for KaOS, written in QML
 
 ![Screenshot](images/welcome1.png)
 ![Screenshot2](images/welcome2.png)
+![Screenshot3](images/welcome3.png)
 
 ### License
 GPL
 
 ### Dependencies
 
-qt5-quickcontrols2, plasma-framework
+qt5-quickcontrols2, plasma-framework, qt5-webview
 
 
 ### Installation
