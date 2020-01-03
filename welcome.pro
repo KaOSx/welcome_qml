@@ -62,7 +62,7 @@ qml.path = /usr/lib/qt5/qml/welcome
 qml.files += package.qml
 
 sh.path =/usr/bin
-sh.file = packages.sh
+sh.file += packages.sh
 
 INSTALLS += target desktop icon qml sh
 
