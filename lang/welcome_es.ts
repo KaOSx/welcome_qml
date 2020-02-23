@@ -14,7 +14,7 @@
     <message>
         <location filename="../Page1Form.ui.qml" line="187"/>
         <source>Donate</source>
-        <translation type="unfinished"/>
+        <translation>Donaciones</translation>
     </message>
     <message>
         <location filename="../Page1Form.ui.qml" line="138"/>
@@ -122,7 +122,22 @@
             &lt;p&gt;Ensure that your system meets the minimal requirements. Not having an internet connection during the install is no deal breaker and won't stop the install from going through.&lt;/p&gt;
             
             &lt;p&gt;Having less than the shown disc space or available RAM will almost certainly fail the install. As for disc space, a minimum of 20 Gb is recommended.&lt;/p&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h3&gt;Guía de Instalación&lt;/h3&gt;
+
+            &lt;p&gt;Ahora que ha visto algo cómo funciona KaOS en el modo live, puede que esté listo para instalar. Antes de hacerlo, es mejor entender unas pocas cosas.&lt;/p&gt;
+
+            &lt;p&gt;Como con cualquier rolling release, es necesario actualizar regularmente, si se atrasa mucho y luego trata de actualizar, pueden aparecer problemas. Lo recomendado es actualizar una vez a la semana, o como mucho una vez al mes.&lt;/br&gt;
+            Si eso no es factible para Ud., es mejor que considere usar una distribución estática, con un ciclo de lanzamiento de seis o nueve meses. Si es necesaria alguna instrucción para alguna actualización de KaOS, &lt;a href=&apos;https://kaosx.us/news/&apos;&gt;kaosx.us/news/&lt;/a&gt; will always warn you about them (which will be shown in Octopi, the package manager too). It is best to familiarize yourself with the command line &lt;a href=&apos;https://kaosx.us/docs/pacman/&apos;&gt;package manager pacman&lt;/a&gt;. Any distribution has to implement major changes at times, a rolling distribution has to rely on the package manager to interact with the users to make sure such updates are done correctly. Since rolling inherently means, no re-install at set intervals (a static distribution can use such needed re-install to introduce major changes). No GUI for pacman is as powerful as pacman itself in those situations.&lt;/p&gt;
+
+            &lt;p&gt;Calamares, the installer of KaOS is straightforward and easy to use, but lacks one feature at this stage. RAID disk setups is not supported yet.&lt;/p&gt;
+
+            &lt;h3&gt;Starting the Installer&lt;/h3&gt;
+
+            &lt;p&gt;The first page gives you some information of the installer, option to check the currently known issues and an option to select what language will be used for the install.&lt;/p&gt;
+            
+            &lt;p&gt;Ensure that your system meets the minimal requirements. Not having an internet connection during the install is no deal breaker and won&apos;t stop the install from going through.&lt;/p&gt;
+            
+            &lt;p&gt;Having less than the shown disc space or available RAM will almost certainly fail the install. As for disc space, a minimum of 20 Gb is recommended.&lt;/p&gt;</translation>
     </message>
 </context>
 <context>
@@ -197,7 +212,7 @@
     <message>
         <location filename="../main.qml" line="117"/>
         <source>Package List</source>
-        <translation type="unfinished"/>
+        <translation>Lista de Paquetes</translation>
     </message>
 </context>
 <context>
@@ -241,7 +256,23 @@
             &lt;p&gt;The fourth option gives you the freedom to set any option, any filesystem and partition table. If you want to completely clean the drive and start over or if this drive has no partition table at all yet (new media, virtualbox install), you have to make a decision what partitiontable to use. Default in the installer is GPT, ms-dos is the older option (still more commonly used for BIOS systems). Advantage of GPT, it can use virtual unlimited primary partitions (ms-dos is limited to four), is needed for drives larger than 2 Tb and is best for UEFI systems. If you choose to use GPT on a BIOS system, make sure to set it up correctly, with the needed 8 MB partition of unformatted space at the beginning of the drive and having the bios_grub flag assigned to that unformatted partition.  This setup cannot have a seperate /boot partition.&lt;/p&gt;
             
             &lt;p&gt;Once the partitiontable is set, you need to partition the drive, minimum needed, one partition for / (root). There are some advantages to using a separate partition for /home, and you might like to have a swap partition for sleep/hibernate. Any other partitions is strictly personal choice, though setting up /usr is not very well supported in systemd (you&apos;ll have to use extra steps to make that work correctly).&lt;/p&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h3&gt;Particionado&lt;/h3&gt;
+            
+            &lt;p&gt;Utilizando la configuración correcta de la partición, el sistema de archivos y la tabla de partición más adecuados es la parte más difícil para cualquier novato en la instalación de un Sistema Operativo.
+            &lt;p&gt;&lt;font color=&apos;#ff0000&apos;&gt;Asegúrese de hacer una copia de seguridad de los datos que pueda necesitar de su unidad antes de continuar.&lt;/font&gt;&lt;/p&gt;
+            
+            &lt;p&gt;Si su medio de instalación de destino (HDD, ssd, usb-stick como ejemplos), no está formateado ni particionado o no está configurado a su gusto, puede hacerlo desde el instalador o prepararlo antes de iniciarlo.&lt;/p&gt;
+            
+            &lt;p&gt;Tanto para los sistemas UEFI como para los BIOS, al pasar el cursor sobre los respectivos botones de información, obtendrá más información sobre las diferentes opciones para cada uno.&lt;/p&gt;
+            
+            &lt;p&gt;Este instalador le ofrece cuatro opciones para su uso.&lt;/br&gt;
+            La primera opción le permitirá reducir una partición existente e instalar KaOS junto con cualquier otro sistema operativo que ya esté disponible en su sistema, utilizando el sistema de archivos XFS. No es posible reducir las particiones que residen en una tabla de partición extendida o que utilizan el sistema de archivos XFS.&lt;/br&gt;
+            La segunda opción le permite usar una partición existente y reemplazará todos los archivos y/o sistemas operativos en esa partición con una instalación de KaOS, utilizando el sistema de archivos XFS.&lt;/br&gt;
+            La tercera opción utilizará todo el disco y creará una partición donde todos se instalarán bajo la raíz, todas las demás particiones se eliminarán y el sistema de archivos utilizado será XFS.&lt;/p&gt;
+            
+            &lt;p&gt;La cuarta opción le brinda la libertad de configurar cualquier opción, cualquier sistema de archivos y tabla de particiones. Si desea limpiar completamente la unidad y comenzar de nuevo o si esta unidad aún no tiene una tabla de particiones (nuevo medio, instalación de virtualbox), debe decidir qué partición utilizar. El valor predeterminado en el instalador es GPT, ms-dos es la opción más antigua (aún más comúnmente utilizada para sistemas BIOS). La ventaja de GPT es que puede usar particiones primarias ilimitadas virtuales (ms-dos está limitado a cuatro), se necesita para unidades de más de 2 Tb y es mejor para sistemas UEFI. Si elige usar GPT en un sistema BIOS, asegúrese de configurarlo correctamente, con la partición necesaria de 8 MB de espacio sin formato al comienzo de la unidad y teniendo el indicador bios_grub asignado a esa partición sin formato. Esta configuración no puede tener una partición / boot separada.&lt;/p&gt;
+            
+            &lt;p&gt;Una vez que se configura la tabla de particiones, debe particionar la unidad, como mínimo, una partición para / (raíz). Hay algunas ventajas de usar una partición separada para / home, y le gustaría tener una partición de intercambio para dormir / hibernar. Cualquier otra partición es una elección estrictamente personal, aunque la configuración de / usr no está muy bien soportada en systemd (tendrá que usar pasos adicionales para que esto funcione correctamente).&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../guide/partition.qml" line="117"/>
@@ -251,7 +282,7 @@
     <message>
         <location filename="../guide/partition.qml" line="144"/>
         <source>&lt;p&gt;Option to replace an existing partition, UEFI system, / (root) and swap used. Once you select the partition you want to replace, the preview will show the &lt;i&gt;after&lt;/i&gt; bar.  Also shown here is the option to encrypt the system with password set.&lt;/p&gt;</source>
-        <translation>&lt;p&gt;Opción para reemplazar una partición existente, sistema UEFI, / (raíz) y swap utilizado. Una vez que seleccione la partición que desea reemplazar, la vista previa mostrará la barra posterior. También se muestra aquí la opción de cifrar el sistema con la contraseña establecida.</translation>
+        <translation>&lt;p&gt;Opción para reemplazar una partición existente, sistema UEFI, / (raíz) y swap utilizado. Una vez que seleccione la partición que desea reemplazar, la vista previa mostrará la barra &lt;i&gt;posterior&lt;/i&gt;. También se muestra aquí la opción de cifrar el sistema con la contraseña establecida.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../guide/partition.qml" line="171"/>
@@ -291,7 +322,7 @@
             &lt;p&gt;All looking as it should? Then clicking Next will give you one last warning before the actual formatting and installation will start.&lt;/p&gt;</source>
         <translation>&lt;h3&gt;Resumen&lt;/h3&gt;
 
-            &lt;p&gt;Todos mirando como debería? Luego, al hacer clic en Siguiente, aparecerá una última advertencia antes de que comience el formateo y la instalación.&lt;/p&gt;</translation>
+            &lt;p&gt;¿Todo está como debería? Luego, al hacer clic en Siguiente, aparecerá una última advertencia antes de que comience el formateo y la instalación.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../guide/summary.qml" line="90"/>
@@ -300,9 +331,9 @@
             &lt;p&gt;Once the installation is finished, you have the option to close the installer and go back to live mode or reboot the system right away. A full log of the install is available as installation.log in the home directory of the Live user and this log is copied to /var/log/installation.log of the target system.&lt;/p&gt;
 
             &lt;p&gt;Hopefully this Guide has answered any questions you had about using this Installer. If anything is not clear enough then it would be really appreciated if you can get in touch to get the needed changes in.&lt;/p&gt;</source>
-        <translation>&lt;p&gt;Mientras se instala el sistema, se muestra una presentación de diapositivas que le dará información básica. Sin embargo, puedes seguir lo que el instalador está haciendo en diferentes etapas. Espere que esta parte demore entre 5-10 minutos, según la configuración y la velocidad de la unidad de destino. Alrededor del 30%, la copia de los archivos se completa (lo que llevará más tiempo), luego el instalador creará los usuarios, eliminará los paquetes específicos del sistema Live, instalará paquetes adicionales, eliminará cualquier paquete de idioma y controladores que no sean necesarios para su hardware específico , configure ya sea GRUB para sistemas BIOS o Systemd-boot para UEFI y copia las configuraciones de usuario específicas de KaOS.&lt;/p&gt;
+        <translation>&lt;p&gt;Mientras se instala el sistema, se muestra una presentación de diapositivas que le dará información básica. Sin embargo, puedes seguir lo que el instalador está haciendo en las diferentes etapas. Espere que esta parte demore entre 5-10 minutos, según la configuración y la velocidad de la unidad de destino. En alrededor del 30%, sec completará la copia de los archivos (que es lo que  llevará más tiempo), luego el instalador creará los usuarios, eliminará los paquetes específicos del sistema Live, instalará paquetes adicionales, eliminará cualquier paquete de idioma y controladores que no sean necesarios para su hardware específico , configurará ya sea GRUB para sistemas BIOS o Systemd-boot para UEFI y copiará las configuraciones de usuario específicas de KaOS.&lt;/p&gt;
 
-            &lt;p&gt;Una vez que finaliza la instalación, tiene la opción de cerrar el instalador y volver al modo en vivo o reiniciar el sistema de inmediato. Un registro completo de la instalación está disponible como installation.log en el directorio de inicio del usuario de Live y este registro se copia en /var/log/installation.log del sistema de destino.&lt;/p&gt;
+            &lt;p&gt;Una vez que finaliza la instalación, tiene la opción de cerrar el instalador y volver al modo Live  o reiniciar el sistema de inmediato. Un registro completo de la instalación está disponible como installation.log en el directorio de inicio del usuario de Live y este registro se copia en /var/log/installation.log del sistema de destino.&lt;/p&gt;
 
             &lt;p&gt;Esperemos que esta guía haya respondido alguna pregunta que haya tenido sobre el uso de este instalador. Si algo no está lo suficientemente claro, sería realmente apreciado si puede ponerse en contacto para obtener los cambios necesarios.&lt;/p&gt;</translation>
     </message>

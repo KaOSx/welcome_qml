@@ -14,7 +14,7 @@
     <message>
         <location filename="../Page1Form.ui.qml" line="187"/>
         <source>Donate</source>
-        <translation type="unfinished"/>
+        <translation>Donaciones</translation>
     </message>
     <message>
         <location filename="../Page1Form.ui.qml" line="138"/>
@@ -122,7 +122,22 @@
             &lt;p&gt;Ensure that your system meets the minimal requirements. Not having an internet connection during the install is no deal breaker and won't stop the install from going through.&lt;/p&gt;
             
             &lt;p&gt;Having less than the shown disc space or available RAM will almost certainly fail the install. As for disc space, a minimum of 20 Gb is recommended.&lt;/p&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h3&gt;Guía de Instalación&lt;/h3&gt;
+
+            &lt;p&gt;Ahora que ha visto algo cómo funciona KaOS en el modo live, puede que esté listo para instalar. Antes de hacerlo, es mejor entender unas pocas cosas.&lt;/p&gt;
+
+            &lt;p&gt;Como con cualquier rolling release, es necesario actualizar regularmente, si se atrasa mucho y luego trata de actualizar, pueden aparecer problemas. Lo recomendado es actualizar una vez a la semana, o como mucho una vez al mes.&lt;/br&gt;
+            Si eso no es factible para Ud., es mejor que considere usar una distribución estática, con un ciclo de lanzamiento de seis o nueve meses. Si es necesaria alguna instrucción para alguna actualización de KaOS, &lt;a href=&apos;https://kaosx.us/news/&apos;&gt;kaosx.us/news/&lt;/a&gt; siempre le advertirá sobre ello (lo que también se mostrará en Octopi, el gestor de paquetes). Es mejor familiarizarseman, con el gestor de paquetes en linea de comandos &lt;a href=&apos;https://kaosx.us/docs/pacman/&apos;&gt;pacman&lt;/a&gt;. Cualquier distribución necesita, a veces, implementar cambios importantes, una distribución rolling tiene que confiar en el gestor de paquetes para interactuar con los usuarios para asegurarse de que cada actualización se haga correctamente. Dado lo que significa ser una distribución rolling, no se puede reinstalar a intervalos establecidos (una distribución estática puede usar cada reinstalación para introducir cambios importantes). Ninguna GUI para pacman tan poderosa como el mismo pacman puede serlo en esas situaciones.&lt;/p&gt;
+
+            &lt;p&gt;CCalamares, el instalador de KaOS es sencillo y fácil de usar, pero en esta etapa adolesce de una característica, la configuración de discos RAID no está soportada.&lt;/p&gt;
+
+            &lt;h3&gt;Iniciando el instalador&lt;/h3&gt;
+
+            &lt;p&gt;La primera página le brindará información sobre el instalador, la opción de comprobar los problemas conocidos actualmente y una opción para seleccionar el idioma que se usará para la instalación.&lt;/p&gt;
+            
+            &lt;p&gt;Asegúrese de que su sistema cumpla con los requisitos mínimos. No tener conexión a internet durante la instalación no es un impedimento y no evitará que la instalación se lleve a cabo.&lt;/p&gt;
+            
+            &lt;p&gt;Si tiene menos espacion en disco o menos RAM disponible, es muy probable que falle la instalación. En cuanto al espacio en disco, se recomiendo un mínimo de 20 Gb.&lt;/p&gt;</translation>
     </message>
 </context>
 <context>
@@ -197,7 +212,7 @@
     <message>
         <location filename="../main.qml" line="117"/>
         <source>Package List</source>
-        <translation type="unfinished"/>
+        <translation>Lista de Paquetes</translation>
     </message>
 </context>
 <context>
@@ -241,41 +256,62 @@
             &lt;p&gt;The fourth option gives you the freedom to set any option, any filesystem and partition table. If you want to completely clean the drive and start over or if this drive has no partition table at all yet (new media, virtualbox install), you have to make a decision what partitiontable to use. Default in the installer is GPT, ms-dos is the older option (still more commonly used for BIOS systems). Advantage of GPT, it can use virtual unlimited primary partitions (ms-dos is limited to four), is needed for drives larger than 2 Tb and is best for UEFI systems. If you choose to use GPT on a BIOS system, make sure to set it up correctly, with the needed 8 MB partition of unformatted space at the beginning of the drive and having the bios_grub flag assigned to that unformatted partition.  This setup cannot have a seperate /boot partition.&lt;/p&gt;
             
             &lt;p&gt;Once the partitiontable is set, you need to partition the drive, minimum needed, one partition for / (root). There are some advantages to using a separate partition for /home, and you might like to have a swap partition for sleep/hibernate. Any other partitions is strictly personal choice, though setting up /usr is not very well supported in systemd (you&apos;ll have to use extra steps to make that work correctly).&lt;/p&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h3&gt;Particionado&lt;/h3&gt;
+            
+            &lt;p&gt;Utilizando la configuración correcta de la partición, el sistema de archivos y la tabla de partición más adecuados es la parte más difícil para cualquier novato en la instalación de un Sistema Operativo.&lt;/p&gt;
+
+            &lt;p&gt;&lt;font color=&apos;#ff0000&apos;&gt;Asegúrese de hacer una copia de seguridad de los datos que pueda necesitar de su unidad antes de continuar.&lt;/font&gt;&lt;/p&gt;
+            
+            &lt;p&gt;Si su medio de instalación de destino (HDD, ssd, usb-stick como ejemplos), no está formateado ni particionado o no está configurado a su gusto, puede hacerlo desde el instalador o prepararlo antes de iniciarlo.&lt;/p&gt;
+            
+            &lt;p&gt;Tanto para los sistemas UEFI como para los BIOS, al pasar el cursor sobre los respectivos botones de información, obtendrá más información sobre las diferentes opciones para cada uno.&lt;/p&gt;
+            
+            &lt;p&gt;Este instalador le ofrece cuatro opciones para su uso.&lt;/br&gt;
+            La primera opción le permitirá reducir una partición existente e instalar KaOS junto con cualquier otro sistema operativo que ya esté disponible en su sistema, utilizando el sistema de archivos XFS. No es posible reducir las particiones que residen en una tabla de partición extendida o que utilizan el sistema de archivos XFS.&lt;/br&gt;
+            La segunda opción le permite usar una partición existente y reemplazará todos los archivos y/o sistemas operativos en esa partición con una instalación de KaOS, utilizando el sistema de archivos XFS.&lt;/br&gt;
+            La tercera opción utilizará todo el disco y creará una partición donde todos se instalarán bajo la raíz, todas las demás particiones se eliminarán y el sistema de archivos utilizado será XFS.&lt;/p&gt;
+            
+            &lt;p&gt;La cuarta opción le brinda la libertad de configurar cualquier opción, cualquier sistema de archivos y tabla de particiones. Si desea limpiar completamente la unidad y comenzar de nuevo o si esta unidad aún no tiene una tabla de particiones (nuevo medio, instalación de virtualbox), debe decidir qué partición utilizar. El valor predeterminado en el instalador es GPT, ms-dos es la opción más antigua (aún más comúnmente utilizada para sistemas BIOS). La ventaja de GPT es que puede usar particiones primarias ilimitadas virtuales (ms-dos está limitado a cuatro), se necesita para unidades de más de 2 Tb y es mejor para sistemas UEFI. Si elige usar GPT en un sistema BIOS, asegúrese de configurarlo correctamente, con la partición necesaria de 8 MB de espacio sin formato al comienzo de la unidad y teniendo el indicador bios_grub asignado a esa partición sin formato. Esta configuración no puede tener una partición / boot separada.&lt;/p&gt;
+            
+            &lt;p&gt;Una vez que se configura la tabla de particiones, debe particionar la unidad, como mínimo, una partición para / (raíz). Hay algunas ventajas de usar una partición separada para / home, y le gustaría tener una partición de intercambio para dormir / hibernar. Cualquier otra partición es una elección estrictamente personal, aunque la configuración de / usr no está muy bien soportada en systemd (tendrá que usar pasos adicionales para que esto funcione correctamente).&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../guide/partition.qml" line="117"/>
         <source>&lt;p&gt;Option to install alongside an existing partition, UEFI system, / (root) and swap used. After selecting which partition you want to shrink to create room for KaOS, you can drag in that partition to set the desired size.  Also shown here is the option to encrypt the system with password set.&lt;/p&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;p&gt;Opción para instalar junto con una partición existente, sistema UEFI, / (root) y swap utilizado. Después de seleccionar la partición que desea reducir para crear espacio para KaOS, puede arrastrar esa partición para establecer el tamaño deseado. También se muestra aquí la opción de cifrar el sistema con la contraseña establecida.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../guide/partition.qml" line="144"/>
         <source>&lt;p&gt;Option to replace an existing partition, UEFI system, / (root) and swap used. Once you select the partition you want to replace, the preview will show the &lt;i&gt;after&lt;/i&gt; bar.  Also shown here is the option to encrypt the system with password set.&lt;/p&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;p&gt;Opción para reemplazar una partición existente, sistema UEFI, / (raíz) y swap utilizado. Una vez que seleccione la partición que desea reemplazar, la vista previa mostrará la barra &lt;i&gt;posterior&lt;/i&gt;. También se muestra aquí la opción de cifrar el sistema con la contraseña establecida.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../guide/partition.qml" line="171"/>
         <source>&lt;p&gt;Option to use the entire drive, all installed under / (root) if on a BIOS system and FAT32 EFI partition also created if the system is UEFI, with swap assigned if disk size allows.  This will remove all data and installed systems from the selected drive.&lt;/p&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;p&gt;Opción para usar la unidad completa, todo instalado bajo / (raíz) si en un sistema BIOS y la partición EFI FAT32 también se creó si el sistema es UEFI, con intercambio asignado si el tamaño del disco lo permite. Esto eliminará todos los datos y sistemas instalados de la unidad seleccionada.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../guide/partition.qml" line="198"/>
         <source>&lt;p&gt;Using the fourth option to delete an existing layout. Select &lt;code&gt;New Partition Table&lt;/code&gt; for a new drive or to switch from ms-dos to GPT or vice versa.&lt;/br&gt;
             Highlight &lt;code&gt;Free Space&lt;/code&gt; and select &lt;code&gt;Create&lt;/code&gt;.  You then get a window with options to set partition type, file system and mountpoint. When using an UEFI install, it is a must to have a vfat (fat32) formatted /boot partition available. Best set the size to 512Mb and have it at the beginning of the partition-table. Once root is set, the Next button will become active again.&lt;/p&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;p&gt;Usando la cuarta opción para eliminar una disposición existente. Seleccionar &lt;code&gt;Nueva Tabla de Particiones&lt;/code&gt; para una nueva unidad o para cambiar de ms-dos a GPT o viceversa.&lt;/br&gt;
+            Destacar &lt;code&gt;Espacio Libre&lt;/code&gt; y seleccinar &lt;code&gt;Crear &lt;/code&gt;.   A continuación, sale una ventana con opciones para configurar el tipo de partición, el sistema de archivos y el punto de montaje. Cuando se utiliza una instalación de UEFI, es necesario tener una partición formateada / boot vfat (fat32) disponible. Mejor establezca el tamaño a 512Mb y téngalo al comienzo de la tabla de particiones. Una vez que se establece la raíz, el botón Siguiente se activará de nuevo.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../guide/partition.qml" line="266"/>
         <source>&lt;p&gt;Using the fourth option to adjust existing layout. Select &lt;code&gt;New Partition Table&lt;/code&gt; for a new drive or to switch from ms-dos to GPT or vice versa.&lt;/br&gt;
             Highlight a desired partition, and select &lt;code&gt;Format&lt;/code&gt;. If this is going to be the root partition, it needs to be formatted. If old files are still present it will most likely result in a broken install. Next select a Mountpoint, root needs to be set, for UEFI install /boot needs to be set too. Repeat these steps for any other partition you want to use for this install. Once root is set, the Next button will become active again. Options are available to encrypt partitions, this includes swap.&lt;/p&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;p&gt;Usando la cuarta opción para ajustar la disposición existente. Seleccione &lt;code&gt;Nueva Tabla de Particiones&lt;/code&gt; para una nueva unidad o para cambiar de ms-dos a GPT o viceversa.&lt;/br&gt;
+            Destaque una partición deseada y seleccione &lt;code&gt;Formatear&lt;/code&gt;. Si esta va a ser la partición raíz, necesita ser formateada. Si los archivos antiguos todavía están presentes, lo más probable es que resulte en una instalación rota. A continuación, seleccione un Punto de Montaje, la raíz debe configurarse, para la instalación de UEFI / el arranque también debe configurarse. Repita estos pasos para cualquier otra partición que desee utilizar para esta instalación. Una vez que se establece la raíz, el botón Siguiente se activará de nuevo. Las opciones están disponibles para cifrar particiones, esto incluye swap.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../guide/partition.qml" line="304"/>
         <source>&lt;p&gt;The image below shows the needed setup for an UEFI partition. If your install already has this set, &lt;font color='#ff0000'&gt;DO NOT&lt;/font&gt; format it. With UEFI any existing bootloader can be used, formatting will delete any currently present files to boot Windows or any other OS.&lt;/br&gt;
             For BIOS systems select where you want to install the bootloader, this can either be done in the Master Boot Record of the selected disc, or can be installed in the /boot partition of the system (/boot can reside under root for that).&lt;/br&gt;
             No changes will happen when you click the Next button, you will get a chance to review all your chosen settings and go back if things are not exactly as you want them.&lt;/p&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;p&gt;La siguiente imagen muestra la configuración necesaria para una partición UEFI. Si su instalación ya tiene este conjunto, &lt;font color=&apos;#ff0000&apos;&gt; NO&lt;/font&gt; lo formatee. Con UEFI se puede usar cualquier gestor de arranque existente, el formato eliminará los archivos actuales para iniciar Windows o cualquier otro sistema operativo.&lt;/br&gt;
+            Para los sistemas BIOS, seleccione dónde desea instalar el cargador de arranque, esto se puede hacer en el Registro de arranque maestro del disco seleccionado, o se puede instalar en la partición / boot del sistema (/ boot puede residir en la raíz).&lt;/br&gt;
+            No se realizarán cambios cuando haga clic en el botón Siguiente, tendrá la oportunidad de revisar todas las configuraciones elegidas y volver si las cosas no son exactamente como las desea.&lt;/p&gt;</translation>
     </message>
 </context>
 <context>
@@ -285,7 +321,9 @@
         <source>&lt;h3&gt;Summary&lt;/h3&gt;
 
             &lt;p&gt;All looking as it should? Then clicking Next will give you one last warning before the actual formatting and installation will start.&lt;/p&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h3&gt;Resumen&lt;/h3&gt;
+
+            &lt;p&gt;¿Todo está como debería? Luego, al hacer clic en Siguiente, aparecerá una última advertencia antes de que comience el formateo y la instalación.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../guide/summary.qml" line="90"/>
@@ -294,7 +332,11 @@
             &lt;p&gt;Once the installation is finished, you have the option to close the installer and go back to live mode or reboot the system right away. A full log of the install is available as installation.log in the home directory of the Live user and this log is copied to /var/log/installation.log of the target system.&lt;/p&gt;
 
             &lt;p&gt;Hopefully this Guide has answered any questions you had about using this Installer. If anything is not clear enough then it would be really appreciated if you can get in touch to get the needed changes in.&lt;/p&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;p&gt;Mientras se instala el sistema, se muestra una presentación de diapositivas que le dará información básica. Sin embargo, puedes seguir lo que el instalador está haciendo en las diferentes etapas. Espere que esta parte demore entre 5-10 minutos, según la configuración y la velocidad de la unidad de destino. En alrededor del 30%, sec completará la copia de los archivos (que es lo que llevará más tiempo), luego el instalador creará los usuarios, eliminará los paquetes específicos del sistema Live, instalará paquetes adicionales, eliminará cualquier paquete de idioma y controladores que no sean necesarios para su hardware específico , configurará ya sea GRUB para sistemas BIOS o Systemd-boot para UEFI y copiará las configuraciones de usuario específicas de KaOS.&lt;/p&gt;
+
+            &lt;p&gt;Una vez que finaliza la instalación, tiene la opción de cerrar el instalador y volver al modo Live o reiniciar el sistema de inmediato. Un registro completo de la instalación está disponible como installation.log en el directorio de inicio del usuario de Live y este registro se copia en /var/log/installation.log del sistema de destino.&lt;/p&gt;
+
+            &lt;p&gt;Esperemos que esta guía haya respondido alguna pregunta que haya tenido sobre el uso de este instalador. Si algo no está lo suficientemente claro, sería realmente apreciado si puede ponerse en contacto para obtener los cambios necesarios.&lt;/p&gt;</translation>
     </message>
 </context>
 <context>
@@ -308,7 +350,13 @@
             &lt;p&gt;For security reasons, it is advisable to use a different password for the administrator (or root) account.&lt;/p&gt;
 
             &lt;p&gt;Default is set to autologin disabled, add a marker to enable passwordless login.&lt;/p&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h3&gt;Creación de usuario&lt;/h3&gt;
+
+            &lt;p&gt;La página de creación de usuarios le da la opción de establecer un nombre de usuario diferente de su nombre real y establecer un nombre preferido para el sistema.&lt;/p&gt;
+
+            &lt;p&gt;Por razones de seguridad, es recomendable utilizar una contraseña diferente para la cuenta del administrador (o root).&lt;/p&gt;
+
+            &lt;p&gt;Se establece deshabilitado como predeterminado el inicio de sesión automático , agregue un marcador para habilitar el inicio de sesión sin contraseña.&lt;/p&gt;</translation>
     </message>
 </context>
 </TS>

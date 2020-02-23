@@ -14,7 +14,7 @@
     <message>
         <location filename="../Page1Form.ui.qml" line="187"/>
         <source>Donate</source>
-        <translation type="unfinished"/>
+        <translation>Feu una donació</translation>
     </message>
     <message>
         <location filename="../Page1Form.ui.qml" line="138"/>
@@ -122,7 +122,22 @@
             &lt;p&gt;Ensure that your system meets the minimal requirements. Not having an internet connection during the install is no deal breaker and won't stop the install from going through.&lt;/p&gt;
             
             &lt;p&gt;Having less than the shown disc space or available RAM will almost certainly fail the install. As for disc space, a minimum of 20 Gb is recommended.&lt;/p&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h3&gt;Guia d&apos;instal·lació&lt;/h3&gt;
+
+            &lt;p&gt;Ara que heu vist com funciona el KaOS en mode autònom, podeu estar preparats per instal·lar-lo. Abans de fer-ho, però, és millor entendre algunes coses.&lt;/p&gt;
+
+            &lt;p&gt;Com amb qualsevol versió contínua, és obligatori actualitzar el sistema regularment. Si el sistema es queda massa enrere, intentar actualitzar-lo podria comportar problemes. És recomanable actualitzar-lo un cop per setmana, no menys d&apos;un cop al mes.&lt;/br&gt;
+            Si no ho podeu fer d&apos;aquesta manera, potser seria millor que consideréssiu usar una distribució estàtica, amb un cicle de versions noves de cada sis o nou mesos. Si calen instruccions per a alguna actualització del KaOS, &lt;a href=&apos;http://kaosx.us/news/&apos;&gt;kaosx.us/news/&lt;/a&gt; sempre us n&apos;avisarà (també es mostraran a l&apos;Octopi, el gestor de paquets). És millor que us familiaritzeu amb el gestor de paquets de la línia d&apos;ordres, el &lt;a href=&apos;https://kaosx.us/docs/pacman/&apos;&gt;pacman&lt;/a&gt;. Qualsevol distribució ha d&apos;implementar a vegades canvis importants, una distribució contínua ha de confiar en el gestor de paquets perquè interaccioni amb els usuaris per assegurar que aquestes actualitzacions es facin correctament. Una versió contínua significa que no cal reinstal·lar el sistema a intervals establerts (una distribució estàtica pot necessitar aquesta reinstal·lació per introduir canvis importants). No hi ha cap interfície gràfica per al pacman que sigui tan potent com el mateix pacman en aquestes situacions.&lt;/p&gt;
+
+            &lt;p&gt;El Calamares, l&apos;instal·lador del KaOS, és directe i fàcil d&apos;usar, però en aquests moments li manca una característica. La configuració de discs RAID encara no té suport.&lt;/p&gt;
+
+            &lt;h3&gt;Iniciar l&apos;instal·lador&lt;/h3&gt;
+
+            &lt;p&gt;La primera pàgina us dona informació sobre l&apos;instal·lador, l&apos;opció de mirar els problemes actuals coneguts i l&apos;opció de seleccionar la llengua que s&apos;usarà per a la instal·lació.&lt;/p&gt;
+            
+            &lt;p&gt;Assegureu-vos que el sistema compleix els requisits mínims. No tenir una connexió a Internet durant la instal·lació no és imprescindible i no n&apos;aturarà el procés.&lt;/p&gt;
+            
+            &lt;p&gt;Tenir menys espai de disc del que es mostra o RAM disponible farà que gairebé segurament falli la instal·lació. Pel que fa a l&apos;espai de disc, és recomanable un mínim de 20 Gb.&lt;/p&gt;</translation>
     </message>
 </context>
 <context>
@@ -197,7 +212,7 @@
     <message>
         <location filename="../main.qml" line="117"/>
         <source>Package List</source>
-        <translation type="unfinished"/>
+        <translation>Llista de paquets</translation>
     </message>
 </context>
 <context>
@@ -241,7 +256,24 @@
             &lt;p&gt;The fourth option gives you the freedom to set any option, any filesystem and partition table. If you want to completely clean the drive and start over or if this drive has no partition table at all yet (new media, virtualbox install), you have to make a decision what partitiontable to use. Default in the installer is GPT, ms-dos is the older option (still more commonly used for BIOS systems). Advantage of GPT, it can use virtual unlimited primary partitions (ms-dos is limited to four), is needed for drives larger than 2 Tb and is best for UEFI systems. If you choose to use GPT on a BIOS system, make sure to set it up correctly, with the needed 8 MB partition of unformatted space at the beginning of the drive and having the bios_grub flag assigned to that unformatted partition.  This setup cannot have a seperate /boot partition.&lt;/p&gt;
             
             &lt;p&gt;Once the partitiontable is set, you need to partition the drive, minimum needed, one partition for / (root). There are some advantages to using a separate partition for /home, and you might like to have a swap partition for sleep/hibernate. Any other partitions is strictly personal choice, though setting up /usr is not very well supported in systemd (you&apos;ll have to use extra steps to make that work correctly).&lt;/p&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h3&gt;Particions&lt;/h3&gt;
+            
+            &lt;p&gt;Usar la configuració de particions correcta, el sistema de fitxers i la taula de particions més adequats és una de les etapes més desafiants per a qualsevol persona nova a l&apos;hora d&apos;instal·lar un sistema operatiu.&lt;/p&gt;
+
+            &lt;p&gt;&lt;font color=&apos;#ff0000&apos;&gt;Assegureu-vos de fer una còpia de seguretat de qualssevol dades que pugueu necessitar dels dispositius abans de continuar.&lt;/font&gt;&lt;/p&gt;
+            
+            &lt;p&gt;Si el mitjà d&apos;instal·lació de destinació (HDD, SSD, memòria USB...), no està formatat i partit o no està configurat com us agradaria, ho podeu fer des de dins de l&apos;instal·lador, o preparar-ho abans d&apos;iniciar l&apos;instal·lador.&lt;/p&gt;
+            
+            &lt;p&gt;Per als sistemes UEFI i BIOS, passar per sobre dels botons d&apos;informació respectius us oferirà més informació de les diferents opcions de cada cas.&lt;/p&gt;
+            
+            &lt;p&gt;Aquest instal·lador us ofereix quatre opcions.&lt;/br&gt;
+            La primera opció us permetrà encongir una partició existent i instal·lar el KaOS al costat de qualsevol altre sistema operatiu disponible que hi hagi, amb el sistema de fitxers XFS. No és possible encongir particions que siguin en una taula de particions ampliada o que usin un sistema de fitxers XFS.&lt;/br&gt;
+            La segona opció us permet usar una partició existent per reemplaçar-ne tots els fitxers o sistemes operatius per una instal·lació del KaOS, amb el sistema de fitxers XFS.&lt;/br&gt;
+            La tercera opció usarà el disc sencer i hi crearà una partició en què s&apos;hi instal·larà tot com a arrel. Totes les altres particions s&apos;eliminaran i el sistema de fitxers serà XFS.&lt;/p&gt;
+            
+            &lt;p&gt;La quarta opció us ofereix la llibertat d&apos;establir qualsevol configuració, qualsevol sistema de fitxers i taula de particions. Si voleu netejar el disc completament i començar de nou o si aquest disc encara no té cap mena de taula de particions (un mitjà nou, o una instal·lació de màquina virtual), heu de prendre la decisió de quina taula de particions usar-hi. Per defecte a l&apos;instal·lador és GPT, MS-DOS és l&apos;opció més antiga (encar molt utilitzada en sistemes BIOS). L&apos;avantatge de GPT és que pot usar particions primàries il·limitades virtuals (MS-DOS està limitat a quatre), és necessari per a discs més grosso de 2 TB i és millor per a sistemes UEFI. Si trieu usar GPT en un sistema BIOS, assegureu-vos de configurar-ho correctament, amb una partició necessària de 8 MB sense formatar al principi del disc i amb la bandera bios_grub assignada.  Aquesta configuració no pot tenir una partició /boot separada.&lt;/p&gt;
+            
+            &lt;p&gt;Un cop la taula de particions està establerta, heu de partir el disc. El mínim necessari és una partició per a l&apos;arrel, / (root). Hi ha alguna avantatges a l&apos;hora d&apos;usar una partició per a l&apos;usuari separada (/home), i potser us aniria bé tenir una partició d&apos;intercanvi (swap) per a la suspensió o hibernació del sistema. Qualsevol altra partició és estrictament una tria personal, tot i que establir-ne una per a /usr no es gaire ben admès a systemd (haureu de fer passos complementaris per fer que funcioni correctament).&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../guide/partition.qml" line="117"/>

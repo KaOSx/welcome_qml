@@ -14,7 +14,7 @@
     <message>
         <location filename="../Page1Form.ui.qml" line="187"/>
         <source>Donate</source>
-        <translation type="unfinished"/>
+        <translation>दान करें</translation>
     </message>
     <message>
         <location filename="../Page1Form.ui.qml" line="138"/>
@@ -197,7 +197,7 @@ KaOS के विषय में और जानने हेतु, नी�
     <message>
         <location filename="../main.qml" line="117"/>
         <source>Package List</source>
-        <translation type="unfinished"/>
+        <translation>पैकेज सूची</translation>
     </message>
 </context>
 <context>

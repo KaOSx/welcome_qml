@@ -14,7 +14,7 @@
     <message>
         <location filename="../Page1Form.ui.qml" line="187"/>
         <source>Donate</source>
-        <translation type="unfinished"/>
+        <translation>Faire un don</translation>
     </message>
     <message>
         <location filename="../Page1Form.ui.qml" line="138"/>
@@ -122,7 +122,22 @@
             &lt;p&gt;Ensure that your system meets the minimal requirements. Not having an internet connection during the install is no deal breaker and won't stop the install from going through.&lt;/p&gt;
             
             &lt;p&gt;Having less than the shown disc space or available RAM will almost certainly fail the install. As for disc space, a minimum of 20 Gb is recommended.&lt;/p&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h3&gt;Guide d’installation&lt;/h3&gt;
+
+            &lt;p&gt;Après avoir vu le fonctionnement de KaOS en mode live, vous pouvez vous préparer à l’installer. Avant cela, il est souhaitable de comprendre certaines choses.&lt;/p&gt;
+
+            &lt;p&gt;Comme pour toute Rolling Release, il vaut mieux mettre à jour régulièrement. Le faire trop peu souvent va probablement causer des problèmes. Il est recommandé de mettre à jour une fois par semaine, en tout cas, pas moins d’une fois par mois.&lt;/br&gt;
+            Si cela n’est pas possible pour vous, il vaudrait mieux envisager une distribution statique avec un cycle de versions de six ou neuf mois. Si des instructions sont nécessaires lors d’une mise à jour de KaOS, elles seront toujours précisées sur &lt;a href=&quot;https://kaosx.us/news/&quot;&gt;kaosx.us/news/&lt;/a&gt; (ainsi que sur Octopi, le gestionnaire de paquets). L’idéal est de vous familiariser avec le &lt;a href=&apos;https://kaosx.us/docs/pacman/&apos;&gt;gestionnaire de paquets en ligne de commande, pacman&lt;/a&gt;. Toute distribution doit mettre en œuvre des changements majeurs à certains moments, et une distribution Rolling doit s’appuyer sur le gestionnaire de paquets pour interagir avec les utilisateurs afin de s’assurer que ces mises à jour sont correctement effectuées, puisque Rolling implique qu’il n’est pas nécessaire de réinstaller à des intervalles fixés (une distribution statique peut nécessiter une réinstallation lors de changements majeurs). Aucune interface graphique à pacman n’est aussi puissante que pacman lui-même dans de telles situations.&lt;/p&gt;
+
+            &lt;p&gt;Calamares, l’installateur de KaOS est simple d’utilisation, mais il manque d’une fonctionnalité à ce stade. Les configurations de disque RAID ne sont pas encore supportées.&lt;/p&gt;
+
+            &lt;h3&gt;Démarrer l’installateur&lt;/h3&gt;
+
+            &lt;p&gt;La première page vous donne des informations sur l’installateur, une option pour vérifier les problèmes connus et une option pour sélectionner la langue qui sera utilisée pour l’installation.&lt;/p&gt;
+            
+            &lt;p&gt;Assurez-vous que votre système répond aux exigences minimales. Le fait de ne pas avoir de connexion Internet pendant l’installation n’est pas un facteur bloquant et n’empêchera pas l’installation de continuer.&lt;/p&gt;
+            
+            &lt;p&gt;Avoir moins d’espace de disque qu’indiqué ou de RAM disponible fera échouer l’installation de façon quasi certaine. En ce qui concerne l&apos;espace disque, un minimum de 20 Go est recommandé.&lt;/p&gt;</translation>
     </message>
 </context>
 <context>
@@ -197,7 +212,7 @@ N’hésitez pas à partager votre avis sur KaOS dans le forum.&lt;/div&gt;</tra
     <message>
         <location filename="../main.qml" line="117"/>
         <source>Package List</source>
-        <translation type="unfinished"/>
+        <translation>Liste des paquets</translation>
     </message>
 </context>
 <context>
@@ -241,7 +256,24 @@ N’hésitez pas à partager votre avis sur KaOS dans le forum.&lt;/div&gt;</tra
             &lt;p&gt;The fourth option gives you the freedom to set any option, any filesystem and partition table. If you want to completely clean the drive and start over or if this drive has no partition table at all yet (new media, virtualbox install), you have to make a decision what partitiontable to use. Default in the installer is GPT, ms-dos is the older option (still more commonly used for BIOS systems). Advantage of GPT, it can use virtual unlimited primary partitions (ms-dos is limited to four), is needed for drives larger than 2 Tb and is best for UEFI systems. If you choose to use GPT on a BIOS system, make sure to set it up correctly, with the needed 8 MB partition of unformatted space at the beginning of the drive and having the bios_grub flag assigned to that unformatted partition.  This setup cannot have a seperate /boot partition.&lt;/p&gt;
             
             &lt;p&gt;Once the partitiontable is set, you need to partition the drive, minimum needed, one partition for / (root). There are some advantages to using a separate partition for /home, and you might like to have a swap partition for sleep/hibernate. Any other partitions is strictly personal choice, though setting up /usr is not very well supported in systemd (you&apos;ll have to use extra steps to make that work correctly).&lt;/p&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h3&gt;Partitionnement&lt;/h3&gt;
+            
+            &lt;p&gt;Utiliser les options de partitionnement correctes, le système de fichiers et la table de partition les plus appropriés constituent la partie la plus difficile à l’installation d’un système d’exploitation pour les nouveaux utilisateurs.&lt;/p&gt;
+
+            &lt;p&gt;&lt;font color=&apos;#ff0000&apos;&gt;Assurez-vous de sauvegarder toutes les données utiles de votre disque avant de continuer.&lt;/font&gt;&lt;/p&gt;
+            
+            &lt;p&gt;Si votre support d’installation cible (HDD, SSD, clé USB par exemple) n’est pas formaté et partitionné ou n’est pas configuré comme vous le souhaitez, vous pouvez le faire depuis le programme d’installation ou le préparer avant de démarrer le programme d’installation.&lt;/p&gt;
+            
+            &lt;p&gt;À la fois pour les systèmes UEFI et BIOS, passez la souris sur les boutons d’informations respectifs pour obtenir plus d’informations sur les différentes options pour chacun.&lt;/p&gt;
+            
+            &lt;p&gt;Cet installateur vous propose quatre options possibles.&lt;/br&gt;
+            La première option vous permettra de réduire une partition existante et d’installer KaOS aux côtés des autres systèmes d&apos;exploitation déjà disponibles sur votre système, en utilisant le système de fichiers XFS. La réduction n’est pas possible pour les partitions situées sur une table de partitions étendue ou utilisant le système de fichiers XFS.&lt;/br&gt;
+            La deuxième option vous permet d’utiliser une partition existante et remplacer tous les fichiers et/ou le système d’exploitation qu’elle contient par KaOS, en utilisant le système de fichiers XFS.&lt;/br&gt;
+            La troisième option utilise le disque entier et crée une partition root unique formatée en XFS où sera installé le système.&lt;/p&gt;
+            
+            &lt;p&gt;La quatrième option vous donne la liberté de définir n’importe quelle option, n’importe quel système de fichiers et table de partition. Si vous voulez nettoyer complètement le lecteur et recommencer ou si ce lecteur n’a pas encore de table de partition (nouveau média, installation de virtualbox), vous devez décider quelle partition utiliser. La table de partitions par défaut dans le programme est GPT, ms-dos est une option plus ancienne (encore plus communément utilisée pour les systèmes BIOS). GPT a l’avantage de pouvoir utiliser un nombre de partitions primaires virtuelles illimité (ms-dos est limité à quatre), il est nécessaire pour les disques de plus de 2 To et est meilleur pour les systèmes UEFI. Si vous choisissez d’utiliser GPT sur un système BIOS, assurez-vous de le configurer correctement, avec une partition requise de 8 Mo d’espace non formaté au début du lecteur avec un flag bios_grub. Cette configuration ne peut pas avoir une partition séparée pour /boot.&lt;/p&gt;
+            
+            &lt;p&gt;Une fois talbe de partitions créée, vous devez partitionner le disque, le minimum requis étant une partition pour / (root). Il y a certains avantages à utiliser une partition séparée pour /home, et vous aimeriez avoir une partition swap pour la mise en veille/mise en veille prolongée. Toute autre partition est un choix strictement personnel, bien que la configuration de /usr ne soit pas très bien supportée dans systemd (vous devrez utiliser des étapes supplémentaires pour que cela correctement)..&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../guide/partition.qml" line="117"/>

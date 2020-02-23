@@ -21,7 +21,6 @@ import QtQuick.Controls 2.14
 import QtQuick.Layouts 1.3
 import QtQuick.Window 2.0
 import QtQuick.Dialogs 1.2
-import org.kde.plasma.core 2.0 as PlasmaCore
 
 ApplicationWindow {
     visible: true
