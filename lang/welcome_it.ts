@@ -49,7 +49,27 @@
                     &lt;p&gt;&lt;b&gt;The target users&lt;/b&gt; are those who have tried many Operating Systems/Distributions/Desktop Environments and have found they prefer a Distribution that uses all its available resources to work on one DE to make that the best it can be, and know that after their searches, the best for them is KDE. Their used hardware is from about 2005 or later, so there are no issues with running 64 bit software. And the target audience is not afraid to use KDE/Qt versions of their needed applications, likes to see the best available selected for their needs, even if that means learning some new ways of working with a before unused application. There is an understanding selection for similar applications will be limited to 5-6.&lt;/p&gt;
                     
                     &lt;p&gt;KDE is a modern Desktop Environment which can make use of most of any graphics or sound card capabilities. This does not mean KDE can’t be made to run on very low-end hardware, but in general there are better options available for such systems (OpenBox for example). The very minimal needed for &lt;b&gt;hard-drive space is 8 Gb, but 25 Gb&lt;/b&gt; is recommended as minimal. KaOS will install with 1.5Gb of RAM available, though a much better experience will start with &lt;b&gt;2 Gb of RAM&lt;/b&gt;. Since only x86_64 packages are available, a &lt;b&gt;64 bit capable cpu&lt;/b&gt; is needed. As with any rolling distribution, updates are frequent and can be large, so a reasonable fast internet connection (dial-up will become very cumbersome) and available monthly data of over 2 Gb are recommended.&lt;/p&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h3&gt;A proposito di KaOS&lt;/h3&gt;
+&lt;p&gt;L&apos;idea alla base di KaOS è di creare una distribuzione rolling, solida e ben integrata per poter offrire un ambiente moderno, costruito con cura da zero, con un&apos;idea ben precisa in mente.
+ &lt;b&gt;Focus su un DE (KDE), un toolkit (Qt) e un&apos;architettura (x86_64).&lt;/b&gt;
+e in più abbiamo valutato e selezionato gli strumenti e le applicazioni più adatte. Tutto il lavoro è destinato allla creazione dei pacchetti, non allo sviluppo di nuovi strumenti o applicazioni..&lt;/p&gt;
+
+                    &lt;p&gt;Passando da sistemi operativi proprietari a opzioni open source (basate su Linux. BSD o Solaris) è una questione
+&lt;b&gt;di libertà e possibilità di scelta&lt;/b&gt; nella maggioranza dei casi. Ma un sistema operativo o una distribuzione open source deve per forza evitare di fare alcune scelte? KaOS vede in questo una mancanza di attenzione. Per creare una distribuzione della più alta qualità è necessario che ci sia un focus per assicurarsi che l&apos;utente ottenga il meglio da qualsiasi scelta faccia. È semplicemente impossibile includere tutti i pacchetti in modo che ognuno sia integrato perfettamente in tutti i Desktop Environment o i Toolkit.&lt;/p&gt;
+                    
+                    &lt;p&gt;KaOS ha scelto di usare il &lt;b&gt;kernel Linux&lt;/b&gt; come base (tanche se il kernel Illumos è continuamente preso in considerazione, ed è auspicabile un futuro passaggio ad esso). In base a questa scelta, il miglior package manager disponibile, il modo più flessibile di fare package building, e di mantenere i repository per una distribuzione rolling come KaOs è &lt;b&gt;pacman/makepkg&lt;/b&gt;. Per quanto riguarda il Desktop Environment, non ci sarà mai un cambiamento, che il kernel sia Linux o Illumos, e KDE sarà sempre la scelta, mentre il Toolkit sarà sempre Qt. Forti di queste scelte, nell&apos;aprile del 2013 è cominciato il package building per questa distribuzione indipendente.&lt;/p&gt;
+
+                    &lt;p&gt;KaOS è una distribuzione costruita da zero, &lt;b&gt;ogni pacchetto di ogni repository è stato costruito da e per KaOS&lt;/b&gt;. L&apos;obiettivo iniziale di 1500 pacchetti è stato raggiunto a luglio 2013.&lt;/p&gt;
+
+                    &lt;p&gt;Quando ci si sofferma sul numero relativamente basso di pacchetti totali disponibili, bisogna tenere a mente una cosa.Poiché  ci si concentra su un toolkit e un DE,&lt;b&gt; non c&apos;è bisogno di un frazionamento eccessivo dei pacchetti &lt;/b&gt; da provare e rendere funzionanti nei vari ambienti. In altre situazioni molti pacchetti sono divisi in 3-4-5, a volte perfino 15-20 pacchetti; KaOS semplifica le cose il più possibile per evitare il frazionamento  (ad esempio le app xorg, circa 50 pacchetti in origine, è costituito da 3 pacchetti, mesa di 2 invece che di 15).&lt;/p&gt;
+                    
+                    &lt;p&gt;Scegliere KDE/QT non significa che KaOS perda di vista l&apos;importanza di avere &lt;b&gt;gli strumenti migliori per un compito&lt;/b&gt;. La maggior parte delle volte si reputa che KDE/Qt offra strumenti superiori, ma ci sono alcune applicazioni in cui l&apos;opzione GTK è l&apos;unica possibile (Inkscape, Ardour per nominarne due), o per esempio nel caso dei browser web l&apos;opzione Qt non sta al passo con le controparti GTK. In queste situazioni, le applicazioni GTK sono disponibili, anche se il loro numero rimarrà limitato. In ogni caso, l&apos;ISO è una dimostrazione delle possibilità di Qt/KDE quindi &lt;b&gt;l&apos;ISO è GTK free&lt;/b&gt;, quindi non sono disponibili Firefox, Chrome o LibreOffice ad esempio, poiché dipendono da GTK&lt;/p&gt;
+                    
+                    &lt;p&gt;La struttura del repository è semplice e consiste di tre gruppi: Core, Main e Apps. Un aggiornamento di sistema ordinario e completo offrirà sempre le ultime novità,, &lt;b&gt;senza la necessità di reinstallare&lt;/b&gt; il sistema. &lt;i&gt;Core&lt;/i&gt; contiene i pacchetti di base necessari all&apos;accensione, alla comunicazione con il BIOS, al collegamento dell&apos;hardware di base e all&apos;impostazione di base della shell. Tra i pacchetti inclusi ci sono ad esempio il kernel, systemd, toolchain per il building e strumenti da riga di comando di base. &lt;i&gt;Main&lt;/i&gt; contiene tutte le librerie necessarie, i driver extra e i firmware necessari per far funzionare il desktop e le applicazioni. &lt;i&gt;Apps&lt;/i&gt; contiene tutti i pacchetti visti e usati dall&apos;utente, inclusi KDE e gli strumenti necessari. &lt;i&gt;Build&lt;/i&gt; è dove partono tutti i pacchetti, che siano una rebuild, un aggiornamento o un&apos;aggiunta, tutto parte da lì. Una volta superati i test opportuni, i pacchetti sono spostati ai repository rispettivi.&lt;/p&gt;
+                    
+                    &lt;p&gt;&lt;b&gt;L&apos;utente target&lt;/b&gt; è quello che ha provato diversi Sistemi operativi/Distributioni/Desktop Environment è ha capito di preferire una distribuzione che usa tutte le sue risorse per lavorare ad un DE per farlo rendere al meglio; inoltre, a seguito delle ricerche, ha scoperto che il migliroe in questo caso è KDE. L&apos;hardware usato è almeno del 2005, in modo che non ci siano problemi con i software a 64 bit.. Il pubblico di riferimento non ha problemi ad usare le versioni KDE/Qt delle applicazioni di cui ha bisogno, gradisce veder selezionate le migliori alternative per i propri bisogni, anche se questo significa imparare nuovi modi di lavorare o lavorare con nuove applicazioni. La scelta tra applicazioni simili è ridotta comprensibilmente a 5-6 alternative.&lt;/p&gt;
+                    
+                    &lt;p&gt;KDE è un Desktop Environment moderno che permette di sfruttare al meglio le capacità di qualsiasi scheda grafica o audio. Questo non significa che KDE non può girare su hardware scarso, ma in generale ci sono alternative più adatte per questi sistemi (OpenBox per esempio). Il minimo necessario è 8 GB di spazio&lt;b&gt;libero su disco, ma 25 Gb&lt;/b&gt; raccomandato come limite inferiore; KaOS può essere installato con 1.5 GB di RAM disponibile, anche se si gode di un&apos;esperienza molto migliore con almeno &lt;b&gt;2 GB of RAM&lt;/b&gt;. Poiché sono disponibili solo pacchetti x86_64, è necessaria &lt;b&gt;una cpu che supporta registri a 64 bit&lt;/b&gt; Come per ogni altra distribuzione rolling, gli aggiornamenti sono frequenti e possono anche essere corposi, quindi è necessaria una connessione internet ragionevolmente veloce (il dial-up può risultare difficoltoso) ed è raccomandata una disponibilità mensile di almeno 2 GB.&lt;/p&gt;</translation>
     </message>
 </context>
 <context>
@@ -72,7 +92,7 @@
     <message>
         <location filename="../guide/guide.qml" line="87"/>
         <source>Partitioning</source>
-        <translation type="unfinished"/>
+        <translation>Partizionamento</translation>
     </message>
     <message>
         <location filename="../guide/guide.qml" line="90"/>
@@ -175,7 +195,7 @@
     <message>
         <location filename="../main.qml" line="114"/>
         <source>About</source>
-        <translation type="unfinished"/>
+        <translation>A proposito di</translation>
     </message>
     <message>
         <location filename="../main.qml" line="117"/>
@@ -196,7 +216,9 @@
         <source>&lt;p&gt;Next is the &lt;strong&gt;Keyboard Setup&lt;/strong&gt;. You can test the layout by typing something in the designated area.&lt;/p&gt;
 
             &lt;p&gt;Use the drop-down menu to fine tune to your exact desired keyboard model.&lt;/p&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;p&gt;Le prossime sono le &lt;strong&gt;Impostazioni della tastiera&lt;/strong&gt;. Puoi testare il layout scrivendo qualcosa nell&apos;area apposita.&lt;/p&gt;
+
+&lt;p&gt;Usa il menu a tendina per aggiustare il modello esatto della tastiera.&lt;/p&gt;</translation>
     </message>
 </context>
 <context>
@@ -226,17 +248,17 @@
     <message>
         <location filename="../guide/partition.qml" line="117"/>
         <source>&lt;p&gt;Option to install alongside an existing partition, UEFI system, / (root) and swap used. After selecting which partition you want to shrink to create room for KaOS, you can drag in that partition to set the desired size.  Also shown here is the option to encrypt the system with password set.&lt;/p&gt;</source>
-        <translation type="unfinished"/>
+        <translation>Opzioni per installare affiancando una partizione esistente, sistema UEFI, / (radice) e lo swap usato. Dopo aver selezionato quale partizione vuoi ridimensionare per creare lo spazio per KaOS, trascina il bordo della partizione per impostare la dimensione desiderata. Qui è anche mostrata l&apos;opzione per crittografare il sistema e impostarne una password. </translation>
     </message>
     <message>
         <location filename="../guide/partition.qml" line="144"/>
         <source>&lt;p&gt;Option to replace an existing partition, UEFI system, / (root) and swap used. Once you select the partition you want to replace, the preview will show the &lt;i&gt;after&lt;/i&gt; bar.  Also shown here is the option to encrypt the system with password set.&lt;/p&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;p&gt;Opzioni per sostituire una partizione esistente, un sistema UEFI, 7 (radice) e lo swap usato. Una volta selezionata la partizione che vuoi sostituire, la preview mostrerà la barra &lt;i&gt;dopo&lt;/i&gt;. Qui è anche mostrata l&apos;opzione per crittografare il sistema e impostare una password.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../guide/partition.qml" line="171"/>
         <source>&lt;p&gt;Option to use the entire drive, all installed under / (root) if on a BIOS system and FAT32 EFI partition also created if the system is UEFI, with swap assigned if disk size allows.  This will remove all data and installed systems from the selected drive.&lt;/p&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;p&gt;Opzione per usare l&apos;intero disco, completamente installato sotto / (radice) se su un sistema BIOS oppure con anche una partizione FAT32 EFI se il sistema è UEFI, con assegnazione dello swap se le dimensioni del disco lo permettono. Quest&apos;opzione rimuoverà tutti i dati e i sistemi installati sul disco selezionato.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../guide/partition.qml" line="198"/>
@@ -248,14 +270,17 @@
         <location filename="../guide/partition.qml" line="266"/>
         <source>&lt;p&gt;Using the fourth option to adjust existing layout. Select &lt;code&gt;New Partition Table&lt;/code&gt; for a new drive or to switch from ms-dos to GPT or vice versa.&lt;/br&gt;
             Highlight a desired partition, and select &lt;code&gt;Format&lt;/code&gt;. If this is going to be the root partition, it needs to be formatted. If old files are still present it will most likely result in a broken install. Next select a Mountpoint, root needs to be set, for UEFI install /boot needs to be set too. Repeat these steps for any other partition you want to use for this install. Once root is set, the Next button will become active again. Options are available to encrypt partitions, this includes swap.&lt;/p&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;p&gt;Usa la quarta opzione per sistemare il layout esistente. Seleziona &lt;code&gt;Nuova tabella delle partizioni&lt;/code&gt; per un nuovo disco o per passare da ms-dos a GPT o viceversa.&lt;/br&gt;
+Evidenzia la partizione desiderata, e seleziona &lt;code&gt;Formatta&lt;/code&gt;. Se questa sarà la partizione radice, deve essere formattata. Se sono presenti vecchi file molto probabilmente l&apos;installazione risulterà corrotta. Poi seleziona un punto di montaggio, la radice deve essere impostata, per installazioni UEFI anche /boot deve essere impostata. Ripeti questi passaggi anche per le altre partizioni che vuoi usare per questa installazione. Una volta che root è impostata, il pulsante Next sarà nuovamente attivo. Sono disponibili opzioni per crittografare le partizioni, incluse quelle di swap.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../guide/partition.qml" line="304"/>
         <source>&lt;p&gt;The image below shows the needed setup for an UEFI partition. If your install already has this set, &lt;font color='#ff0000'&gt;DO NOT&lt;/font&gt; format it. With UEFI any existing bootloader can be used, formatting will delete any currently present files to boot Windows or any other OS.&lt;/br&gt;
             For BIOS systems select where you want to install the bootloader, this can either be done in the Master Boot Record of the selected disc, or can be installed in the /boot partition of the system (/boot can reside under root for that).&lt;/br&gt;
             No changes will happen when you click the Next button, you will get a chance to review all your chosen settings and go back if things are not exactly as you want them.&lt;/p&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;p&gt;L&apos;immagine sotto mostra il setup necessario per una partizione UEFI. Se la tua installazione l&apos;ha già impostata, &lt;font color=&apos;#ff0000&apos;&gt;NON&lt;/font&gt; formattarla. Con UEFI si può usare qualsiasi bootloader esistente, la formattazione cancellerebbe qualsiasi file presente per il boot di Windows o altri sistemi operativi. &lt;/br&gt;
+Per sistemi BIOS seleziona dove vuoi installare il bootloader,si può installare sia nel Master Boot Record del disco selezionato che in una partizione di boot del sistema (boot può anche stare sotto root in questo caso).&lt;/br&gt;
+Nessun cambiamento sarà applicato quando premi il pulsante Next, ma avrai la possibilità di ricontrollare tutte le impostazioni scelte e tornare indietro se le cose non saranno come desideri.</translation>
     </message>
 </context>
 <context>
@@ -265,7 +290,9 @@
         <source>&lt;h3&gt;Summary&lt;/h3&gt;
 
             &lt;p&gt;All looking as it should? Then clicking Next will give you one last warning before the actual formatting and installation will start.&lt;/p&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h3&gt;Panoramica&lt;/h3&gt;
+
+&lt;p&gt;Tutto appare come dovrebbe? Allora premendo Next avrai un ultimo avviso prima che la formattazione vera e propria e l&apos;installazione partano. &lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../guide/summary.qml" line="90"/>
@@ -274,7 +301,11 @@
             &lt;p&gt;Once the installation is finished, you have the option to close the installer and go back to live mode or reboot the system right away. A full log of the install is available as installation.log in the home directory of the Live user and this log is copied to /var/log/installation.log of the target system.&lt;/p&gt;
 
             &lt;p&gt;Hopefully this Guide has answered any questions you had about using this Installer. If anything is not clear enough then it would be really appreciated if you can get in touch to get the needed changes in.&lt;/p&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;p&gt;Mentre procede l&apos;installazione del sistema, viene mostrata una presentazione che ti darà qualche informazione di base. Puoi comunque seguire quello che sta facendo l&apos;installer ad ogni step. Questa parte impiegherà circa 5-10 minuti in base alle tue impostazioni e alla velocità del disco di destinazione. Intorno al 30% finisce la copia dei file (la parte più lunga), poi l&apos;installer creerà gli utenti, rimuoverà i pacchetti specifici della versione Live, installerà pacchetti aggiuntivi, rimuoverà pacchetti di lingua e  driver non necessari per il tuo hardware, configurerà GRUB per sistemi BIOS o Systemd-boot per UEFI e copierà le impostazioni utente specifiche di KaOS.&lt;/p&gt;
+
+&lt;p&gt;Una volta terminata l&apos;installazione, avrai la possibilità di chiudere l&apos;installer e tornare alla distribuzione live o riavviare immediatamente il sistema. Un log completo dell&apos;installazione è disponibile nel file installation.log nella cartella home dell&apos;utente Live ed è copiato in /var/log/installation.log del sistema di destinazione.&lt;/p&gt;
+
+&lt;p&gt;Speriamo che questa guida abba risposto a tutte le domande che avevi su questo installer. Se qualcosa non fosse chiaro abbastanza, ti preghiamo di contattarci per modificarlo in modo opportuno.&lt;/p&gt;</translation>
     </message>
 </context>
 <context>

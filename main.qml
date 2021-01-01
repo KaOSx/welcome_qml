@@ -83,13 +83,13 @@ ApplicationWindow {
                 }
             }
         }
-        
+
         Page {
             Loader {
                 id: about
                 source: "about.qml"
             }
-            
+
         }
         Page {
             Loader {
