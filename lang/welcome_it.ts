@@ -209,7 +209,8 @@ e in più abbiamo valutato e selezionato gli strumenti e le applicazioni più ad
         <location filename="../guide/notes.qml" line="52"/>
         <source>&lt;p&gt;The &lt;strong&gt;Release Notes&lt;/strong&gt; give you important information of what is included in this ISO&lt;/p&gt;
             &lt;p&gt;If you selected non-free Nvidia during the start-up of the Live session, you will be presented with a License page.  Make sure to read and accept the license, otherwise your install will not include the non-free driver, and will fallback to Nouveau instead. You won&apos;t see this page if you selected to use the free drivers.&lt;/p&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;p&gt;Le &lt;strong&gt;Release Notes&lt;/strong&gt; ti forniranno informazioni importanti su cosa include questa ISO.&lt;/p&gt;
+ &lt;p&gt;Se hai selezionato non-free Nvidia all&apos;avvio della sessione Live, ti sarà mostrata una pagina con la Licenza. Assicurati di leggerla e accettarla, altrimenti la tua installazione non includerà i driver non-free e conterrà invece Nouveau. Non vedrai la pagina in questione se hai scelto l&apos;uso dei driver free.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../guide/notes.qml" line="90"/>
@@ -264,7 +265,8 @@ e in più abbiamo valutato e selezionato gli strumenti e le applicazioni più ad
         <location filename="../guide/partition.qml" line="198"/>
         <source>&lt;p&gt;Using the fourth option to delete an existing layout. Select &lt;code&gt;New Partition Table&lt;/code&gt; for a new drive or to switch from ms-dos to GPT or vice versa.&lt;/br&gt;
             Highlight &lt;code&gt;Free Space&lt;/code&gt; and select &lt;code&gt;Create&lt;/code&gt;.  You then get a window with options to set partition type, file system and mountpoint. When using an UEFI install, it is a must to have a vfat (fat32) formatted /boot partition available. Best set the size to 512Mb and have it at the beginning of the partition-table. Once root is set, the Next button will become active again.&lt;/p&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;p&gt;Usa la quarta opzione per cancellare il layout esistente. Seleziona &lt;code&gt;Nuova tabella delle partizioni&lt;/code&gt; per un nuovo disco o per passare da ms-dos a GPT o viceversa.&lt;/br&gt;
+Evidenzia &lt;code&gt;Spazio libero&lt;/code&gt; e seleziona &lt;code&gt;Crea&lt;/code&gt;. Vedrai una finestra con le opzioni per l&apos;impostazione del tipo di partizione, di file system e punto di montaggio. Per installazioni UEFI, deve essere disponibile una partizione /boot formattata in vfat (fat32). La situazione ottimale è una partizione di 512Mb all&apos;inizio della tabella delle partizioni. Una volta che root è impostata, il pulsante Next sarà nuovamente attivo. &lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../guide/partition.qml" line="266"/>
@@ -319,7 +321,13 @@ Nessun cambiamento sarà applicato quando premi il pulsante Next, ma avrai la po
             &lt;p&gt;For security reasons, it is advisable to use a different password for the administrator (or root) account.&lt;/p&gt;
 
             &lt;p&gt;Default is set to autologin disabled, add a marker to enable passwordless login.&lt;/p&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h3&gt;Creazione utente&lt;/h3&gt;
+
+&lt;p&gt;La pagina di creazione dell&apos;utente fornisce le opzioni per impostare un nome utente diverso dal tuo vero nome e il nome desiderato per il sistema.&lt;/p&gt;
+
+&lt;p&gt;Per ragioni di sicurezza, è consigliabile usare una password diversa per l&apos;account di amministrazione (root)&lt;/p&gt;
+
+&lt;p&gt;Di default l&apos;autologin è disattivato, spunta la casella per attivare il login senza password.&lt;/p&gt;</translation>
     </message>
 </context>
 </TS>
