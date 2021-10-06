@@ -30,6 +30,7 @@ TRANSLATIONS  += lang/welcome.ts \
               lang/welcome_ast.ts \
               lang/welcome_ca.ts \
               lang/welcome_cs.ts \
+              lang/welcome_da.ts \
               lang/welcome_de.ts \
               lang/welcome_es.ts \
               lang/welcome_es_AR.ts \
