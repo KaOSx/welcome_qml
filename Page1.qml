@@ -19,14 +19,14 @@
 import QtQuick 2.7
 import QtQuick.Controls 2.0
 import QtQuick.Layouts 1.3
-//import org.kde.plasma.core 2.0 as PlasmaCore
+import org.kde.plasma.core 2.0 as PlasmaCore
 
 Page1Form {
-    //PlasmaCore.DataSource {
-    //    id: executer
-    //    engine: "executable"
-    //    onNewData: {executer.disconnectSource(sourceName);}
-    //}
+    PlasmaCore.DataSource {
+        id: executer
+        engine: "executable"
+        onNewData: {executer.disconnectSource(sourceName);}
+    }
 
     button1.onClicked: {
         executer.connectSource("/usr/bin/launch-calamares.sh");
