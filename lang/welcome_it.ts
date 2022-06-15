@@ -1,4 +1,4 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="it" version="2.1">
+<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="it">
 <context>
     <name>Page1Form.ui</name>
     <message>
@@ -14,7 +14,7 @@
     <message>
         <location filename="../Page1Form.ui.qml" line="187"/>
         <source>Donate</source>
-        <translation type="unfinished"/>
+        <translation>Donate</translation>
     </message>
     <message>
         <location filename="../Page1Form.ui.qml" line="138"/>
@@ -55,7 +55,7 @@
 e in più abbiamo valutato e selezionato gli strumenti e le applicazioni più adatte. Tutto il lavoro è destinato allla creazione dei pacchetti, non allo sviluppo di nuovi strumenti o applicazioni..&lt;/p&gt;
 
                     &lt;p&gt;Passando da sistemi operativi proprietari a opzioni open source (basate su Linux. BSD o Solaris) è una questione
-&lt;b&gt;di libertà e possibilità di scelta&lt;/b&gt; nella maggioranza dei casi. Ma un sistema operativo o una distribuzione open source deve per forza evitare di fare alcune scelte? KaOS vede in questo una mancanza di attenzione. Per creare una distribuzione della più alta qualità è necessario che ci sia un focus per assicurarsi che l&apos;utente ottenga il meglio da qualsiasi scelta faccia. È semplicemente impossibile includere tutti i pacchetti in modo che ognuno sia integrato perfettamente in tutti i Desktop Environment o i Toolkit.&lt;/p&gt;
+&lt;b&gt;di libertà e possibilità di scelta&lt;/b&gt; nella maggioranza dei casi. Ma un sistema operativo o una distribuzione open source deve per forza evitare di fare delle scelte su ciò che ritiene più adatto? KaOS vede in questo una mancanza di attenzione. Per creare una distribuzione della più alta qualità è necessario che ci sia un focus per assicurarsi che l&apos;utente ottenga il meglio da qualsiasi scelta faccia. È semplicemente impossibile includere tutti i pacchetti in modo che ognuno sia integrato perfettamente in tutti i Desktop Environment o i Toolkit.&lt;/p&gt;
                     
                     &lt;p&gt;KaOS ha scelto di usare il &lt;b&gt;kernel Linux&lt;/b&gt; come base (tanche se il kernel Illumos è continuamente preso in considerazione, ed è auspicabile un futuro passaggio ad esso). In base a questa scelta, il miglior package manager disponibile, il modo più flessibile di fare package building, e di mantenere i repository per una distribuzione rolling come KaOs è &lt;b&gt;pacman/makepkg&lt;/b&gt;. Per quanto riguarda il Desktop Environment, non ci sarà mai un cambiamento, che il kernel sia Linux o Illumos, e KDE sarà sempre la scelta, mentre il Toolkit sarà sempre Qt. Forti di queste scelte, nell&apos;aprile del 2013 è cominciato il package building per questa distribuzione indipendente.&lt;/p&gt;
 
@@ -125,7 +125,22 @@ e in più abbiamo valutato e selezionato gli strumenti e le applicazioni più ad
             &lt;p&gt;Ensure that your system meets the minimal requirements. Not having an internet connection during the install is no deal breaker and won't stop the install from going through.&lt;/p&gt;
             
             &lt;p&gt;Having less than the shown disc space or available RAM will almost certainly fail the install. As for disc space, a minimum of 20 Gb is recommended.&lt;/p&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h3&gt;Guida all&apos;installazione&lt;/h3&gt;
+
+            &lt;p&gt;Ora che avete visto come funziona KaOS in modalità live, siete pronti per l&apos;installazione. Prima di farlo, è bene sapere alcune cose.&lt;/p&gt;
+
+            &lt;p&gt;Come per ogni release rolling, è necessario un aggiornamento regolare; se si rimane troppo indietro e si cerca di aggiornare, è probabile che si verifichino dei problemi. Si consiglia di aggiornare settimanalmente, non meno di una volta al mese.&lt;/br&gt;
+            Se questo non è possibile, sarebbe meglio considerare l&apos;uso di una distribuzione statica, con un ciclo di rilascio di sei o nove mesi. Se sono necessarie istruzioni per un aggiornamento di KaOS, &lt;a href=&apos;https://kaosx.us/news/&apos;&gt;kaosx.us/news/&lt;/a&gt; vi avvertirà sempre di tali istruzioni (che saranno mostrate anche in Octopi, il gestore dei pacchetti). È bene familiarizzare con il gestore di pacchetti a riga di comando &lt;a href=&apos;https://kaosx.us/docs/pacman/&apos;&gt;pacman&lt;/a&gt;. Ogni distribuzione deve implementare cambiamenti importanti a volte, una distribuzione rolling deve affidarsi al gestore di pacchetti per interagire con gli utenti e assicurarsi che tali aggiornamenti siano fatti correttamente. Poiché rolling significa essenzialmente che non si deve reinstallare a intervalli prestabiliti (una distribuzione statica può richiedere tale reinstallazione necessaria per introdurre cambiamenti importanti). Nessuna interfaccia grafica per pacman è potente quanto pacman stesso in queste situazioni.&lt;/p&gt;
+
+            &lt;p&gt;Calamares, l&apos;installatore di KaOS è semplice e facile da usare. Tuttavia in questa fase manca di una caratteristica: la configurazione dei dischi RAID non è ancora supportata.&lt;/p&gt;
+
+            &lt;h3&gt;Avvio del programma di installazione&lt;/h3&gt;
+
+            &lt;p&gt;La prima pagina fornisce alcune informazioni sul programma di installazione, un&apos;opzione per controllare i problemi attualmente noti e un&apos;opzione per selezionare la lingua da utilizzare per l&apos;installazione.&lt;/p&gt;
+            
+            &lt;p&gt;Assicuratevi che il vostro sistema soddisfi i requisiti minimi. La mancanza di una connessione a internet durante l&apos;installazione non è un problema e non impedisce che l&apos;installazione sia completata.&lt;/p&gt;
+            
+            &lt;p&gt;Se lo spazio su disco o la RAM disponibile sono inferiori a quelli indicati, l&apos;installazione quasi certamente fallirà. Per quanto riguarda lo spazio su disco, si raccomanda un minimo di 20 Gb.&lt;/p&gt;</translation>
     </message>
 </context>
 <context>
@@ -200,7 +215,7 @@ e in più abbiamo valutato e selezionato gli strumenti e le applicazioni più ad
     <message>
         <location filename="../main.qml" line="117"/>
         <source>Package List</source>
-        <translation type="unfinished"/>
+        <translation>Lista dei pacchetti</translation>
     </message>
 </context>
 <context>
@@ -244,7 +259,24 @@ e in più abbiamo valutato e selezionato gli strumenti e le applicazioni più ad
             &lt;p&gt;The fourth option gives you the freedom to set any option, any filesystem and partition table. If you want to completely clean the drive and start over or if this drive has no partition table at all yet (new media, virtualbox install), you have to make a decision what partitiontable to use. Default in the installer is GPT, ms-dos is the older option (still more commonly used for BIOS systems). Advantage of GPT, it can use virtual unlimited primary partitions (ms-dos is limited to four), is needed for drives larger than 2 Tb and is best for UEFI systems. If you choose to use GPT on a BIOS system, make sure to set it up correctly, with the needed 8 MB partition of unformatted space at the beginning of the drive and having the bios_grub flag assigned to that unformatted partition.  This setup cannot have a seperate /boot partition.&lt;/p&gt;
             
             &lt;p&gt;Once the partitiontable is set, you need to partition the drive, minimum needed, one partition for / (root). There are some advantages to using a separate partition for /home, and you might like to have a swap partition for sleep/hibernate. Any other partitions is strictly personal choice, though setting up /usr is not very well supported in systemd (you&apos;ll have to use extra steps to make that work correctly).&lt;/p&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h3&gt;Partizionamento&lt;/h3&gt;
+            
+            &lt;p&gt;L&apos;uso della corretta configurazione delle partizioni, del filesystem più adatto e della tabella delle partizioni è la parte più impegnativa per chiunque sia alle prime armi con l&apos;installazione di un sistema operativo.&lt;/p&gt;
+
+            &lt;p&gt;&lt;font color=&apos;#ff0000&apos;&gt;Assicurarsi di eseguire un backup di tutti i vostri dati importanti dall&apos;unità prima di procedere.&lt;/font&gt;&lt;/p&gt;
+            
+            &lt;p&gt;Se il supporto di installazione di destinazione (HDD, ssd, chiavetta USB, per esempio) non è formattato e partizionato, o non è configurato secondo le vostre necessità, è possibile farlo dall&apos;interno del programma di installazione, oppure prepararlo prima di avviare il programma di installazione.&lt;/p&gt;
+            
+            &lt;p&gt;Sia per i sistemi UEFI che per quelli BIOS, passando il mouse sui rispettivi pulsanti informativi si ottengono ulteriori informazioni sulle diverse opzioni.&lt;/p&gt;
+            
+            &lt;p&gt;Questo programma di installazione offre quattro opzioni da utilizzare.&lt;/br&gt;
+            La prima opzione consente di ridurre una partizione esistente e di installare KaOS a fianco di qualsiasi altro sistema operativo già presente, utilizzando il filesystem XFS. Il restringimento non è possibile per le partizioni che risiedono su una tabella di partizione estesa o che utilizzano il filesystem XFS.&lt;/br&gt;
+            La seconda opzione consente di utilizzare una partizione esistente e di sostituire tutti i file e/o il sistema operativo su tale partizione con un&apos;installazione di KaOS, utilizzando il filesystem XFS.&lt;/br&gt;
+            La terza opzione utilizza l&apos;intero disco e crea una partizione in cui tutto sarà installato sotto root, tutte le altre partizioni saranno rimosse e il filesystem utilizzato sarà XFS.&lt;/p&gt;
+            
+            &lt;p&gt;La quarta opzione offre la libertà di impostare qualsiasi scelta, qualsiasi filesystem e tabella delle partizioni. Se si desidera ripulire completamente l&apos;unità e ricominciare da capo o se l&apos;unità non ha ancora una tabella di partizione (nuovo supporto, installazione di virtualbox), è necessario decidere quale tabella di partizione utilizzare. Quella predefinita nel programma di installazione è GPT, mentre ms-dos è l&apos;opzione più vecchia (ancora più comunemente usata per i sistemi BIOS). Il vantaggio di GPT è che può usare partizioni primarie virtuali illimitate (ms-dos è limitato a quattro), è necessario per unità più grandi di 2 Tb ed è migliore per i sistemi UEFI. Se si sceglie di usare GPT su un sistema BIOS, assicurarsi di configurarlo correttamente, con la necessaria partizione di 8 MB di spazio non formattato all&apos;inizio dell&apos;unità e con il flag bios_grub assegnato a tale partizione non formattata. Questa configurazione non può avere una partizione /boot separata.&lt;/p&gt;
+            
+            &lt;p&gt;Una volta impostata la tabella delle partizioni, è necessario partizionare il disco. Il minimo necessario consiste in una partizione per / (root). Ci sono alcuni vantaggi nell&apos;usare una partizione separata per /home e si potrebbe avere una partizione di swap per sleep/hibernate. Qualsiasi altra partizione è una scelta strettamente personale, anche se l&apos;impostazione di /usr non è molto ben supportata da systemd (si dovranno usare dei passaggi extra per farla funzionare correttamente).&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../guide/partition.qml" line="117"/>

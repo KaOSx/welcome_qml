@@ -41,6 +41,7 @@ TRANSLATIONS  += lang/welcome.ts \
               lang/welcome_hu.ts \
               lang/welcome_id_ID.ts \
               lang/welcome_it.ts \
+              lang/welcome_ja.ts \
               lang/welcome_pl.ts \
               lang/welcome_pt_BR.ts \
               lang/welcome_uk.ts \

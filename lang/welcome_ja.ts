@@ -1,30 +1,30 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="uk">
+<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="ja">
 <context>
     <name>Page1Form.ui</name>
     <message>
         <location filename="../Page1Form.ui.qml" line="45"/>
         <source>Install KaOS</source>
-        <translation>Встановити KaOS</translation>
+        <translation>KaOSをインストール</translation>
     </message>
     <message>
         <location filename="../Page1Form.ui.qml" line="94"/>
         <source>Guide</source>
-        <translation>Керівництво</translation>
+        <translation>ガイド</translation>
     </message>
     <message>
         <location filename="../Page1Form.ui.qml" line="187"/>
         <source>Donate</source>
-        <translation>Пожертва</translation>
+        <translation>寄付</translation>
     </message>
     <message>
         <location filename="../Page1Form.ui.qml" line="138"/>
         <source>Forum</source>
-        <translation>Форум</translation>
+        <translation>フォーラム</translation>
     </message>
     <message>
         <location filename="../Page1Form.ui.qml" line="163"/>
         <source>Documentation</source>
-        <translation>Документація</translation>
+        <translation>ドキュメント</translation>
     </message>
 </context>
 <context>
@@ -49,24 +49,25 @@
                     &lt;p&gt;&lt;b&gt;The target users&lt;/b&gt; are those who have tried many Operating Systems/Distributions/Desktop Environments and have found they prefer a Distribution that uses all its available resources to work on one DE to make that the best it can be, and know that after their searches, the best for them is KDE. Their used hardware is from about 2005 or later, so there are no issues with running 64 bit software. And the target audience is not afraid to use KDE/Qt versions of their needed applications, likes to see the best available selected for their needs, even if that means learning some new ways of working with a before unused application. There is an understanding selection for similar applications will be limited to 5-6.&lt;/p&gt;
                     
                     &lt;p&gt;KDE is a modern Desktop Environment which can make use of most of any graphics or sound card capabilities. This does not mean KDE can’t be made to run on very low-end hardware, but in general there are better options available for such systems (OpenBox for example). The very minimal needed for &lt;b&gt;hard-drive space is 8 Gb, but 25 Gb&lt;/b&gt; is recommended as minimal. KaOS will install with 1.5Gb of RAM available, though a much better experience will start with &lt;b&gt;2 Gb of RAM&lt;/b&gt;. Since only x86_64 packages are available, a &lt;b&gt;64 bit capable cpu&lt;/b&gt; is needed. As with any rolling distribution, updates are frequent and can be large, so a reasonable fast internet connection (dial-up will become very cumbersome) and available monthly data of over 2 Gb are recommended.&lt;/p&gt;</source>
-        <translation>&lt;h3&gt;Про KaOS&lt;/h3&gt;
-&lt;p&gt;Ідея KaOS полягає в тому, щоб створити тісно інтегрований і прозорий дистрибутив для сучасного робочого столу, створений з нуля з дуже конкретним фокусом. Зосередьтеся &lt;b&gt;на одному DE (KDE), одному наборі інструментів (Qt), одній архітектурі (x86_64)&lt;/b&gt;, а також зосередьтеся на оцінці та виборі найбільш підходящих інструментів і програм. Вся робота спрямована на упаковку, а не на розробку нових інструментів чи додатків.&lt;/p&gt;
+        <translation>&lt;h3&gt;KaOSについて&lt;/h3&gt;
+&lt;p&gt;KaOSの背後にあるアイデアは、非常に特定の焦点でゼロから構築された、現代のデスクトップのための緊密に統合されたローリングと透明なディストリビューションを作成することです。&lt;b&gt;一つのDE（KDE）、一つのツールキット（Qt）、一つのアーキテクチャ（x86_64）&lt;/b&gt;に加え、最も適したツールやアプリケーションを評価し選択することに焦点を当てます。すべての作業はパッケージングに向けられ、新しいツールやアプリケーションを開発することはありません。&lt;/p&gt;
 
-&lt;p&gt;Відхід від власних операційних систем до варіантів з відкритим кодом (на основі Linux, BSD, Solaris) означає &lt;b&gt;бажання свободи та вибору&lt;/b&gt; майже у всіх випадках. Але чи повинна будь-яка така операційна система чи дистрибутив не робити вибір з того, що, на її думку, найкраще підходить? KaOS бачить у цьому відношенні брак уваги. Щоб створити розповсюдження найвищої якості, необхідно зосередитися на тому, щоб користувач отримав найкращий варіант для будь-якого вибору, який він зробив. Просто неможливо упакувати все, щоб ідеально працювати для кожного середовища робочого столу або інструментарію.&lt;/p&gt;
+&lt;p&gt;プロプライエタリなオペレーティングシステムからオープンソースのオプション(Linuxベース、BSDベース、Solarisベース)への移行は、ほとんどすべてのケースにおいて、&lt;b&gt;自由と選択&lt;/b&gt;を求めることです。しかし、そのようなオペレーティングシステムやディストリビューションは、それが最も適していると信じるものをいくつか選択すべきではないでしょうか。KaOSはこの点に関して、焦点が定まっていないと考えています。可能な限り高品質のディストリビューションを作るには、ユーザーがどのような選択をしたにせよ、可能な限り最高のものを手に入れられるようにすることに焦点を合わせる必要があります。すべてのデスクトップ環境やツールキットで完璧に動作するように、すべてをパッケージ化することは、単に不可能なのです。&lt;/p&gt;
 
-&lt;p&gt;KaOS вирішив використовувати ядро ​​Linux як базу (хоча ядро ​​Illumos постійно перевіряється, і майбутній перемикач є бажанням). Після цього вибору найкращим доступним менеджером пакетів, найгнучкішим способом створення пакетів, обслуговуванням репозиторію є pacman/makepkg для постійного дистрибутива, такого як KaOS. Що стосується середовища робочого столу, то тут ніколи не буде змін, незалежно від того, чи буде воно на базі Linux чи Illumos, вибір буде KDE, а Qt — інструментарій. З цими виборами в квітні 2013 року було розпочато створення пакетів для цього незалежного дистрибутива.
+&lt;p&gt;KaOS は &lt;b&gt;Linux カーネル&lt;/b&gt;をベースにする選択をしました (ただし Illumos カーネルは常に評価中で、将来の切り替えは希望です)。その選択の結果、KaOS のようなローリングディストリビューションでは、パッケージマネージャ、パッケージ構築の最も柔軟な方法、リポジトリのメンテナンスは &lt;b&gt;pacman/makepkg&lt;/b&gt; が最も有効です。デスクトップ環境については、LinuxであろうとIllumosベースであろうと、KDEが選択され、Qtがツールキットとなることに変わりはないでしょう。これらの選択肢が揃ったので、2013年4月、この独立したディストリビューションのためのパッケージ構築が開始されました。&lt;/p&gt;
 
-KaOS — це збірка з нуля, кожен пакунок у кожному репозиторії створений KaOS і для нього. До липня 2013 року було досягнуто початкової мети близько 1500 упаковок.
+&lt;p&gt;KaOSはゼロから構築するディストリビューションで、&lt;b&gt;すべてのリポジトリにあるすべてのパッケージはKaOSによって、またKaOSのために構築されています。&lt;/b&gt;2013年7月までに、当初の目標であった約1500のパッケージに到達しました。&lt;/p&gt;
 
-Розглядаючи відносно невелику кількість загальної кількості доступних пакетів, будь ласка, майте на увазі одну річ. Оскільки фокус зосереджений на одному наборі інструментів, одному DE, немає потреби в надмірному розділенні пакетів, щоб спробувати зробити всі роботи для всіх видів різних середовищ. Були в інших місцях, багато пакетів розділені на 3-4-5, іноді 15-20 пакетів, KaOS максимально спрощує речі та уникає поділу (прикладом є програми xorg, близько 50 пакетів об&apos;єднані лише в 3, mesa складається з 2 замість 15).
+&lt;p&gt;利用可能なパッケージの総数が比較的少ないことを考慮した場合、1 つのことを心に留めておいてください。一つのツールキット、一つのDEに焦点が当てられているため、あらゆる種類の異なる環境ですべてを動作させようとする&lt;b&gt;パッケージの過度の分割は必要ありません。&lt;/b&gt;他のところでは、多くのパッケージが3-4-5、時には15-20に分割されていますが、KaOSでは可能な限り単純化して分割を避けています（例：xorg apps、約50のパッケージがたった3つにまとめられています、Mesaは15ではなく2つで構成されています）。&lt;/p&gt;
 
-Вибір KDE/QT не означає, що KaOS втрачає з уваги важливість мати найкращий інструмент, доступний для роботи. У більшості випадків вважається, що KDE/Qt надає найкращий інструмент, але є кілька програм, у яких опція GTK є єдиною доступною в цьому роді (Inkscape, Ardor, щоб назвати два), або у випадку веб-браузерів для Наприклад, параметри Qt не сумісні з їхніми аналогами GTK. Для цих випадків доступні програми GTK, хоча їх кількість залишиться обмеженою. Хоча цей ISO є демонстрацією потужності Qt/KDE, тож ISO не має GTK, тобто не можна назвати кілька Firefox, Chrome чи LibreOffice, оскільки вони залежать від GTK.
+&lt;p&gt;KDE/QTを選択することは、KaOSが&lt;b&gt;その仕事に利用可能な最高のツール&lt;/b&gt;を持つことの重要性を失うことを意味するものではありません。ほとんどの場合、KDE/Qtは優れたツールを提供すると考えられていますが、GTKオプションがその種の唯一の利用可能なアプリケーションであったり (Inkscape、Ardourを挙げることができます)、例えばウェブブラウザの場合、QtオプションがGTK対応品に追いつかないということがいくつかあります。このような場合、GTKアプリケーションは利用可能ですが、その数は限られたものになるでしょう。&lt;b&gt;このISOはQt/KDEのパワーを紹介するものなので、GTKフリーです。&lt;/b&gt;つまり、Firefox、Chrome、LibreOfficeなどはGTKに依存しているため、使用できません。&lt;/p&gt;
 
-Макет сховища простий і складається з трьох груп: Основна, Основна та Програми. Регулярне повне оновлення системи завжди надасть вам останню доступну версію без необхідності перевстановлювати систему. Core має базові пакети, необхідні для завантаження системи, зв&apos;язку з BIOS, підключення більшості апаратних засобів і встановлення основних параметрів оболонки. Прикладом пакетів є ядро, systemd, ланцюжок інструментів для створення та основні інструменти командного рядка. Основне сховище складається з усіх необхідних бібліотек, додаткових драйверів та мікропрограм, необхідних для роботи робочого столу та програм. Програми складаються з усіх пакетів, які бачать і використовують користувачі, включаючи KDE та всі необхідні інструменти. Коли всі пакунки запущені, незалежно від того, чи це перебудова, оновлення чи нове доповнення, усі пакунки переходять на збірку, пройшовши належне тестування, після чого вони переміщуються до відповідного сховища.
+&lt;p&gt;リポジトリのレイアウトはシンプルで、Core、Main、Appsの3つのグループから構成されています。定期的にシステムを完全にアップデートすることで、システムの&lt;b&gt;再インストールの必要なく&lt;/b&gt;、常に最新のものが利用できます。&lt;i&gt;Core&lt;/i&gt; には、システムが起動し、BIOS と通信してほとんどのハードウェアを接続し、基本的なシェルオプションを設定するために必要な基本パッケージがあります。パッケージの例としては、カーネル、systemd、ビルド用ツールチェーン、基本的なコマンドラインツールなどがあります。&lt;i&gt;Main&lt;/i&gt; リポジトリは、デスクトップとアプリケーションを機能させるために必要なライブラリ、追加ドライバ、ファームウェアのすべてで構成されています。&lt;i&gt;Apps&lt;/i&gt; は、KDE や必要なツールなど、ユーザが見て使うすべてのパッケージで構成されています。&lt;i&gt;Build&lt;/i&gt;は、すべてのパッケージが始まる場所です。リビルド、アップデート、新しい追加など、すべてがビルドされ、適切なテストを経て、それぞれのリポジトリに移動されます。&lt;/p&gt;
 
-Цільовими користувачами є ті, хто спробував багато операційних систем/дистрибутивів/настільних середовищ і виявив, що вони віддають перевагу дистрибутиву, який використовує всі доступні ресурси для роботи над одним DE, щоб зробити це найкращим, і знають, що після їх пошуків, найкращим для них є KDE. Використовувані апаратні засоби приблизно 2005 року або пізніше, тому проблем із запуском 64-розрядного програмного забезпечення немає. І цільова аудиторія не боїться використовувати версії KDE/Qt своїх необхідних програм, любить бачити найкращі доступні, вибрані для їх потреб, навіть якщо це означає вивчення деяких нових способів роботи з програмою, яка раніше не використовувалася. Існує розуміння, що вибір для подібних програм буде обмежено 5-6.
+&lt;p&gt;&lt;b&gt;対象ユーザー&lt;/b&gt;は、多くのオペレーティングシステム/ディストリビューション/デスクトップ環境を試した結果、1つのDEに対して利用可能なリソースをすべて使って最高の状態で動作するディストリビューションを好み、探索の結果、自分にとって最高のものがKDEであることを知っている人たちです。彼らの使用するハードウェアは2005年以降のものなので、64ビットのソフトウェアを実行することに問題はありません。そして、ターゲットとなるユーザーは、必要なアプリケーションの KDE/Qt バージョンを使うことに躊躇せず、たとえそれが、以前使っていなかったアプリケーションで新しい作業方法を学ぶことになったとしても、彼らのニーズに応じて選択された最良のものを見るのが好きなのです。類似のアプリケーションの選択は、5-6に制限されることを理解しています。&lt;/p&gt;
 
-KDE — це сучасне середовище робочого столу, яке може використовувати більшість можливостей графічної чи звукової карти. Це не означає, що KDE не можна змусити працювати на дуже бюджетному обладнанні, але загалом є кращі варіанти</translation>
+&lt;p&gt;KDE は最新のデスクトップ環境であり、グラフィックカードやサウンドカードの機能のほとんどを利用することができます。これは、KDE が非常にローエンドなハードウェアで動作しないという意味ではありませんが、一般的に、そのようなシステムにはより良い選択肢があります (例えば、OpenBox など)。&lt;b&gt;ハードディスクの容量は最低でも 8GB ですが、25GB を推奨します。&lt;/b&gt;KaOS は 1.5GB の RAM があればインストールできますが、&lt;b&gt;2GB の RAM&lt;/b&gt; があればより良い体験ができます。x86_64パッケージのみが利用可能なので、&lt;b&gt;64ビット対応のCPU&lt;/b&gt;が必要です。他のローリングディストリビューションと同様、アップデートは頻繁に行われ、容量も大きくなる可能性があります。したがって、適度な速さのインターネット接続（ダイアルアップは非常に面倒になります）と、2GB以上の月間データを利用できることが推奨されます。
+&lt;/p&gt;</translation>
     </message>
 </context>
 <context>
@@ -74,32 +75,32 @@ KDE — це сучасне середовище робочого столу, я
     <message>
         <location filename="../guide/guide.qml" line="33"/>
         <source>Guide</source>
-        <translation>Керівництво</translation>
+        <translation>ガイド</translation>
     </message>
     <message>
         <location filename="../guide/guide.qml" line="81"/>
         <source>Intro</source>
-        <translation>Вступ</translation>
+        <translation>紹介</translation>
     </message>
     <message>
         <location filename="../guide/guide.qml" line="84"/>
         <source>Keyboard</source>
-        <translation>Клавіатура</translation>
+        <translation>キーボード</translation>
     </message>
     <message>
         <location filename="../guide/guide.qml" line="87"/>
         <source>Partitioning</source>
-        <translation>Перегородка</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../guide/guide.qml" line="90"/>
         <source>Users</source>
-        <translation>Користувачі</translation>
+        <translation>ユーザー</translation>
     </message>
     <message>
         <location filename="../guide/guide.qml" line="93"/>
         <source>Summary</source>
-        <translation>Резюме</translation>
+        <translation>概要</translation>
     </message>
 </context>
 <context>
@@ -122,7 +123,23 @@ KDE — це сучасне середовище робочого столу, я
             &lt;p&gt;Ensure that your system meets the minimal requirements. Not having an internet connection during the install is no deal breaker and won't stop the install from going through.&lt;/p&gt;
             
             &lt;p&gt;Having less than the shown disc space or available RAM will almost certainly fail the install. As for disc space, a minimum of 20 Gb is recommended.&lt;/p&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h3&gt;インストールガイド&lt;h3&gt;
+
+&lt;p&gt;さて、KaOSがライブモードでどのように動作するかの一部をご覧になったので、インストールする準備ができたかもしれませんね。そうする前に、いくつかのことを理解しておくとよいでしょう。&lt;/p&gt;
+
+&lt;p&gt;他のローリングリリースと同様に、定期的なアップデートは必須です。あまりに遅れると、その後にアップデートしようとしても、問題が発生する可能性が高くなります。推奨は毎週、最低でも月に一度のアップデートです。&lt;/p&gt;
+
+&lt;p&gt;もしそれがあなたにとって実現不可能なことであるなら、6ヶ月か9ヶ月のリリースサイクルで、静的ディストリビューションを使うことを考慮する方が良いかもしれません。KaOSのアップデートに何らかの指示が必要な場合、&lt;a href=&apos;https://kaosx.us/news/&apos;&gt;kaosx.us/news/&lt;/a&gt;が常に警告を発します（パッケージマネージャのOctopiにも表示されます）。コマンドラインの&lt;a href=&apos;https://kaosx.us/docs/pacman/&apos;&gt;パッケージマネージャである pacman&lt;/a&gt; に慣れるのが一番です。どんなディストリビューションでも時には大きな変更をしなければなりません。ローリングディストリビューションはパッケージマネージャに依存し、ユーザーと対話し、アップデートが正しく行われることを確認しなければなりません。ローリングは本質的に一定の間隔で再インストールしないことを意味します（静的なディストリビューションは大きな変更を導入するために再インストールを必要とすることがあります）。pacman の GUI はそのような状況では pacman 自身ほど強力ではありません。&lt;/p&gt;
+
+&lt;p&gt;Calamares、KaOSのインストーラーは分かりやすく使いやすいのですが、現段階では1つ機能が不足しています。RAIDディスクのセットアップがまだサポートされていないのです。&lt;/p&gt;
+
+&lt;h3&gt;インストーラーを起動する&lt;/h3&gt;
+
+&lt;p&gt;最初のページでは、インストーラの情報、現在知られている問題を確認するオプション、インストールに使用する言語を選択するオプションが表示されます。&lt;/p&gt;
+
+&lt;p&gt;お使いのシステムが最小限の要件を満たしていることを確認してください。インストール中にインターネットに接続できなくても、インストールが中断されることはありません。&lt;/p&gt;
+
+&lt;p&gt;ディスクの空き容量やRAMの空き容量が表示値より少ないと、ほぼ間違いなくインストールに失敗します。ディスク容量については、最低20GBを推奨します。&lt;/p&gt;</translation>
     </message>
 </context>
 <context>
@@ -130,16 +147,17 @@ KDE — це сучасне середовище робочого столу, я
     <message>
         <location filename="../main.qml" line="35"/>
         <source>Welcome</source>
-        <translation>Ласкаво просимо</translation>
+        <translation>ようこそ</translation>
     </message>
     <message>
         <location filename="../main.qml" line="44"/>
         <source>&lt;div&gt;Thanks for trying KaOS. In need of the password file or package list?&lt;br&gt;
                             Want to learn more about the project? Please find the links below.&lt;br&gt;&lt;br&gt;
                             Don&apos;t hesitate to give your opinion about KaOS in the Forum.&lt;/div&gt;</source>
-        <translation>&lt;div&gt;Дякуємо, що спробували KaOS. Потрібен файл пароля або список пакунків?&lt;br&gt;
-                            Хочете дізнатись більше про проект? Будь ласка, знайдіть посилання нижче.&lt;br&gt;&lt;br&gt;
-                            Не соромтеся надати свою думку про КаОС на форумі.&lt;/div&gt;</translation>
+        <translation>&lt;div&gt;KaOSをお試しいただきありがとうございます。パスワードファイルやパッケージリストが必要ですか？&lt;br&gt;
+このプロジェクトについてもっと知りたいですか？以下のリンク先をご覧ください。&lt;br&gt;&lt;br&gt;
+
+フォーラムでは、KaOSに関するご意見を遠慮なくお寄せください。&lt;/div&gt;</translation>
     </message>
     <message>
         <location filename="../main.qml" line="58"/>
@@ -161,43 +179,27 @@ KDE — це сучасне середовище робочого столу, я
                             &lt;/table&gt;
                             &lt;p&gt;Hope you enjoy&lt;/p&gt;</source>
         <extracomment>Do not translate root/root and live/live</extracomment>
-        <translation>&lt;p&gt;Правильні паролі для використання в live сесії:&lt;/p&gt;
-                            &lt;p&gt;&lt;/p&gt;
-                            &lt;table width=100% align=center bgcolor=#eaeaea&gt;
-                                &lt;tr&gt;
-                                    &lt;th&gt;Ім&apos;я користувача:&lt;/th&gt;
-                                    &lt;th&gt;Пароль:&lt;/th&gt;
-                                &lt;/tr&gt;
-                                &lt;tr&gt;
-                                    &lt;td align=center&gt;root&lt;/td&gt;
-                                    &lt;td align=center&gt;root&lt;/td&gt;
-                                &lt;/tr&gt;
-                                &lt;tr&gt;
-                                    &lt;td align=center&gt;live&lt;/td&gt;
-                                    &lt;td align=center&gt;live&lt;/td&gt;
-                                &lt;/tr&gt;
-                            &lt;/table&gt;
-                            &lt;p&gt;Сподіваюся, тобі сподобається&lt;/p&gt;</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../main.qml" line="108"/>
         <source>Main</source>
-        <translation>Головна</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../main.qml" line="111"/>
         <source>Passwords</source>
-        <translation>Паролі</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../main.qml" line="114"/>
         <source>About</source>
-        <translation>Про</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../main.qml" line="117"/>
         <source>Package List</source>
-        <translation>Список Пакунків</translation>
+        <translation>パッケージリスト</translation>
     </message>
 </context>
 <context>
@@ -282,9 +284,7 @@ KDE — це сучасне середовище робочого столу, я
         <source>&lt;h3&gt;Summary&lt;/h3&gt;
 
             &lt;p&gt;All looking as it should? Then clicking Next will give you one last warning before the actual formatting and installation will start.&lt;/p&gt;</source>
-        <translation>&lt;h3&gt;Резюме&lt;/h3&gt;
-
-&lt;p&gt;Все виглядає як треба? Натиснувши кнопку «Далі», ви отримаєте останнє попередження, перш ніж почнеться фактичне форматування та встановлення.&lt;/p&gt;</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../guide/summary.qml" line="90"/>
