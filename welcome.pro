@@ -45,6 +45,8 @@ TRANSLATIONS  += lang/welcome.ts \
               lang/welcome_ja.ts \
               lang/welcome_pl.ts \
               lang/welcome_pt_BR.ts \
+              lang/welcome_ru.ts \
+              lang/welcome_si.ts \
               lang/welcome_uk.ts \
 
 # Default rules for deployment.
