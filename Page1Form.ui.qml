@@ -50,6 +50,15 @@ Item {
             checkable: true
             highlighted: true
             Material.elevation: 1
+            Material.roundedScale: Material.NotRounded
+            
+            ToolTip {
+                    visible: button1.hovered
+                    height: 70
+                    width: 200
+                    anchors.centerIn: parent
+                    text: "Not installable"
+                }
 
             Image {
                 id: image1
@@ -99,6 +108,7 @@ Item {
             leftPadding: 35
             highlighted: true
             Material.elevation: 1
+            Material.roundedScale: Material.NotRounded
 
             Image {
                 id: image3
@@ -143,6 +153,7 @@ Item {
             Layout.fillWidth: true
             highlighted: false
             Material.elevation: 1
+            Material.roundedScale: Material.NotRounded
 
             Image {
                 id: image5
@@ -168,6 +179,7 @@ Item {
             highlighted: false
             Layout.fillWidth: true
             Material.elevation: 1
+            Material.roundedScale: Material.NotRounded
 
             Image {
                 id: image6
@@ -193,6 +205,7 @@ Item {
             checkable: false
             highlighted: false
             Material.elevation: 1
+            Material.roundedScale: Material.NotRounded
 
             Image {
                 id: image4

@@ -19,25 +19,31 @@
 import QtQuick 2.7
 import QtQuick.Controls 2.0
 import QtQuick.Layouts 1.3
-import org.kde.plasma.plasma5support 2.0 as PlasmaCore
+//import org.kde.plasma.plasma5support 2.0 as PlasmaCore
 
 Page1Form {
-    PlasmaCore.DataSource {
-        id: executer
-        engine: "executable"
-        connectedSources: sources
-        onSourceAdded: {
-            disconnectSource(source);
-            connectSource(source);
-        }
-        onSourceRemoved: {
-            disconnectSource(source);
-        }
+    //PlasmaCore.DataSource {
+    //    id: executer
+    //    engine: "executable"
+    //    onNewData: {executer.disconnectSource(sourceName);}
+    //}
 
+    Popup {
+        id: popup
+        anchors.centerIn: parent
+        width: 400
+        height: 50
+        modal: true
+        focus: true
+        closePolicy: Popup.CloseOnEscape | Popup.CloseOnPressOutside
+        contentItem: Text {
+            text: "This ISO is not meant to be used as install media."
+        }
     }
 
     button1.onClicked: {
-        executer.connectSource("/usr/bin/launch-calamares.sh");
+        popup.open();
+        //executer.connectSource("/usr/bin/launch-calamares.sh");
         //executer.connectSource("/data/anke/dev/github/build-guide-Desktop-Debug/guide");
     }
     
