@@ -25,7 +25,15 @@ Page1Form {
     PlasmaCore.DataSource {
         id: executer
         engine: "executable"
-        onNewData: {executer.disconnectSource(sourceName);}
+        connectedSources: sources
+        onSourceAdded: {
+            disconnectSource(source);
+            connectSource(source);
+        }
+        onSourceRemoved: {
+            disconnectSource(source);
+        }
+
     }
 
     button1.onClicked: {
