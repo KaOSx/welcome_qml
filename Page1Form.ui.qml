@@ -51,14 +51,6 @@ Item {
             highlighted: true
             Material.elevation: 1
             Material.roundedScale: Material.NotRounded
-            
-            ToolTip {
-                    visible: button1.hovered
-                    height: 70
-                    width: 200
-                    anchors.centerIn: parent
-                    text: "Not installable"
-                }
 
             Image {
                 id: image1
