@@ -59,6 +59,7 @@
         <file>lang/welcome_es_AR.qm</file>
         <file>lang/welcome_es.qm</file>
         <file>lang/welcome_fa.qm</file>
+        <file>lang/welcome_fi.qm</file>
         <file>lang/welcome_fr.qm</file>
         <file>lang/welcome_hr_HR.qm</file>
         <file>lang/welcome_hi_IN.qm</file>
@@ -69,6 +70,7 @@
         <file>lang/welcome_nl_NL.qm</file>
         <file>lang/welcome_pl.qm</file>
         <file>lang/welcome_pt_BR.qm</file>
+        <file>lang/welcome_si.qm</file>
         <file>lang/welcome_uk.qm</file>
         <file>images/list.svg</file>
         <file>package.qml</file>
