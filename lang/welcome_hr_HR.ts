@@ -1,4 +1,4 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="hr_HR" version="2.1">
+<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="hr_HR">
 <context>
     <name>Page1Form.ui</name>
     <message>
@@ -14,7 +14,7 @@
     <message>
         <location filename="../Page1Form.ui.qml" line="187"/>
         <source>Donate</source>
-        <translation type="unfinished"/>
+        <translation>Doniraj</translation>
     </message>
     <message>
         <location filename="../Page1Form.ui.qml" line="138"/>
@@ -57,32 +57,32 @@
     <message>
         <location filename="../guide/guide.qml" line="33"/>
         <source>Guide</source>
-        <translation type="unfinished"/>
+        <translation>Vodič</translation>
     </message>
     <message>
         <location filename="../guide/guide.qml" line="81"/>
         <source>Intro</source>
-        <translation type="unfinished"/>
+        <translation>Uvod</translation>
     </message>
     <message>
         <location filename="../guide/guide.qml" line="84"/>
         <source>Keyboard</source>
-        <translation type="unfinished"/>
+        <translation>Tipkovnica</translation>
     </message>
     <message>
         <location filename="../guide/guide.qml" line="87"/>
         <source>Partitioning</source>
-        <translation type="unfinished"/>
+        <translation>Particioniranje</translation>
     </message>
     <message>
         <location filename="../guide/guide.qml" line="90"/>
         <source>Users</source>
-        <translation type="unfinished"/>
+        <translation>Korisnici</translation>
     </message>
     <message>
         <location filename="../guide/guide.qml" line="93"/>
         <source>Summary</source>
-        <translation type="unfinished"/>
+        <translation>Sažetak</translation>
     </message>
 </context>
 <context>
@@ -175,12 +175,12 @@
     <message>
         <location filename="../main.qml" line="114"/>
         <source>About</source>
-        <translation type="unfinished"/>
+        <translation>O programu</translation>
     </message>
     <message>
         <location filename="../main.qml" line="117"/>
         <source>Package List</source>
-        <translation type="unfinished"/>
+        <translation>Lista paketa</translation>
     </message>
 </context>
 <context>
@@ -196,7 +196,9 @@
         <source>&lt;p&gt;Next is the &lt;strong&gt;Keyboard Setup&lt;/strong&gt;. You can test the layout by typing something in the designated area.&lt;/p&gt;
 
             &lt;p&gt;Use the drop-down menu to fine tune to your exact desired keyboard model.&lt;/p&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;p&gt;slijedeće je &lt;strong&gt;postavljanje tipkovnice&lt;/strong&gt;. Možete provjeriti raspored tipkajući u ozačenom području.&lt;/p&gt;
+
+            &lt;p&gt;Koristite padajući izbornik za fino ugađanje željenog modela tipkovnice..&lt;/p&gt;</translation>
     </message>
 </context>
 <context>
