@@ -1,5 +1,5 @@
 /***************************************************************************
- *   Copyright (C) 2017 - 2023 Anke Boersma <demm@kaosx.us>       *
+ *   Copyright (C) 2017 - 2024 Anke Boersma <demm@kaosx.us>       *
  *                                                                         *
  *   This program is free software; you can redistribute it and/or modify  *
  *   it under the terms of the GNU General Public License as published by  *
@@ -53,6 +53,6 @@ Page1Form {
         Qt.openUrlExternally("https://kaosx.us/docs");
     }
     button4.onClicked: {
-        Qt.openUrlExternally("https://kaosx.us/about/donors/");
+        Qt.openUrlExternally("https://kaosx.us/donate/");
     }
 }
